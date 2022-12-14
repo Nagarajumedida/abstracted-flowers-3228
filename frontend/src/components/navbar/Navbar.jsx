@@ -7,9 +7,9 @@ import {
   Image,
   Input,
   InputGroup,
-  InputLeftElement,
+  
   InputRightElement,
-  Square,
+ 
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -27,42 +27,13 @@ import { BiChevronDown } from "react-icons/bi";
 
 // assets import******************
 import MainLogo from "./navbar_assets/main_logo.png";
+import SmartPhonesAndWearables from "./navbar_assets/smartphones_menu_image.png";
+import laptops_menu_image from "./navbar_assets/laptops_menu_image.png";
+import personal_grooming_image from "./navbar_assets/personal_grooming_image.png";
 
 // assets import******************
 
 import { FrontendContext } from "../../context/Frontend_context";
-
-
-
-const Main_menu_dropdown_array_navbar = [{
-    "id": 1,
-    "title": "Smartphones"
-}, {
-    "id": 2,
-    "title": "Wearable Technology",
-    "options": [{ "optionsID": 1, "title": "Top Selling Smartwatches" }, { "optionsID": 2, "title": "Apple Price Drop" }]
-}, {
-    "id": 3,
-    "title": "Accessories",
-    "options": [{ "optionsID": 1, "title": "Tablet Accessories" }, { "optionsID": 2, "title": "Mobile Accessories" }, { "optionsID": 3, "title": "Mobile Grips & Stands" }, { "optionsID": 4, "title": "Car Mobile Holders" }, { "optionsID": 5, "title": "Memory Cards" }, { "optionsID": 6, "title": "Cables & Cords" }, { "optionsID": 7, "title": "Chargers & Adapters" }]
-}, {
-    "id": 4,
-    "title": "Headphones & Headsets",
-}, {
-    "id": 5,
-    "title": "Tablets & eReaders",
-    "options": [{ "optionsID": 1, "title": "Premium Tablets, Above 15001" }, { "optionsID": 2, "title": "Every Day use Tablets below 15000" }]
-}, {
-    "id": 6,
-    "title": "Power Banks",
-}, {
-    "id": 7,
-    "title": "eSlates",
-}, {
-    "id": 8,
-    "title": "AI Learning Robots",
-}]
-
 
 const Navbar = () => {
   const contexts = useContext(FrontendContext);
@@ -151,14 +122,6 @@ const Navbar = () => {
         pr="20px"
         alignItems={"center"}
       >
-        {/* <Box 
-         display={[ "flex", "flex","none", "none", "none", "none"]}
-         
-        bg="rgb(228,37,41)"
-         h="auto">
-            hihihiidfsdfd
-         </Box> */}
-
         <Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
           <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
         </Box>
@@ -171,12 +134,6 @@ const Navbar = () => {
           h="auto"
         >
           <InputGroup bgColor={"rgb(255,255,255)"} borderRadius="40px">
-            {/* <InputLeftElement
-              pointerEvents="none"
-              color="gray.300"
-              fontSize="1.2em"
-              children="$"
-            /> */}
             <Input
               placeholder="Find your favorite products"
               color={"rgb(117,117,117)"}
@@ -261,6 +218,12 @@ const Navbar = () => {
           justifyContent={"center"}
           _hover={{ backgroundColor: main_red_color, cursor: "pointer" }}
           h="100%"
+          onMouseEnter={(e) => {
+            setStyle_Television("flex");
+          }}
+          onMouseLeave={(e) => {
+            setStyle_Television("none");
+          }}
         >
           <Text fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[1].title}
@@ -275,6 +238,12 @@ const Navbar = () => {
           justifyContent={"center"}
           _hover={{ backgroundColor: main_red_color, cursor: "pointer" }}
           h="100%"
+          onMouseEnter={(e) => {
+            setStyle_audio("flex");
+          }}
+          onMouseLeave={(e) => {
+            setStyle_audio("none");
+          }}
         >
           <Text fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[2].title}
@@ -289,6 +258,12 @@ const Navbar = () => {
           justifyContent={"center"}
           _hover={{ backgroundColor: main_red_color, cursor: "pointer" }}
           h="100%"
+          onMouseEnter={(e) => {
+            setStyle_home_appliances("flex");
+          }}
+          onMouseLeave={(e) => {
+            setStyle_home_appliances("none");
+          }}
         >
           <Text fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[3].title}
@@ -303,6 +278,12 @@ const Navbar = () => {
           justifyContent={"center"}
           _hover={{ backgroundColor: main_red_color, cursor: "pointer" }}
           h="100%"
+          onMouseEnter={(e) => {
+            setStyle_computers("flex");
+          }}
+          onMouseLeave={(e) => {
+            setStyle_computers("none");
+          }}
         >
           <Text fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[4].title}
@@ -317,6 +298,12 @@ const Navbar = () => {
           justifyContent={"center"}
           _hover={{ backgroundColor: main_red_color, cursor: "pointer" }}
           h="100%"
+          onMouseEnter={(e) => {
+            setStyle_camaras("flex");
+          }}
+          onMouseLeave={(e) => {
+            setStyle_camaras("none");
+          }}
         >
           <Text fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[5].title}
@@ -331,6 +318,12 @@ const Navbar = () => {
           justifyContent={"center"}
           _hover={{ backgroundColor: main_red_color, cursor: "pointer" }}
           h="100%"
+          onMouseEnter={(e) => {
+            setStyle_kitchen_appliances("flex");
+          }}
+          onMouseLeave={(e) => {
+            setStyle_kitchen_appliances("none");
+          }}
         >
           <Text fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[6].title}
@@ -345,6 +338,12 @@ const Navbar = () => {
           justifyContent={"center"}
           _hover={{ backgroundColor: main_red_color, cursor: "pointer" }}
           h="100%"
+          onMouseEnter={(e) => {
+            setStyle_personal_Care("flex");
+          }}
+          onMouseLeave={(e) => {
+            setStyle_personal_Care("none");
+          }}
         >
           <Text fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[7].title}
@@ -372,6 +371,8 @@ const Navbar = () => {
         pos={"absolute"}
         ml="2.5%"
         w="95%"
+        border={"1px"}
+        borderColor={main_blue_color}
         display={styleMoblie_and_tablets}
         bgColor={main_menu_dropdown_blue_color}
         onMouseEnter={(e) => {
@@ -381,20 +382,2164 @@ const Navbar = () => {
           setStyleMoblie_and_tablets("none");
         }}
       >
-        <Flex>
-            <HStack>
-                <VStack>
-                    <Text>Smartphones</Text>
-                </VStack>
-                <VStack></VStack>
-                <VStack></VStack>
-            </HStack>
+        <Flex flex={"1"} pt="5px">
+          <HStack pl="3%">
+            <VStack w="200px" h="100%">
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Smartphones
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Wearable Technology
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Top Selling Smartwatches
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Apple Price Drop
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Accessories
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Tablet Accessories
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Mobile Accessories
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Mobile Grips & Stands
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Car Mobile Holders
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Memory Cards
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Cables & Cords
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Chargers & Adapters
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Headphones & Headsets
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Tablets & eReaders
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Premium Tablets, Above 15001
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Every Day use Tablets below 15000
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Power Banks
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                AI Learning Robots
+              </Text>
+            </VStack>
+          </HStack>
         </Flex>
-        <Box flex={"1"}></Box>
+        <Box flex={"1"}>
+          <Image
+            src={SmartPhonesAndWearables}
+            alt={SmartPhonesAndWearables}
+            h="100%"
+            w="100%"
+          />
+        </Box>
       </Flex>
-      {/* <Box bgColor={main_red_color} w={"100%"} h="4px" ></Box> */}
+      <Flex
+        h="200px"
+        pos={"absolute"}
+        ml="2.5%"
+        w="95%"
+        border={"1px"}
+        borderColor={main_blue_color}
+        display={style_television}
+        bgColor={main_menu_dropdown_blue_color}
+        onMouseEnter={(e) => {
+          setStyle_Television("flex");
+        }}
+        onMouseLeave={(e) => {
+          setStyle_Television("none");
+        }}
+      >
+        <Flex flex={"1"} pt="5px">
+          <HStack pl="3%">
+            <VStack w="120px" h="100%">
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Televisions
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Smart TVs
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                32 Inch TVs
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                43 Inch TVs
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                55 Inch TVs
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Android TVs
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Gaming
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Gaming Consoles
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Gaming Accessories
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Gaming Titles
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Projectors
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Streaming Devices
+              </Text>
+            </VStack>
+
+            <VStack w="400px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Reconnect Disney | Marvel Audio Collection
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                TV & Audio Accessories
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Virtual Reality Headsets
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Stabilizers & Surge Protectors
+              </Text>
+            </VStack>
+          </HStack>
+        </Flex>
+        <Box flex={"0.5"}>
+          {/* <Image src={SmartPhonesAndWearables} alt={SmartPhonesAndWearables} h="100%" w="100%" /> */}
+        </Box>
+      </Flex>
+      <Flex
+        h="200px"
+        pos={"absolute"}
+        ml="2.5%"
+        w="95%"
+        border={"1px"}
+        borderColor={main_blue_color}
+        display={style_audio}
+        bgColor={main_menu_dropdown_blue_color}
+        onMouseEnter={(e) => {
+          setStyle_audio("flex");
+        }}
+        onMouseLeave={(e) => {
+          setStyle_audio("none");
+        }}
+      >
+        <Flex flex={"1"} pt="5px">
+          <HStack pl="3%">
+            <VStack w="220px" h="100%">
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Headphones & Headsets
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                True Wireless
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Bluetooth Neckbands
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Wired Earphones
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                On Ear Headphones
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Noise Cancelling Headphones
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Bluetooth & WiFi Speakers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Bluetooth Speakers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Smart Speakers
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                TV Speakers & Soundbars
+              </Text>
+
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Soundbars
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Home Theatre Systems
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Party speakers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Multimedia
+              </Text>
+            </VStack>
+            <VStack w="400px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Musical Instruments
+              </Text>
+
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Guitars and Ukuleles
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Microphones
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Musical Keyboards
+              </Text>
+            </VStack>
+          </HStack>
+        </Flex>
+        <Box flex={"0.5"}>
+          {/* <Image src={SmartPhonesAndWearables} alt={SmartPhonesAndWearables} h="100%" w="100%" /> */}
+        </Box>
+      </Flex>
+      <Flex
+        h="320px"
+        pos={"absolute"}
+        ml="2.5%"
+        w="95%"
+        border={"1px"}
+        borderColor={main_blue_color}
+        display={style_home_appliances}
+        bgColor={main_menu_dropdown_blue_color}
+        onMouseEnter={(e) => {
+          setStyle_home_appliances("flex");
+        }}
+        onMouseLeave={(e) => {
+          setStyle_home_appliances("none");
+        }}
+      >
+        <Flex flex={"1"} pt="5px">
+          <HStack pl="3%">
+            <VStack w="220px" h="100%">
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Split Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Window Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Smart Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Energy Efficient Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                1 ton Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                1.5 ton Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                5 star Air Conditioners
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Air Coolers
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Air Purifiers
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Washing Machines
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Fully Automatic Front Load
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Fully Automatic Top Load
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Semi-Automatic Top Load
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Refrigerators
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Single Door
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Double Door
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Side by Side Refrigerators
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Convertible
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Vacuum Cleaners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Robotic Vacuum Cleaners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Dishwashers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Fans
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Cloth Dryers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Geysers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Dishwashers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Room Heaters
+              </Text>
+            </VStack>
+          </HStack>
+        </Flex>
+        <Box flex={"0.5"}>
+          {/* <Image src={SmartPhonesAndWearables} alt={SmartPhonesAndWearables} h="100%" w="100%" /> */}
+        </Box>
+      </Flex>
+      <Flex
+        h="320px"
+        pos={"absolute"}
+        ml="2.5%"
+        w="95%"
+        border={"1px"}
+        borderColor={main_blue_color}
+        display={style_home_appliances}
+        bgColor={main_menu_dropdown_blue_color}
+        onMouseEnter={(e) => {
+          setStyle_home_appliances("flex");
+        }}
+        onMouseLeave={(e) => {
+          setStyle_home_appliances("none");
+        }}
+      >
+        <Flex flex={"1"} pt="5px">
+          <HStack pl="3%">
+            <VStack w="220px" h="100%">
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Split Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Window Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Smart Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Energy Efficient Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                1 ton Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                1.5 ton Air Conditioners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                5 star Air Conditioners
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Air Coolers
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Air Purifiers
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Washing Machines
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Fully Automatic Front Load
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Fully Automatic Top Load
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Semi-Automatic Top Load
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Refrigerators
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Single Door
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Double Door
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Side by Side Refrigerators
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Convertible
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Vacuum Cleaners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Robotic Vacuum Cleaners
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Dishwashers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Fans
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Cloth Dryers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Geysers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Dishwashers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Room Heaters
+              </Text>
+            </VStack>
+          </HStack>
+        </Flex>
+        <Box flex={"0.5"}>
+          {/* <Image src={SmartPhonesAndWearables} alt={SmartPhonesAndWearables} h="100%" w="100%" /> */}
+        </Box>
+      </Flex>
+      <Flex
+        h="460px"
+        pos={"absolute"}
+        ml="2.5%"
+        w="95%"
+        border={"1px"}
+        borderColor={main_blue_color}
+        display={style_computers}
+        bgColor={main_menu_dropdown_blue_color}
+        onMouseEnter={(e) => {
+          setStyle_computers("flex");
+        }}
+        onMouseLeave={(e) => {
+          setStyle_computers("none");
+        }}
+      >
+        <Flex flex={"1"} pt="5px">
+          <HStack pl="3%">
+            <VStack w="220px" h="100%">
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Laptops
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Basic use laptops
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Student Laptops
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Thin and light Laptops
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Multi-Tasking Laptops
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Gaming Laptops
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Content creator Laptops
+              </Text>
+
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Computer Monitors
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Desktops & All-In-Ones
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Bluetooth & WiFi Speakers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Internet Connectivity Devices
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Routers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                WiFi Range Extenders
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Wireless USB Adapters
+              </Text>
+
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Printers & Inks
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Printers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Toners & Ink Cartridges
+              </Text>
+
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Data Storage Devices
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Memory Cards
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Memory Cards
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Pen Drives & OTG Drives
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Hard Disks & SSD
+              </Text>
+            </VStack>
+
+            <VStack w="300px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Computer Accessories
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Upto 72% Off, Only on Reliancedigital.in
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Computer Networking Cables
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Laptop Chargers & Adaptor
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Laptop Batteries
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Hubs & Docks
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Laptop Bags & Sleeves
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Laptop Cooling Pad
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Laptop Screen Protectors
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Laptop Tables & Stands
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Mouse Pads
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Input Devices
+              </Text>
+
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Keyboards
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Computer Mouse
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Stylus Pens
+              </Text>
+            </VStack>
+          </HStack>
+        </Flex>
+        <Box flex={"1"}>
+          <Image
+            src={laptops_menu_image}
+            alt={laptops_menu_image}
+            h="100%"
+            w="100%"
+          />
+        </Box>
+      </Flex>
+      <Flex
+        h="260px"
+        pos={"absolute"}
+        ml="2.5%"
+        w="95%"
+        border={"1px"}
+        borderColor={main_blue_color}
+        display={style_camaras}
+        bgColor={main_menu_dropdown_blue_color}
+        onMouseEnter={(e) => {
+          setStyle_camaras("flex");
+        }}
+        onMouseLeave={(e) => {
+          setStyle_camaras("none");
+        }}
+      >
+        <Flex flex={"1"} pt="5px">
+          <HStack pl="3%">
+            <VStack w="220px" h="100%">
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                DSLR Cameras
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Mirrorless Cameras
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Point & Shoot Cameras
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                ProSumer Cameras
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Action Cameras
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Photo Storage Devices
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Memory Cards
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Pen Drives
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Binoculars
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Camera Lens
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Digital Camera Accessoriess
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Camera Batteries & Chargers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Camera bags & cases
+              </Text>
+
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Tripods & Monopods
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Action Camera Accessories
+              </Text>
+            </VStack>
+          </HStack>
+        </Flex>
+        <Box flex={"1"}>
+          {/* <Image src={laptops_menu_image} alt={laptops_menu_image} h="100%" w="100%" /> */}
+        </Box>
+      </Flex>
+      <Flex
+        h="320px"
+        pos={"absolute"}
+        ml="2.5%"
+        w="95%"
+        border={"1px"}
+        borderColor={main_blue_color}
+        display={style_kitchen_appliances}
+        bgColor={main_menu_dropdown_blue_color}
+        onMouseEnter={(e) => {
+          setStyle_camaras("flex");
+        }}
+        onMouseLeave={(e) => {
+          setStyle_camaras("none");
+        }}
+      >
+        <Flex flex={"1"} pt="5px">
+          <HStack pl="3%">
+            <VStack w="220px" h="100%">
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Microwave Ovens
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Water Purifiers
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Fruits and Vegetable Cleaner
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Oven Toaster Grillers (OTG)
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Cookwares
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Juicer Mixer Grinders
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Juicers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Hand Mixers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Mixer Grinders
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Choppers & Slicers
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Induction Cookers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Food Processors
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Blenders
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Kitchen Hobs & Gas Stoves
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Kitchen Chimneys
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Rice Cookers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Sandwich Makers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Popup Toasters
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Coffee Makers & Grinders
+              </Text>
+            </VStack>
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Reconnect Disney|Marvel Kitchen Collection
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Air Fryers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Specialty Appliances
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Electric Kettles
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Water Dispensers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Wet Grinders
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Flour Mills
+              </Text>
+            </VStack>
+          </HStack>
+        </Flex>
+        <Box flex={"1"}>
+          {/* <Image src={laptops_menu_image} alt={laptops_menu_image} h="100%" w="100%" /> */}
+        </Box>
+      </Flex>
+      <Flex
+        h="230px"
+        pos={"absolute"}
+        ml="2.5%"
+        w="95%"
+        border={"1px"}
+        borderColor={main_blue_color}
+        display={style_personal_Care}
+        bgColor={main_menu_dropdown_blue_color}
+        onMouseEnter={(e) => {
+          setStyle_personal_Care("flex");
+        }}
+        onMouseLeave={(e) => {
+          setStyle_personal_Care("none");
+        }}
+      >
+        <Flex flex={"1"} pt="5px">
+          <HStack pl="3%">
+            <VStack w="220px" h="100%">
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                 Shavers & Trimmers
+
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Epilators
+
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                 Hair Dryers & Stylers
+
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Weighing Scales
+
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+               Irons
+              </Text>
+            
+            </VStack>
+
+            <VStack w="350px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Hygiene & Personal Care
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+               Reconnect Disney|Marvel Grooming Collection
+
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Digital Thermometers
+
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Massagers
+
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                 Misc. Care Devices
+              </Text>
+
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Garment Steamers
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Action Camera Accessories
+              </Text>
+            </VStack>
+          </HStack>
+        </Flex>
+        <Box flex={"1"}>
+          <Image src={personal_grooming_image} alt={personal_grooming_image} h="100%" w="100%" />
+        </Box>
+      </Flex>
     </div>
   );
 };
 
 export default Navbar;
+
+// Shavers & Trimmers
+// Epilators
+// Hair Dryers & Stylers
+// Weighing Scales
+// Irons
+
+// 
+// 
+// 
