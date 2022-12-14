@@ -1,2 +1,3 @@
-# -abstracted-flowers-3228
-This is a NEM-111 construct week project ,the name of web site is  DIGITAL INDIA  its an e-commerce web site. Here we can shopping all type of digital accessories.
+# abstracted-flowers-3228
+This is a NEM-111 construct week project. The name of the website is  DIGITAL INDIA. It's an e-commerce website. Here, user can shop for any kind of digital accessory.
+
