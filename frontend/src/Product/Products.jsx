@@ -4,10 +4,12 @@ import { Box, Text,
   Button,
   Checkbox,
   Image,
-  Flex
+  Flex,
+  Center,
+  Divider
 } from '@chakra-ui/react'
 import { BsSuitHeartFill,BsSuitHeart } from "react-icons/bs"
-
+import data from "../db.json"
 
 
 
@@ -15,6 +17,7 @@ import { BsSuitHeartFill,BsSuitHeart } from "react-icons/bs"
 import { useState } from "react";
 
 import "./Product.css"
+import { useEffect } from 'react';
 
 
 
@@ -22,6 +25,13 @@ import "./Product.css"
 
 
 const Products = () => {
+const [Data,setData]=useState(data.product)
+useEffect(()=>{
+
+
+},[])
+
+
   return (<Box>
     <h1>Products</h1>
 
@@ -29,8 +39,32 @@ const Products = () => {
     <Box className='filter'>
         <Filter/>
     </Box>
+
+
+    <Box className='allproducts'>
+
+    <Box className='sortbtn'>
+    <Heading as='h2' size='xl'>TELEVISIONS</Heading>
+    <Button className='btns'>Relevance</Button>
+    <Button  className='btns'>Price (Low-High)</Button>
+    <Button  className='btns'>Price (High-Low)</Button>
+   </Box>
+   <Box>
+    Filters
+  </Box>
+
     <Box className='products'>
-         <AllProducts/>
+      {
+        Data.map((item)=>{
+          return <AllProducts 
+          key={item.id}
+          title={item.title}
+          image={item.image}
+          price={item.price}
+          />
+        })
+      }
+       </Box>  
     </Box>
 </Box>
 </Box>
@@ -40,43 +74,48 @@ const Products = () => {
 export default Products
 
 
-const AllProducts=()=>{
+const AllProducts=({title,image,price})=>{
   const [heart,setHeart]=useState(true)
 
-  return(<Box>
-  <Box className='sortbtn'>
-    <Heading as='h2' size='3xl'>TELEVISIONS</Heading>
-    <Button className='btns'>Relevance</Button>
-    <Button  className='btns'>Price (Low-High)</Button>
-    <Button  className='btns'>Price (High-Low)</Button>
-  </Box>
-  <Box>
-    Filters
-  </Box>
-
-
-
+  return(<>
+  
   <Box className='showallproducts'>
 
-   <Box className='oneProd'>
-    <Box><Image src='https://www.reliancedigital.in/medias/Mi-4A-Horizon-Edition-Television-492166368-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNjcxM3xpbWFnZS9qcGVnfGltYWdlcy9oNDcvaDk4Lzk3OTA4NzQ3MTQxNDIuanBnfDhjNDk4M2M1MTM1YTViZmFkMTY1NGM1ZmU4ZjFiODNiOGQ2NTMyYzUxYjg0NWJmYWE4MjIzODg4YmEzMWM5ZDY'/></Box>
-    <Box><Text>MI 32 HD Ready Smart LED TV, 4A Horizon, ELA4546IN</Text></Box>
-    <Box>
-      <Text>₹16,999.00</Text>
-    <Text><s>16,999.00</s></Text>
-    <Text>18%(₹3,500)</Text>
-    </Box>
-    <Box><Button>OFFERS AVAILABLE</Button></Box>
+   <Box className='oneProductCard'>
+
+    <Box className='oneProd'>
+    <Box className='imgBox'><Image className='prodimg' src={image}/></Box>
     
-    <Box style={{display:"grid",border:" 1px solid rgb(223, 220, 220)",alignItems:"center",gridTemplateColumns:"repeat(2,1fr)"}}>
-      <Box><Checkbox colorScheme='green'>Compare</Checkbox></Box>
+    <Box style={{marginBottom:"2%"}}><Text fontSize='xl' 
+    className='prodname'>{title}</Text></Box>
+    <Flex fontWeight='500' style={{gap:"4%",alignItems:"center",marginBottom:"2%"}}>
+      <Text color='#003380' fontSize='lg'>₹{price}.00</Text>
+    <Text color="gray"><s>16,999.00</s></Text>
+    <Text color="green">18%(₹3,500)</Text>
+    </Flex>
+    <Box><Button style={{border:"1px solid green",color:"green",borderRadius:"20px",
+    height:"20px"}} fontSize="11px">OFFERS AVAILABLE</Button></Box>
+    </Box>
+
+    <Box fontSize='lg' 
+    style={{display:"grid",border:"1px solid rgb(223, 220, 220)",
+    alignItems:"center",padding:"2%",
+
+    gridTemplateColumns:"repeat(3,1fr)",textAlign:"center"}}>
+      <Box><Checkbox colorScheme='blue'><Text>Compare</Text></Checkbox></Box>
+      <Center >
+       <Divider orientation='vertical' />
+      </Center>
       <Box style={{display:"flex",alignItems:"center",gap:"2%"}} onClick={()=>setHeart(!heart)}>
-        {!heart?<BsSuitHeartFill/>:<BsSuitHeart/>}<Text>WishList</Text> </Box>
+        {!heart?<BsSuitHeartFill/>:<BsSuitHeart/>}Wishlist </Box>
        </Box>
    </Box>
+
+
   </Box>
-</Box>)
+</>)
 }
+
 
 
 

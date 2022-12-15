@@ -16,10 +16,8 @@ color: #333333;
     text-align: left;
     gap: 1%;
 }
-.products{
+.allproducts{
     width: 70%;
-    background-color: white;
-    border: 1px solid rgb(0, 60, 255); 
 }
 
 .sortbtn{
@@ -27,13 +25,14 @@ color: #333333;
     gap: 5%;
     align-items: center;
     margin: auto;
-    width: 90%;
+   background-color: white;
+   padding: 2%;
 }
 .btns{
     border:0.5px solid rgb(223, 220, 220);
     border-radius: 8%;
-
-    padding: 1%;
+    background-color: white;
+    padding: 0.5%;
 }
 .btns:hover{
     border:0.5px solid rgb(54, 167, 54);
@@ -41,13 +40,59 @@ color: #333333;
     background-color: white;
 }
 
-.showallproducts{
-    margin-top: 3%;
-   display: grid;
-   grid-template-columns: repeat(3,1fr); 
+.products{
+  
+    background-color: white;
+    /* border: 4px solid rgb(221, 218, 18);  */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   column-gap: 1.5%;
+  row-gap: 20px;
+  background-color:rgb(240, 237, 237) ;
 }
 
-.oneProd{
+
+
+.oneProductCard{
+    cursor: pointer;
     background-color: white;
     border: 1px solid rgb(223, 220, 220);
 }
+
+.oneProductCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+
+.oneProductCard:hover .prodname{
+ color: red;
+}
+
+.prodname{
+    color:#003380;
+    margin-top: 3%;
+    height: 60px;
+    overflow: hidden;
+}
+
+
+
+.oneProd{
+    padding: 4%;
+}
+
+
+.imgBox{
+    width: 80%;
+    height: 40%;
+padding: 2%;
+margin: auto;
+}
+
+.prodimg{
+    height: 100%;
+    width: 100%;
+}
+.prodimg:hover{
+transform: scale(1.1);
+}
+

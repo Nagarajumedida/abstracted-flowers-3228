@@ -8,9 +8,9 @@ import Homepage from './pages/Homepage/Homepage';
 function App() {
   return (
     <>
-    {/* <Products/> */}
- <Navbar/>
- <Homepage/>
+    <Products/>
+ {/* <Navbar/>
+ <Homepage/> */}
     </>
   );
 }
