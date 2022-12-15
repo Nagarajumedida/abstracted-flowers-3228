@@ -86,9 +86,9 @@ const Navbar = () => {
   const [style_accessories, setStyle_accessories] = useState("none");
 
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  // pos="sticky" top={"0px"} zIndex="27"
   return (
-    <div>
+    <div style={{position:"sticky",top:"0px",zIndex:"27" }}>
       <Flex
         bgColor={main_red_color}
         color={"white"}
@@ -401,6 +401,7 @@ const Navbar = () => {
         pos={"absolute"}
         ml="2.5%"
         w="95%"
+        zIndex={500}
         border={"1px"}
         borderColor={main_blue_color}
         display={styleMoblie_and_tablets}
@@ -604,6 +605,7 @@ const Navbar = () => {
       </Flex>
       <Flex
         h="200px"
+        zIndex={500}
         pos={"absolute"}
         ml="2.5%"
         w="95%"
@@ -786,6 +788,7 @@ const Navbar = () => {
       </Flex>
       <Flex
         h="200px"
+        zIndex={500}
         pos={"absolute"}
         ml="2.5%"
         w="95%"
@@ -990,7 +993,7 @@ const Navbar = () => {
         h="320px"
         pos={"absolute"}
         ml="2.5%"
-        w="95%"
+        w="95%" zIndex={500}
         border={"1px"}
         borderColor={main_blue_color}
         display={style_home_appliances}
@@ -1277,7 +1280,7 @@ const Navbar = () => {
         h="320px"
         pos={"absolute"}
         ml="2.5%"
-        w="95%"
+        w="95%" zIndex={500}
         border={"1px"}
         borderColor={main_blue_color}
         display={style_home_appliances}
@@ -1565,6 +1568,7 @@ const Navbar = () => {
         pos={"absolute"}
         ml="2.5%"
         w="95%"
+        zIndex={500}
         border={"1px"}
         borderColor={main_blue_color}
         display={style_computers}
@@ -1944,7 +1948,7 @@ const Navbar = () => {
         </Box>
       </Flex>
       <Flex
-        h="260px"
+        h="260px" zIndex={500}
         pos={"absolute"}
         ml="2.5%"
         w="95%"
@@ -2122,6 +2126,7 @@ const Navbar = () => {
         pos={"absolute"}
         ml="2.5%"
         w="95%"
+        zIndex={500}
         border={"1px"}
         borderColor={main_blue_color}
         display={style_kitchen_appliances}
@@ -2407,7 +2412,7 @@ const Navbar = () => {
       <Flex
         h="230px"
         pos={"absolute"}
-        ml="2.5%"
+        ml="2.5%" zIndex={500}
         w="95%"
         border={"1px"}
         borderColor={main_blue_color}
@@ -2559,7 +2564,7 @@ const Navbar = () => {
         h="400px"
         pos={"absolute"}
         ml="2.5%"
-        w="95%"
+        w="95%" zIndex={500}
         border={"1px"}
         borderColor={main_blue_color}
         display={style_accessories}

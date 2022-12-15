@@ -12,7 +12,7 @@ function App() {
     {/* <Products/> */}
  <Navbar/>
  <Homepage/>
- <Footer/>
+ {/* <Footer/> */}
     </>
   );
 }
