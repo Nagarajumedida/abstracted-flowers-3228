@@ -5,7 +5,10 @@ const Homepage = () => {
     document.title = "Online Electronic Shopping Store in India - Reliance Digital";
   }, []);
   return (
-    <div>Homepage</div>
+    <div>
+
+      
+    </div>
   )
 }
 
