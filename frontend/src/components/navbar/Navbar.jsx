@@ -7,9 +7,7 @@ import {
   Image,
   Input,
   InputGroup,
-  
   InputRightElement,
- 
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -22,6 +20,7 @@ import { ImCart } from "react-icons/im";
 import { FaUser } from "react-icons/fa";
 import { ImSearch } from "react-icons/im";
 import { BiChevronDown } from "react-icons/bi";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 // icons import******************
 
@@ -358,6 +357,12 @@ const Navbar = () => {
           justifyContent={"center"}
           _hover={{ backgroundColor: main_red_color, cursor: "pointer" }}
           h="100%"
+          onMouseEnter={(e) => {
+            setStyle_accessories("flex");
+          }}
+          onMouseLeave={(e) => {
+            setStyle_accessories("none");
+          }}
         >
           <Text fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[8].title}
@@ -2401,8 +2406,7 @@ const Navbar = () => {
                 mb="10px"
                 alignSelf={"start"}
               >
-                 Shavers & Trimmers
-
+                Shavers & Trimmers
               </Text>
               <Text
                 fontSize={"16px"}
@@ -2413,7 +2417,6 @@ const Navbar = () => {
                 alignSelf={"start"}
               >
                 Epilators
-
               </Text>
               <Text
                 fontSize={"16px"}
@@ -2423,8 +2426,7 @@ const Navbar = () => {
                 mb="10px"
                 alignSelf={"start"}
               >
-                 Hair Dryers & Stylers
-
+                Hair Dryers & Stylers
               </Text>
               <Text
                 fontSize={"16px"}
@@ -2435,7 +2437,6 @@ const Navbar = () => {
                 alignSelf={"start"}
               >
                 Weighing Scales
-
               </Text>
               <Text
                 fontSize={"16px"}
@@ -2445,9 +2446,8 @@ const Navbar = () => {
                 mb="10px"
                 alignSelf={"start"}
               >
-               Irons
+                Irons
               </Text>
-            
             </VStack>
 
             <VStack w="350px" h="100%">
@@ -2469,8 +2469,7 @@ const Navbar = () => {
                 _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
                 mb="10px"
               >
-               Reconnect Disney|Marvel Grooming Collection
-
+                Reconnect Disney|Marvel Grooming Collection
               </Text>
               <Text
                 alignSelf={"start"}
@@ -2480,7 +2479,6 @@ const Navbar = () => {
                 _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
               >
                 Digital Thermometers
-
               </Text>
               <Text
                 alignSelf={"start"}
@@ -2490,7 +2488,6 @@ const Navbar = () => {
                 _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
               >
                 Massagers
-
               </Text>
               <Text
                 alignSelf={"start"}
@@ -2499,7 +2496,7 @@ const Navbar = () => {
                 fontWeight={"300"}
                 _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
               >
-                 Misc. Care Devices
+                Misc. Care Devices
               </Text>
 
               <Text
@@ -2525,7 +2522,274 @@ const Navbar = () => {
           </HStack>
         </Flex>
         <Box flex={"1"}>
-          <Image src={personal_grooming_image} alt={personal_grooming_image} h="100%" w="100%" />
+          <Image
+            src={personal_grooming_image}
+            alt={personal_grooming_image}
+            h="100%"
+            w="100%"
+          />
+        </Box>
+      </Flex>
+      <Flex
+        h="400px"
+        pos={"absolute"}
+        ml="2.5%"
+        w="95%"
+        border={"1px"}
+        borderColor={main_blue_color}
+        display={style_accessories}
+        bgColor={main_menu_dropdown_blue_color}
+        onMouseEnter={(e) => {
+          setStyleMoblie_and_tablets("flex");
+        }}
+        onMouseLeave={(e) => {
+          setStyleMoblie_and_tablets("none");
+        }}
+      >
+        <Flex flex={"1"} pt="5px">
+          <HStack pl="3%">
+            <VStack w="200px" h="100%">
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Smartphones
+              </Text>
+              <Text
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+                alignSelf={"start"}
+              >
+                Wearable Technology
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Top Selling Smartwatches
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Apple Price Drop
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Accessories
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Tablet Accessories
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Mobile Accessories
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Mobile Grips & Stands
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Car Mobile Holders
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Memory Cards
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Cables & Cords
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Chargers & Adapters
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Headphones & Headsets
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Tablets & eReaders
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Premium Tablets, Above 15001
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"13px"}
+                color={"white"}
+                fontWeight={"300"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+              >
+                Every Day use Tablets below 15000
+              </Text>
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                Power Banks
+              </Text>
+            </VStack>
+
+            <VStack w="200px" h="100%">
+              <Text
+                alignSelf={"start"}
+                fontSize={"16px"}
+                color={"white"}
+                fontWeight={"500"}
+                _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
+                mb="10px"
+              >
+                AI Learning Robots
+              </Text>
+            </VStack>
+          </HStack>
+        </Flex>
+        <Box flex={"1"}>
+          <Image
+            src={SmartPhonesAndWearables}
+            alt={SmartPhonesAndWearables}
+            h="100%"
+            w="100%"
+          />
+        </Box>
+      </Flex>
+      <Flex
+        bgColor={main_red_color}
+        color={"white"}
+        display={[ "flex", "flex","flex", "flex","none", "none" ]}
+        h="65px"
+        pr="10px"
+        alignItems={"center"}
+        justifyContent="space-between"
+      >
+        <Box display={"flex"} alignItems="center" >
+          <Box
+            w="30px"
+            ml="20px"
+            bg={main_red_color}
+            color={"white"}
+            borderRadius="5px"
+            h="30px"
+          >
+            <GiHamburgerMenu size={"25px"} />
+          </Box>
+          <Box w="180px" ml="20px" bg="rgb(228,37,41)" h="60px">
+            <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
+          </Box>
+        </Box>
+
+        <Center w="80px" bg="rgb(228,37,41)" gap={"5px"}>
+          <ImCart color="white" size={"20px"} />
+        </Center>
+      </Flex>
+      <Flex
+        bgColor={main_red_color}
+        color={"white"}
+        display={["flex", "flex","flex", "flex","none", "none"]}
+        h="55px"
+        px="10px"
+        alignItems={"center"}
+      >
+        <Box
+          flex="1"
+          bg="rgb(228,37,41)"
+          //  bg="white"
+          margin={"auto"}
+          h="auto"
+        >
+          <InputGroup bgColor={"rgb(255,255,255)"} borderRadius="40px">
+            <Input
+              placeholder="Find your favorite products"
+              color={"rgb(117,117,117)"}
+              fontWeight="400"
+            />
+            <InputRightElement
+              children={<ImSearch color="rgb(187,187,187)" />}
+            />
+          </InputGroup>
         </Box>
       </Flex>
     </div>
@@ -2540,6 +2804,6 @@ export default Navbar;
 // Weighing Scales
 // Irons
 
-// 
-// 
-// 
+//
+//
+//
