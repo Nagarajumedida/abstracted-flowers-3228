@@ -1,7 +1,17 @@
 import {
+  Accordion,
+  AccordionButton,
+  
+  AccordionItem,
+  AccordionPanel,
   Box,
   Center,
   Divider,
+  Drawer,
+  DrawerBody,
+  DrawerContent,
+  DrawerHeader,
+  DrawerOverlay,
   Flex,
   HStack,
   Image,
@@ -9,6 +19,7 @@ import {
   InputGroup,
   InputRightElement,
   Text,
+  useDisclosure,
   VStack,
 } from "@chakra-ui/react";
 import React, { useContext, useState } from "react";
@@ -21,6 +32,18 @@ import { FaUser } from "react-icons/fa";
 import { ImSearch } from "react-icons/im";
 import { BiChevronDown } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { GiPlug } from "react-icons/gi";
+import { HiComputerDesktop } from "react-icons/hi2";
+import { FiMonitor } from "react-icons/fi";
+
+import { FaHeadphones } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
+import { FaMinus } from "react-icons/fa";
+import { FaBath } from "react-icons/fa";
+import { FaUsb } from "react-icons/fa";
+import { MdTabletMac } from "react-icons/md";
+import { BsCameraFill } from "react-icons/bs";
+import { ImSpoonKnife } from "react-icons/im";
 
 // icons import******************
 
@@ -61,6 +84,8 @@ const Navbar = () => {
     useState("none");
   const [style_personal_Care, setStyle_personal_Care] = useState("none");
   const [style_accessories, setStyle_accessories] = useState("none");
+
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <div>
@@ -2739,13 +2764,13 @@ const Navbar = () => {
       <Flex
         bgColor={main_red_color}
         color={"white"}
-        display={[ "flex", "flex","flex", "flex","none", "none" ]}
+        display={["flex", "flex", "flex", "flex", "none", "none"]}
         h="65px"
         pr="10px"
         alignItems={"center"}
         justifyContent="space-between"
       >
-        <Box display={"flex"} alignItems="center" >
+        <Box display={"flex"} alignItems="center">
           <Box
             w="30px"
             ml="20px"
@@ -2753,9 +2778,2699 @@ const Navbar = () => {
             color={"white"}
             borderRadius="5px"
             h="30px"
+            onClick={onOpen}
           >
             <GiHamburgerMenu size={"25px"} />
           </Box>
+          <Drawer
+            placement={"left"}
+            onClose={onClose}
+            isOpen={isOpen}
+            size={"sm"}
+          >
+            <DrawerOverlay />
+            <DrawerContent>
+              <DrawerHeader
+                display={"flex"}
+                borderBottomWidth="1px"
+                bgColor={main_red_color}
+              >
+                <Box color="white" h="80%" w="70px">
+                  <Center w="70px" bg="rgb(228,37,41)" gap={"5px"}>
+                    <FaUser color="white" size={"15px"} />
+                    <Text
+                      fontSize={"15px"}
+                      fontWeight={"500"}
+                      _hover={{ cursor: "pointer" }}
+                    >
+                      Login
+                    </Text>
+                  </Center>
+                </Box>
+                <Box color="white" h="80%" w="70px">
+                  <Center w="70px" bg="rgb(228,37,41)" gap={"5px"}>
+                    <Center height="20px">
+                      <Divider orientation="vertical" />
+                    </Center>
+                    <Text
+                      fontSize={"15px"}
+                      fontWeight={"500"}
+                      _hover={{ cursor: "pointer" }}
+                    >
+                      Register
+                    </Text>
+                  </Center>
+                </Box>
+              </DrawerHeader>
+              <DrawerHeader pt="8px" bgColor="rgb(243,243,243)" h="40px">
+                <Text fontSize={"14px"} color="rgb(123,123,123)">
+                  Categories
+                </Text>
+              </DrawerHeader>
+              <DrawerBody>
+                <Accordion allowMultiple>
+                  <AccordionItem>
+                    {({ isExpanded }) => (
+                      <>
+                        <h2>
+                          <AccordionButton>
+                            <MdTabletMac size={"17px"} />
+                            <Box
+                              as="span"
+                              flex="1"
+                              letterSpacing={"-1px"}
+                              ml="12px"
+                              textAlign="left"
+                            >
+                              Mobiles & Tablets
+                            </Box>
+                            {isExpanded ? (
+                              <FaMinus fontSize="12px" />
+                            ) : (
+                              <FaPlus fontSize="12px" />
+                            )}
+                          </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Smartphones
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Wearable Technology
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Top Selling Smartwatches
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Apple Price Drop
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Tablet Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Grips & Stands
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Car Mobile Holders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Memory Cards
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Cables & Cords
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Chargers & Adapters
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Headphones & Headsets
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Tablets & eReaders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Every Day use Tablets below 15000
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Premium Tablets above 15001
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Power Banks
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            eSlates
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            AI Learning Robots
+                          </Text>
+                        </AccordionPanel>
+                      </>
+                    )}
+                  </AccordionItem>
+                  <AccordionItem>
+                    {({ isExpanded }) => (
+                      <>
+                        <h2>
+                          <AccordionButton>
+                            <FiMonitor size={"17px"} />
+                            <Box
+                              as="span"
+                              flex="1"
+                              letterSpacing={"-1px"}
+                              ml="12px"
+                              textAlign="left"
+                            >
+                              Televisions
+                            </Box>
+                            {isExpanded ? (
+                              <FaMinus fontSize="12px" />
+                            ) : (
+                              <FaPlus fontSize="12px" />
+                            )}
+                          </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Smartphones
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Wearable Technology
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Top Selling Smartwatches
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Apple Price Drop
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Tablet Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Grips & Stands
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Car Mobile Holders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Memory Cards
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Cables & Cords
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Chargers & Adapters
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Headphones & Headsets
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Tablets & eReaders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Every Day use Tablets below 15000
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Premium Tablets above 15001
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Power Banks
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            eSlates
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            AI Learning Robots
+                          </Text>
+                        </AccordionPanel>
+                      </>
+                    )}
+                  </AccordionItem>
+                  <AccordionItem>
+                    {({ isExpanded }) => (
+                      <>
+                        <h2>
+                          <AccordionButton>
+                            <FaHeadphones size={"17px"} />
+                            <Box
+                              as="span"
+                              flex="1"
+                              letterSpacing={"-1px"}
+                              ml="12px"
+                              textAlign="left"
+                            >
+                              Audio
+                            </Box>
+                            {isExpanded ? (
+                              <FaMinus fontSize="12px" />
+                            ) : (
+                              <FaPlus fontSize="12px" />
+                            )}
+                          </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Smartphones
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Wearable Technology
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Top Selling Smartwatches
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Apple Price Drop
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Tablet Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Grips & Stands
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Car Mobile Holders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Memory Cards
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Cables & Cords
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Chargers & Adapters
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Headphones & Headsets
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Tablets & eReaders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Every Day use Tablets below 15000
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Premium Tablets above 15001
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Power Banks
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            eSlates
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            AI Learning Robots
+                          </Text>
+                        </AccordionPanel>
+                      </>
+                    )}
+                  </AccordionItem>
+                  <AccordionItem>
+                    {({ isExpanded }) => (
+                      <>
+                        <h2>
+                          <AccordionButton>
+                            <GiPlug size={"17px"} />
+                            <Box
+                              as="span"
+                              flex="1"
+                              letterSpacing={"-1px"}
+                              ml="12px"
+                              textAlign="left"
+                            >
+                              Home Appliances
+                            </Box>
+                            {isExpanded ? (
+                              <FaMinus fontSize="12px" />
+                            ) : (
+                              <FaPlus fontSize="12px" />
+                            )}
+                          </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Smartphones
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Wearable Technology
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Top Selling Smartwatches
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Apple Price Drop
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Tablet Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Grips & Stands
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Car Mobile Holders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Memory Cards
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Cables & Cords
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Chargers & Adapters
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Headphones & Headsets
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Tablets & eReaders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Every Day use Tablets below 15000
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Premium Tablets above 15001
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Power Banks
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            eSlates
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            AI Learning Robots
+                          </Text>
+                        </AccordionPanel>
+                      </>
+                    )}
+                  </AccordionItem>
+                  <AccordionItem>
+                    {({ isExpanded }) => (
+                      <>
+                        <h2>
+                          <AccordionButton>
+                            <HiComputerDesktop size={"17px"} />
+                            <Box
+                              as="span"
+                              flex="1"
+                              letterSpacing={"-1px"}
+                              ml="12px"
+                              textAlign="left"
+                            >
+                              Computers
+                            </Box>
+                            {isExpanded ? (
+                              <FaMinus fontSize="12px" />
+                            ) : (
+                              <FaPlus fontSize="12px" />
+                            )}
+                          </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Smartphones
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Wearable Technology
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Top Selling Smartwatches
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Apple Price Drop
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Tablet Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Grips & Stands
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Car Mobile Holders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Memory Cards
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Cables & Cords
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Chargers & Adapters
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Headphones & Headsets
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Tablets & eReaders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Every Day use Tablets below 15000
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Premium Tablets above 15001
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Power Banks
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            eSlates
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            AI Learning Robots
+                          </Text>
+                        </AccordionPanel>
+                      </>
+                    )}
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    {({ isExpanded }) => (
+                      <>
+                        <h2>
+                          <AccordionButton>
+                            <BsCameraFill size={"17px"} />
+                            <Box
+                              as="span"
+                              flex="1"
+                              letterSpacing={"-1px"}
+                              ml="12px"
+                              textAlign="left"
+                            >
+                              Cameras
+                            </Box>
+                            {isExpanded ? (
+                              <FaMinus fontSize="12px" />
+                            ) : (
+                              <FaPlus fontSize="12px" />
+                            )}
+                          </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Smartphones
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Wearable Technology
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Top Selling Smartwatches
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Apple Price Drop
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Tablet Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Grips & Stands
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Car Mobile Holders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Memory Cards
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Cables & Cords
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Chargers & Adapters
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Headphones & Headsets
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Tablets & eReaders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Every Day use Tablets below 15000
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Premium Tablets above 15001
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Power Banks
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            eSlates
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            AI Learning Robots
+                          </Text>
+                        </AccordionPanel>
+                      </>
+                    )}
+                  </AccordionItem>
+                  <AccordionItem>
+                    {({ isExpanded }) => (
+                      <>
+                        <h2>
+                          <AccordionButton>
+                            <ImSpoonKnife size={"17px"} />
+                            <Box
+                              as="span"
+                              flex="1"
+                              letterSpacing={"-1px"}
+                              ml="12px"
+                              textAlign="left"
+                            >
+                              Kitchen Appliances
+                            </Box>
+                            {isExpanded ? (
+                              <FaMinus fontSize="12px" />
+                            ) : (
+                              <FaPlus fontSize="12px" />
+                            )}
+                          </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Smartphones
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Wearable Technology
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Top Selling Smartwatches
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Apple Price Drop
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Tablet Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Grips & Stands
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Car Mobile Holders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Memory Cards
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Cables & Cords
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Chargers & Adapters
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Headphones & Headsets
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Tablets & eReaders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Every Day use Tablets below 15000
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Premium Tablets above 15001
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Power Banks
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            eSlates
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            AI Learning Robots
+                          </Text>
+                        </AccordionPanel>
+                      </>
+                    )}
+                  </AccordionItem>
+                  <AccordionItem>
+                    {({ isExpanded }) => (
+                      <>
+                        <h2>
+                          <AccordionButton>
+                            <FaBath size={"17px"} />
+                            <Box
+                              as="span"
+                              flex="1"
+                              letterSpacing={"-1px"}
+                              ml="12px"
+                              textAlign="left"
+                            >
+                              Personal Care
+                            </Box>
+                            {isExpanded ? (
+                              <FaMinus fontSize="12px" />
+                            ) : (
+                              <FaPlus fontSize="12px" />
+                            )}
+                          </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Smartphones
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Wearable Technology
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Top Selling Smartwatches
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Apple Price Drop
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Tablet Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Grips & Stands
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Car Mobile Holders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Memory Cards
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Cables & Cords
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Chargers & Adapters
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Headphones & Headsets
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Tablets & eReaders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Every Day use Tablets below 15000
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Premium Tablets above 15001
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Power Banks
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            eSlates
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            AI Learning Robots
+                          </Text>
+                        </AccordionPanel>
+                      </>
+                    )}
+                  </AccordionItem>
+                  <AccordionItem>
+                    {({ isExpanded }) => (
+                      <>
+                        <h2>
+                          <AccordionButton>
+                            <FaUsb size={"17px"} />
+                            <Box
+                              as="span"
+                              flex="1"
+                              letterSpacing={"-1px"}
+                              ml="12px"
+                              textAlign="left"
+                            >
+                              Accessories
+                            </Box>
+                            {isExpanded ? (
+                              <FaMinus fontSize="12px" />
+                            ) : (
+                              <FaPlus fontSize="12px" />
+                            )}
+                          </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4}>
+                        <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Smartphones
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Wearable Technology
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Top Selling Smartwatches
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Apple Price Drop
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Tablet Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Accessories
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Mobile Grips & Stands
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Car Mobile Holders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Memory Cards
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Cables & Cords
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Chargers & Adapters
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Headphones & Headsets
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Tablets & eReaders
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Every Day use Tablets below 15000
+                          </Text>
+                          <Text
+                          letterSpacing={"-0.5px"}
+                          ml="20px"
+                            alignSelf={"start"}
+                            fontSize={"14px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"400"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                          >
+                            Premium Tablets above 15001
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            Power Banks
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            eSlates
+                          </Text>
+                          <Text
+                          letterSpacing={"1px"}
+                            fontSize={"15px"}
+                            color={"rgb(66,70,91)"}
+                            fontWeight={"500"}
+                            _hover={{
+                              textDecorationLine: "underline",
+                              cursor: "pointer",
+                            }}
+                            mb="10px"
+                            alignSelf={"start"}
+                          >
+                            AI Learning Robots
+                          </Text>
+                        </AccordionPanel>
+                      </>
+                    )}
+                  </AccordionItem>
+                </Accordion>
+              </DrawerBody>
+            </DrawerContent>
+          </Drawer>
           <Box w="180px" ml="20px" bg="rgb(228,37,41)" h="60px">
             <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
           </Box>
@@ -2768,7 +5483,7 @@ const Navbar = () => {
       <Flex
         bgColor={main_red_color}
         color={"white"}
-        display={["flex", "flex","flex", "flex","none", "none"]}
+        display={["flex", "flex", "flex", "flex", "none", "none"]}
         h="55px"
         px="10px"
         alignItems={"center"}
