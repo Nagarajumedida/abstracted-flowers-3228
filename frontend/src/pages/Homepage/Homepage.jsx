@@ -7,6 +7,7 @@ import "./Homepage.css";
 import AdImage_One from "./homepage assets/productSlider_Homepage_1/Year-End-Sale-5000-Instant-Discount-Carousel-Banner-05-12-2022.webp";
 import Apple_Carousel from "./Apple_Carousel";
 import PriceDrop_appleSmartwatches from "./PriceDrop_appleSmartwatches";
+import Carousel_products_only from "./Carousel_products_only";
 
 // asssets **************
 const Homepage = () => {
@@ -22,6 +23,7 @@ const Homepage = () => {
       <Carousel />
       <PriceDrop_appleSmartwatches/>
       <Apple_Carousel/>
+      <Carousel_products_only/>
     </div>
   );
 };

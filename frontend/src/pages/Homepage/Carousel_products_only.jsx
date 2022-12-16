@@ -84,7 +84,7 @@ const settings4 = {
   autoplay: true,
   speed: 100,
   autoplaySpeed: 2000,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
 };
 const settings5 = {
@@ -181,7 +181,7 @@ const PriceDrop_appleSmartwatches_Array = [
   },
 ];
 // ₹
-export default function PriceDrop_appleSmartwatches() {
+export default function Carousel_products_only() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState();
@@ -209,14 +209,7 @@ export default function PriceDrop_appleSmartwatches() {
         color="white"
         display={["block", "none", "none", "none", "none", "none"]}
       >
-        <Square w="90%" m="auto">
-          <Image
-            src={apple_static_image}
-            alt={apple_static_image}
-            w="100%"
-            h="100%"
-          />
-        </Square>
+       
 
         <Box w="90%" bg="white" m="auto">
           <Box
@@ -337,16 +330,8 @@ export default function PriceDrop_appleSmartwatches() {
         color="white"
         display={["none", "flex", "none", "none", "none", "none"]}
       >
-        <Square w="50%" m="auto">
-          <Image
-            src={apple_static_image}
-            alt={apple_static_image}
-            w="100%"
-            h="100%"
-          />
-        </Square>
-
-        <Box w="50%" bg="white" m="auto">
+    
+        <Box w="90%" bg="white" m="auto">
           <Box
             position={"relative"}
             height={"auto"}
@@ -465,16 +450,9 @@ export default function PriceDrop_appleSmartwatches() {
         color="white"
         display={["none", "none", "none","flex",  "none", "none"]}
       >
-        <Square w="25%" m="auto">
-          <Image
-            src={apple_static_image}
-            alt={apple_static_image}
-            w="100%"
-            h="100%"
-          />
-        </Square>
+        
 
-        <Box w="75%" bg="white" m="auto">
+        <Box w="90%" bg="white" m="auto">
           <Box
             position={"relative"}
             height={"auto"}
@@ -593,16 +571,8 @@ export default function PriceDrop_appleSmartwatches() {
         color="white"
         display={["none", "none", "none", "none", "flex", "none"]}
       >
-        <Square w="25%" m="auto">
-          <Image
-            src={apple_static_image}
-            alt={apple_static_image}
-            w="100%"
-            h="100%"
-          />
-        </Square>
-
-        <Box w="75%" bg="white" m="auto">
+       
+        <Box w="90%" bg="white" m="auto">
           <Box
             position={"relative"}
             height={"auto"}
@@ -721,16 +691,9 @@ export default function PriceDrop_appleSmartwatches() {
         color="white"
         display={["none", "none",  "none", "none", "none","flex"]}
       >
-        <Square w="25%" m="auto">
-          <Image
-            src={apple_static_image}
-            alt={apple_static_image}
-            w="100%"
-            h="100%"
-          />
-        </Square>
+       
 
-        <Box w="75%" bg="white" m="auto">
+        <Box w="90%" bg="white" m="auto">
           <Box
             position={"relative"}
             height={"auto"}
@@ -849,16 +812,9 @@ export default function PriceDrop_appleSmartwatches() {
         color="white"
         display={["none", "none", "flex", "none", "none", "none"]}
       >
-        <Square w="25%" m="auto">
-          <Image
-            src={apple_static_image}
-            alt={apple_static_image}
-            w="100%"
-            h="100%"
-          />
-        </Square>
+        
 
-        <Box w="75%" bg="white" m="auto">
+        <Box w="90%" bg="white" m="auto">
           <Box
             position={"relative"}
             height={"auto"}
