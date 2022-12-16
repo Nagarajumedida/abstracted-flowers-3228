@@ -48,9 +48,9 @@ const FilterSort = () => {
 
     return (
         <div className='filter'>
-            <h2>Filters</h2>
+            
             <div className='filter-1'>
-                  <h4>Categories</h4>
+                 
 
                 <div className='filter-2'>
                     <input type="checkbox" value="mobile" defaultChecked={categoryType.includes("mobile")} onChange={handleFilter} />
@@ -99,7 +99,7 @@ const FilterSort = () => {
             </div>
 
             <div className='filter-1'>
-            <h4>Price</h4>
+            
             <div onChange={handleSortBy}>
                 <div className='filter-2'>
                     <input type="radio" name="sortBy" value="asc" defaultChecked={sortBy === 'asc'} />

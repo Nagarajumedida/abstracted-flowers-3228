@@ -1,39 +1,57 @@
-.product-list{
-    /* border:1px solid red; */
-    border-radius: 10px;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-    text-align: center;
+
+.products{
+  
     background-color: white;
+    /* border: 4px solid rgb(221, 218, 18);  */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   column-gap: 1.5%;
+  row-gap: 20px;
+  background-color:rgb(240, 237, 237) ;
 }
 
-.product-list div{
-    /* padding: 20px; */
-    margin-top: 10px;
+
+
+.oneProductCard{
     cursor: pointer;
-   
-   
+    background-color: white;
+    border: 1px solid rgb(223, 220, 220);
 }
-.product-list:hover{
-    transform: scale(0.90);
-    border: 2px solid  rgba(229, 19, 156, 0.918) !important;
-    transition: all 0.8s ease;
-    box-shadow:  rgba(229, 19, 156, 0.918) 0px 10px 40px -12px;
-    
+
+.oneProductCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+
+.oneProductCard:hover .prodname{
+ color: red;
 }
-.button-product{
-    margin-bottom: 20px;
-    width: 150px;
-    height: 30px;
-    border-radius: 10px;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;  
-    background-color: teal; 
-    color: white;
+
+.prodname{
+    color:#003380;
+    margin-top: 3%;
+    height: 60px;
+    overflow: hidden;
 }
-.product-list h3{
-    font-size: 18px;
-    font-weight: bold;
+
+
+
+.oneProd{
+    padding: 4%;
 }
-.product-list img{
-    background: wheat;
-    
+
+
+.imgBox{
+    width: 80%;
+    height: 40%;
+padding: 2%;
+margin: auto;
 }
+
+.prodimg{
+    height: 100%;
+    width: 100%;
+}
+.prodimg:hover{
+transform: scale(1.1);
+}
+

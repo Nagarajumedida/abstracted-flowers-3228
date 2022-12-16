@@ -22,7 +22,7 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Navbar.css";
 
 // icons import******************
@@ -54,7 +54,7 @@ import laptops_menu_image from "./navbar_assets/laptops_menu_image.png";
 import personal_grooming_image from "./navbar_assets/personal_grooming_image.png";
 
 // assets import******************
-
+import { Link, useNavigate } from "react-router-dom";
 import { FrontendContext } from "../../context/Frontend_context";
 
 const Navbar = () => {
@@ -87,6 +87,23 @@ const Navbar = () => {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   // pos="sticky" top={"0px"} zIndex="27"
+   const navigate=useNavigate()
+
+   const[category,setCategory]=useState('')
+
+
+
+  useEffect(()=>{
+  if(category===''){
+    navigate('')
+  }
+console.log("category",category)
+
+  },[])
+
+
+
+
   return (
     <div style={{position:"sticky",top:"0px",zIndex:"27" }}>
       <Flex
@@ -146,10 +163,10 @@ const Navbar = () => {
         pr="20px"
         alignItems={"center"}
       >
-        <Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
+     <Link to='/'>   <Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
           <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
         </Box>
-
+        </Link>
         <Box
           flex="0.7"
           bg="rgb(228,37,41)"
@@ -229,9 +246,13 @@ const Navbar = () => {
             setStyleMoblie_and_tablets("none");
           }}
         >
-          <Text fontSize={"12px"} fontWeight="500">
+         
+          <Text onClick={(e)=>setCategory(e.target.value)} 
+           value={Main_menu_array_navbar[0].title}
+          fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[0].title}
           </Text>
+          
           <BiChevronDown />
         </Box>
         <Box
@@ -249,9 +270,11 @@ const Navbar = () => {
             setStyle_Television("none");
           }}
         >
+           <Link to='/product?category=television'>
           <Text fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[1].title}
           </Text>
+          </Link>
           <BiChevronDown />
         </Box>
         <Box
