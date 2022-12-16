@@ -1,13 +1,13 @@
 import {Box,Button, Divider, Flex,Image,Input,InputGroup,InputRightAddon,Spacer,Text} from '@chakra-ui/react'
 import React,{useContext,useEffect,useState } from 'react'
 import {useNavigate} from 'react-router-dom'
-import {Frontend_context} from '../context/Frontend_context'
+import {FrontendContext} from '../context/FrontendContext'
 const Cart = () => {
 const [show,setShow] = useState(false)
 const [item,setItem] = useState([])
 const [price1,setPrice1] = useState(0)
 const navigate = useNavigate()
-const {setCar,pincode,total,settotal,firstName} = useContext(Frontend_context)
+const {setCar,pincode,total,settotal,firstName} = useContext(FrontendContext)
 const handleDelete=(id)=>{
     let r=JSON.parse(localStorage.getItem("cart"))
     let newarr=r.filter(e=>e.id!==id)

@@ -1,10 +1,10 @@
 import React, { useContext, useRef, useState } from 'react'
 import { Box,Input,Button,Text,Flex, useToast } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
-import { Frontend_context} from '../context/Frontend_context';
+import { FrontendContext} from '../context/FrontendContext';
 const Register = () => {
     const navigate=useNavigate();
-    const {mobile,setemail,email,setlastName,lastName,setfirstName,firstName,mobile1,setMobile1} = useContext(Frontend_context)
+    const {mobile,setemail,email,setlastName,lastName,setfirstName,firstName,mobile1,setMobile1} = useContext(FrontendContext)
     const [first, setfirst] = useState(true)
     const [firstnam, setfirstnam] = useState("")
     const [verified, setverified] = useState(false)

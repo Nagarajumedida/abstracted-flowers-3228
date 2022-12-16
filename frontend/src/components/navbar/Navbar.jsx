@@ -55,7 +55,7 @@ import personal_grooming_image from "./navbar_assets/personal_grooming_image.png
 
 // assets import******************
 
-import { FrontendContext } from "../../context/Frontend_context";
+import { FrontendContext } from "../../context/FrontendContext";
 
 const Navbar = () => {
   const contexts = useContext(FrontendContext);
