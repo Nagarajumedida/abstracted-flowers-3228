@@ -1,15 +1,19 @@
 .filter{
-    /* display:grid; */
-/* grid-template-columns:repeat(auto-fit,minmax(300px,max-content)); */
+   
 justify-content: center;
- gap: 30px;
- z-index: -10;
+width: 100%;
+text-align: center;
+margin-top: 50px;
+border:none;
+
+ /* gap: 30px; */
+
 }
 /* .filter-1{
     display: flex;
 } */
 .filter  h2{
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 20px;
 
 }
