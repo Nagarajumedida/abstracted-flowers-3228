@@ -8,6 +8,10 @@ import MainRoutes from './ProductPages/MainRoutes';
 
 import Homepage from './pages/Homepage/Homepage';
 import Footer from './components/footer/Footer';
+import AllRoutes from './components/AllRoutes';
+import Cart from './pages/Cart';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 
 function App() {
@@ -19,7 +23,11 @@ function App() {
 
    
  <Navbar/>
+ <AllRoutes/>
   <MainRoutes/>
+  <Cart/>
+<Login/>
+ <Register/>
 
  <Footer/>
 
