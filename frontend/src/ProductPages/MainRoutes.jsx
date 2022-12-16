@@ -4,6 +4,9 @@ import { Route, Routes } from 'react-router-dom'
 import ProductRecords from './ProductRecords'
 // import SingleProductRecord from './SingleProductRecord'
 import Home from "../pages/Homepage/Homepage"
+import Login from "../pages/Login"
+import Cart from "../pages/Cart"
+import Register from '../pages/Register'
 
 const MainRoutes = () => {
   return (
@@ -13,8 +16,11 @@ const MainRoutes = () => {
         {/* <Route path="/product/:id" element={<SingleProductRecord/>}/> */}
         {/* <Route path="/product/:id/edit" element={<EditProductPage/>}/> */}
         <Route path="*" element={<h3>Page Not Found</h3>}/>
+        <Route path='/login' element={<Login/>}/>
+         <Route path='/cart' element={<Cart/>}/>
+         <Route path="/register" element={<Register/>}/>
         <Route/>
-
+  
     </Routes>
   )
 }
