@@ -1,0 +1,970 @@
+{
+    "product": [
+      {
+          "id": 1,
+          "title": "Motorola G62",
+          "category": "mobile",
+          "image": "https://m.media-amazon.com/images/I/51PG75Ko2NL._SX522_.jpg",
+          "price": "17999"
+      },
+      {
+          "id": 2,
+          "title": "Samsung Galaxy S22",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/wp-content/uploads/2022/02/Samsung_S22_Cover.jpg",
+          "price": "20000"
+      },
+      {
+          "id": 3,
+          "title": "Samsung Galaxy S22",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/One-Plus-10T-Mobile-Phone-493177297-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyOTk2NXxpbWFnZS9qcGVnfGltYWdlcy9oM2QvaGQwLzk4Njk5NDgzNTQ1OTAuanBnfGY3ZTRhOGQ5MGVkOTQ3ZTU5MGY1MzlmMWI0NjNkY2M1ODRlZmEzYjBiYWMxYTU3MjkxZGY1Y2E1NDU5MDE4OTU",
+          "price": "49900"
+      },
+      {
+          "id": 4,
+          "title": "Realme 9i",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Realme-9i-Smart-Phone-493177590-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NTk0NnxpbWFnZS9qcGVnfGltYWdlcy9oZDIvaDgxLzk5MDk3MjU2NTkxNjYuanBnfDRiNDI3NTY3MzQ0MTg0M2IyYmIxYTljMzhlYTliOWY1OWExZTIxYTUxN2E2MjcxNjY1MGM4ZDMyMzQ5NzkyNWE",
+          "price": "18000"
+      },
+      {
+          "id": 5,
+          "title": "Vivo T1 pro",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Vivo-T1-Pro-5G-Mobiles-492850282-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNzg2M3xpbWFnZS9qcGVnfGltYWdlcy9oOWIvaGM5Lzk4NjY4MDA4ODk4ODYuanBnfGUzYzUyYTQ1NzBkYjY0MzE3ZGI1MjkzNjM5NzhjYzQ0NTRmMWU5MTVhNmRiMDM2NzYxYmExMjQ4MTI4MzhlMWI",
+          "price": "24000"
+      },
+      {
+          "id": 6,
+          "title": "Apple iPhone",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Apple-iPhone-14-Plus-Mobile-Phone-493177765-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDAyMHxpbWFnZS9qcGVnfGltYWdlcy9oNDIvaDAyLzk4OTA1MzYwNjMwMDYuanBnfDQzYjhhMjgyYWJlYWJkNTBiNDM4NzI5YjA4NTU4NzY3Y2Y2ZTJjYWQxNDQ4NDE0ZWViYzJmZTdjZjYwNTQ5ZGU",
+          "price": "89900"
+      },
+      {
+          "id": 7,
+          "title": "OPPO F21 pro",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Oppo-F21s-Pro-Mobile-Phone-493177727-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTMwNnxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaDc0Lzk4OTQ2MjcwODIyNzAuanBnfGQxODBlNWU2MTgyMjNjZTljZTE3MjRkYzhmN2I3ZTQ2YTYxM2QwNjFjN2M3NjBjMjhkMTk1NTAxZjcxYTU5YjE",
+          "price": "25000"
+      },
+      {
+          "id": 8,
+          "title": "Apple iPhone 14",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Apple-iPhone-14-Mobile-Phone-493177752-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDYyM3xpbWFnZS9qcGVnfGltYWdlcy9oMGQvaDc0Lzk4OTA0ODY1MTc3OTAuanBnfGZiNzc0ODMzZjdmMGNjMGE3MmEwMGVlNDgzNTYxYzlkZThjOGNmYzIwYzI1NDFmZmY0MDMyYmQ0ZjNlMjkyN2U",
+          "price": "79000"
+      },
+      {
+          "id": 9,
+          "title": "Xiaomi 11T pro",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Xiaomi-11T-Pro-Smartphones-492574979-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NjkyNHxpbWFnZS9qcGVnfGltYWdlcy9oY2IvaDZmLzk4MzI5MTExNzU3MTAuanBnfGIxMTRmZDg3OTA1ZTUzZTU4MTM0ZDkxYjA1N2I1MzMxNGQ2YzBhNWJlMWZkNWQ3ZjA1OGMzMTQ5YzIxYmMwYjY",
+          "price": "35999"
+      },
+      {
+          "id": 10,
+          "title": "Motorola G71",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Motorola-G71-Mobile-Phone-492849088-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTk3OXxpbWFnZS9qcGVnfGltYWdlcy9oMTcvaGNmLzk4Mjg4NDc3Nzk4NzAuanBnfGQxYjE2M2ZlMTBkOGEyZGQwNWQyYjRlZWY4NTZkMzUxMDY5ZDQxMjQwYjAwMzM0NjlmNGVkYjVjNGU1NjQ2NGE",
+          "price": "16999"
+      },
+      {
+          "id": 11,
+          "title": "Redmi 10A",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Redmi-10A-Smartphones-492850147-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1Nzk4NnxpbWFnZS9qcGVnfGltYWdlcy9oYTYvaGQ2Lzk4MzI0MjU5NDcxNjYuanBnfGE5ZjQxYWFjYzhmMTBhYTdlZjQyZTA3MWZkNjQzYjEzYTBhYjI4NWMyMDYzZWIzMDNlZmZiMGU2YmFmOWVhMzQ",
+          "price": "8000"
+      },
+      {
+          "id": 12,
+          "title": "Spark 9",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Tecno-SPARK-9-Mobile-Phone-493177163-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzgzMnxpbWFnZS9qcGVnfGltYWdlcy9oMzEvaDY2Lzk4NjMzMDk3MjE2MzAuanBnfDk4NTQzYjJhMWFlMWViMTE2MzAyMWUxZTE5YWRjZmM4OGVlZjA0YWM2NzIxNzZkODkxYWYyZDQwMmEwNGY3OGI",
+          "price": "9000"
+      },
+      {
+          "id": 13,
+          "title": "Realme C31",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/realme-C31-Smartphone-492849898-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNjk5N3xpbWFnZS9qcGVnfGltYWdlcy9oMWYvaGFjLzk5MDc5OTgwNjQ2NzAuanBnfDhiODllNTI4OTQyYjg3NGM3MmVmZDgyNGRhNjIyYjNjMWVjZWFlZDBlZWNmNTAzYTc2MTM2YjVjZDRiYzExMGE",
+          "price": "7000"
+      },
+      {
+          "id": 14,
+          "title": "Realme C33",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Realme-C33-Mobile-Phone-493177735-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyODg5M3xpbWFnZS9qcGVnfGltYWdlcy9oNGYvaGFiLzk5MDM3MDM4NTEwMzguanBnfDM0MmNmYjQ3MmI2Y2ZmMTBkMTNlZDAyOGM4MGM1Y2ZmY2Y1Y2NlYzgxOGQwNTg3NWE5NzUxNGYwYzVlOWU0ZmI",
+          "price": "9,999"
+      },
+      {
+          "id": 15,
+          "title": "Techno POVA",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Tecno-TECNO-POVA3-Smart-Phones-492850709-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MDIzNXxpbWFnZS9qcGVnfGltYWdlcy9oYmEvaGRhLzk4NDg2NTk4Njk3MjYuanBnfDMzODFjYzQzNDczYjAxOGViOTUxOWYxNmMwYmM0Y2E1YjAyYTAwZTBhODg3MWE5YWVkZGU3MTRiZTkyMWQ2MTg",
+          "price": "11000"
+      },
+      {
+          "id": 16,
+          "title": "Motorola E32",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Motorola-E32-Mobile-Phone-492849904-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDU4OHxpbWFnZS9qcGVnfGltYWdlcy9oODAvaDI1Lzk4MzQxMDkyMDY1NTguanBnfGU1NGNkMTA3ODhiYTJhZGEyNDFhMGEzZDZhNjg5NzhmZWYzM2JkNDY4NjY3MzhiZTA3MzRmM2U4OGUzMmU4Y2Q",
+          "price": "7500"
+      },
+      {
+          "id": 17,
+          "title": "itel Vision",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Itel-Vision-2S-Smartphones-491997913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3ODExNHxpbWFnZS9qcGVnfGltYWdlcy9oOWIvaDhlLzk2NTc0MTI0ODUxNTAuanBnfDAzMDdkNjNiZjhiMzg5MjMxMWY1OWZjNTE4ZDcyMDY3Yjc5YjRlNjk5ZmEwMDhlZGZhZGRhMzIzZjliMzA0YTk",
+          "price": "7500"
+      },
+      {
+          "id": 18,
+          "title": "Vivo Y21G",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/VIVO-Y21G-MobilePhone-492849963-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDUxNXxpbWFnZS9qcGVnfGltYWdlcy9oMTYvaDM0Lzk4NzAyNzU5NjkwNTQuanBnfDc1NDkxNzY4MWY5MGUxNGFjM2IxYzVlYTM5NGJhZWFkZWM2Y2JjNmI3MjUxZDRmMzY0ODcyZjVjMmQyM2QxNmU",
+          "price": "13500"
+      },
+      {
+          "id": 19,
+          "title": "Oppo A57",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Oppo-A57-Smart-Phones-492850647-i-492850647-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NjU1M3xpbWFnZS9qcGVnfGltYWdlcy9oOTcvaGIyLzk4NDcyMjg0NjUxODIuanBnfDAyYzY4OTY5ZmJkMzU1NjlmNGUwNjQ4YzE4ZjJlZDk3ZDBjMWEwOTU5ZmI0ZGEzNzRjMzU1NmFmNjlmYTA3Njk",
+          "price": "14000"
+      },
+      {
+          "id": 20,
+          "title": "Techno POP 5",
+          "category": "mobile",
+          "image": "https://www.reliancedigital.in/medias/Tecno-Pop-5-LTE-Mobile-Phone-492850001-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMzUxMXxpbWFnZS9qcGVnfGltYWdlcy9oZjIvaGE1Lzk4MjA0MzI2NjI1NTguanBnfDA4YjY4YzY5MGVlMWRjMTg4ZThjMzRhMWI0ZTE0ZDVhNGE5MWU3NGNkMWNhMTFiOTg0MDc5OWViMzhhMGQ5OWU",
+          "price": "6000"
+      },
+      {
+          "id": 21,
+          "title": "Samsung 80 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Samsung-UA32T4010ARXXL-LED-TV-492796778-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzcwOXxpbWFnZS9qcGVnfGltYWdlcy9oZTIvaDc2Lzk4MDg4ODExMjMzNTguanBnfGU1ZTI3N2IwYzAzZjljMGQ4NDg1YmNkMDU5ZmVkYjZlZmRkMmRhNGM4YTY0MzMwZTYxYzUyYjlhMGEzM2JhMDk",
+          "price": "12000"
+      },
+      {
+          "id": 22,
+          "title": "Samsung 108 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Samsung-UA43TE50AAKXXL-Smart-LED-TV-492166127-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDUzN3xpbWFnZS9qcGVnfGltYWdlcy9oMWEvaGJhLzk4MDcxMDk4ODE4ODYuanBnfDExNTUwMTVlNWUyZTZlZGE4ZTVhMTAyMGMxZmUyMjA3MWIxZWVhMmI2MmFmMGFiYmIzMGFlMDdlYTgwY2QxNjE",
+          "price": "32000"
+      },
+      {
+          "id": 23,
+          "title": "Samsung Crystal 4K 163 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Samsung-UA65AUE70AKLXL-LED-TV-492796783-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDUzN3xpbWFnZS9qcGVnfGltYWdlcy9oOWQvaDQ0Lzk4MDg1MTM2OTU3NzQuanBnfGJhZmExMmQ5ZTU3MjcxOWQ5ZmFmMTAxNGZlNWI0ZDkyZGJkM2Q5ZTQ2NjU0Mjc4NTBkOTA2NzJmYTU3OWE4YjQ",
+          "price": "70000"
+      },
+      {
+          "id": 24,
+          "title": "Samsung 108 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Samsung-QA43LS03AAKLXL-LED-TV-492796782-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNTc2NXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaGY5Lzk4MDg1MDkxMDgyNTQuanBnfDA3ZjQwODcxOWRiYWQ3Yzg5MmNiZTg1YTEwODA3NDM2YjY0ZDJkYWRjMDI1YjljNDdlM2FjOTRkNjBlMTJhZmQ",
+          "price": "50000"
+      },
+      {
+          "id": 25,
+          "title": "Samsung 80 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Samsung-UA32TE40FAKBXL-LED-TV-492796789-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNjE4MHxpbWFnZS9qcGVnfGltYWdlcy9oZDAvaDI0Lzk4MDg1MzIzNzM1MzQuanBnfGI3ZjJhYWVlNGQ2YjIwNjk0NjhlZDcyYmU2NTliNzM1ZGUwNWFlMDc1ZWNhYzE4ZGY0OGI5Yzg5MmFkZjhmY2M",
+          "price": "15000"
+      },
+      {
+          "id": 26,
+          "title": "ONEPLUS 81.28 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/ONEPLUS-32Y1-TV-491895010-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjIzMXxpbWFnZS9qcGVnfGltYWdlcy9oNjkvaDE0Lzk4MTAwNTg5MDM1ODIuanBnfGFiZjk3NDA1MzY1ODQwYjc2OTZkMzY4OTI1Y2RmOWM3OTI4NTE1MTlkMDFlOTUwYmZkM2U5MTVlYmIyZGFlYzg",
+          "price": "12999"
+      },
+      {
+          "id": 27,
+          "title": "ONEPLUS 108 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/ONEPLUS-43Y1-TV-491895011-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9qcGVnfGltYWdlcy9oOGQvaDZmLzk4MTAwNTg1NzU5MDIuanBnfDRlNjk2MTc0MjNiODNmYmZkNmVjNWQwMjM1N2QxMzExOWFkNzcyOTNiY2M3ODU0ZmUyN2Y5OWEyNjExNzFkYTY",
+          "price": "22000"
+      },
+      {
+          "id": 28,
+          "title": "Realme 80 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Realme-Realme-32-Televisions-491973484-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4MTc4M3xpbWFnZS9qcGVnfGltYWdlcy9oOGYvaGQ3Lzk0NzU5NzIxNjk3NTguanBnfDgxZmQwM2JmNTJhM2EwYTcxZTViNzA5YjkzNWVmZjJiMjg4OTM4NGVkZWM2ODA2ZGQ4OTg1ZjAzOTNiNjVlMjc",
+          "price": "12999"
+      },
+      {
+          "id": 131,
+          "title": "realme 126 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/realme-RMV2005-Televisions-492338548-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3NDkxOHxpbWFnZS9qcGVnfGltYWdlcy9oN2YvaDFiLzk1NzY5NDczMTg4MTQuanBnfGYzYjBhZTM2Mzg5ODMwOGRiYzBmOTM0NTg5YzM0ODc3NTI0MDc0NWIyMTgxNDQ4ODY2ZDRiM2RlMGRhMTFiNGY",
+          "price": "31999"
+      },
+      {
+          "id": 132,
+          "title": "MI 32 HD Smart",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Mi-4A-Horizon-Edition-Television-492166368-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNjcxM3xpbWFnZS9qcGVnfGltYWdlcy9oNDcvaDk4Lzk3OTA4NzQ3MTQxNDIuanBnfDhjNDk4M2M1MTM1YTViZmFkMTY1NGM1ZmU4ZjFiODNiOGQ2NTMyYzUxYjg0NWJmYWE4MjIzODg4YmEzMWM5ZDY",
+          "price": "16000"
+      },
+      {
+          "id": 133,
+          "title": "Mi 4X 125 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Mi-4X-Pro-Television-492166363-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MTYzOXxpbWFnZS9qcGVnfGltYWdlcy9oNWIvaDdiLzk2MjAzMTkxMDkxNTAuanBnfGM2OGNhOWE3M2M0ZDlkNDQ2MjUzMDFmNTE0NzBiMmMzNjExZmRiNzAwNWVhYzhjMDQyYmQ2MmUyZDU2MjBhZTM",
+          "price": "30000"
+      },
+      {
+          "id": 134,
+          "title": "Realme 139 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Realme-Realme-55-Televisions-491973486-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NTM4OHxpbWFnZS9qcGVnfGltYWdlcy9oZjkvaDg3Lzk0NzU5NzI0OTc0MzguanBnfDZhODJkMjEzN2VlZTM4NjkxMjJhMWE5MTE2ZDcxN2NkYzhiYzVlZDJiMzYyNmRiNWE5NWE0NzU0ZDE3NTczYTc",
+          "price": "38000"
+      },
+      {
+          "id": 135,
+          "title": "Mi 109.22 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/build/client/images/sold-out.png",
+          "price": "22000"
+      },
+      {
+          "id": 136,
+          "title": "MI 32 HD",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Mi-4A-Horizon-Edition-Television-492166368-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNjcxM3xpbWFnZS9qcGVnfGltYWdlcy9oNDcvaDk4Lzk3OTA4NzQ3MTQxNDIuanBnfDhjNDk4M2M1MTM1YTViZmFkMTY1NGM1ZmU4ZjFiODNiOGQ2NTMyYzUxYjg0NWJmYWE4MjIzODg4YmEzMWM5ZDY",
+          "price": "17000"
+      },
+      {
+          "id": 137,
+          "title": "IFFALCON 139.7",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Iffalcon-55U71-Television-493179244-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MjUyMXxpbWFnZS9qcGVnfGltYWdlcy9oZDMvaGM0Lzk4OTU3NzUwMTA4NDYuanBnfDhlMGU4MDEzNjUzZGNmYzM4ZTkzNTA2OGUwNDkyY2Y2ZTZkMzI5NzIyZjQzMzgzYzI1OTU0MTY5MGZjYTk5M2Y",
+          "price": "25000"
+      },
+      {
+          "id": 138,
+          "title": "Kodak 139 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Kodak-55UHDX7XPRO-Television-492166145-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3NDEyN3xpbWFnZS9qcGVnfGltYWdlcy9oYzIvaDNmLzk1MTE0Nzk2MDczMjYuanBnfGNkZjZkNTdlYWU4YmQ3YWM0MjU2MWY4OGNlNTBkZTM0YWIzOTQ1NTAwODFkYjkzODJjNGIxNzgwOWI4NzIyZmU",
+          "price": "25000"
+      },
+      {
+          "id": 29,
+          "title": "Hisense Vivid 80 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Hisense-32E4G-Television-492912681-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MDM0NXxpbWFnZS9qcGVnfGltYWdlcy9oMTIvaGVlLzk4Mjk4NTgzNDQ5OTAuanBnfDIzYjlkNDkwNjgwYWViZWY0ZjgxZGI5Njk2MGJiYWNmNGU0MmExOGZlNjFhM2E3YTIyNGYxM2FmMzJmZWI5NmU",
+          "price": "11000"
+      },
+      {
+          "id": 30,
+          "title": "TCL 81.28 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Tcl-32S5205-Television-493285675-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MjM4OHxpbWFnZS9qcGVnfGltYWdlcy9oNDMvaGUzLzk4NzcwNTI0ODk3NTguanBnfDM1ZmZlN2JjMzFiMWViNDM4ZDk5N2ZiZGIzMTJkMDE4YjljNDg2YmM4YTRmOTIzMWE0MWM0OGU5NDhlMWViZjQ",
+          "price": "11000"
+      },
+      {
+          "id": 31,
+          "title": "BPL 80 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/BPL-32H-B4000-TV-492338719-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDg4N3xpbWFnZS9qcGVnfGltYWdlcy9oOTQvaDRkLzk4MzI4NTg5NDM1MTguanBnfGIyM2UwZmQ5NzQ3OGEzMzQ0YzY1ZTRkZTZkNjc1NzY3Yzg4MDkxOGFkMDFlMjMzYTFjYjNkM2ZhMWQwM2YyNjA",
+          "price": "9999"
+      },
+      {
+          "id": 32,
+          "title": "Itel 108 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Itel-G4330IE-Television-493072590-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MDM2NXxpbWFnZS9qcGVnfGltYWdlcy9oNmIvaDQyLzk4OTU1NjY1MDgwNjIuanBnfDc4NDUxNjU3MGMyYmQ2ZjIwNjIxOThlZTI0ZTRlYmIzZmI1YWUwMzc4NzZkYjhhNTcwMzI3OGMwNjk2ZGZiMjM",
+          "price": "14999"
+      },
+      {
+          "id": 33,
+          "title": "Xiaomi 81.28 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Xiaomi-ELA4819IN-Televisions-493285619-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4NDAzNXxpbWFnZS9qcGVnfGltYWdlcy9oNDcvaDg5Lzk4NzAwMjYxNzg1OTAuanBnfGFhMTU4MGJlN2Y4ZTkxZTFjNzQzODAyY2JkOGY0NTA1YzNjOWZiYzI3M2EyN2UzMTZlZDg4ODFjYzZlYTNkOGM",
+          "price": "13500"
+      },
+      {
+          "id": 34,
+          "title": "Sansuni Prime Series 80 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Sansui-JSW32ASHD-Televisions-491973449-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNDY0NHxpbWFnZS9qcGVnfGltYWdlcy9oZGEvaDI2Lzk4NTE0MTExMzY1NDIuanBnfDNlMGMzYzQ5OGUzMWNmZDFiZDg5OTY3N2I2ZmU0YTdiODg2NDkwZGJkNTMwYmQxNjcyZjcwNWY0YmE0Y2NhZjI",
+          "price": "11999"
+      },
+      {
+          "id": 35,
+          "title": "HISENSE 108 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/HISENSE-43A56F-Televisions-492166307-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3Mzk1N3xpbWFnZS9qcGVnfGltYWdlcy9oNzYvaGZlLzk2NDYwNjk2NzgxMTAuanBnfDcxYzJjMmMzMjljZjExMWI1MDAxYzIyMjlmOWRmYjEwMzYxNWE1MTRhMDVkZmJhM2I5OWUwMTgyZTNjNzJhNzU",
+          "price": "18000"
+      },
+      {
+          "id": 36,
+          "title": "Karbonn 80 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Karbonn-KJK32ASHD-Television-493286017-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTQyOHxpbWFnZS9qcGVnfGltYWdlcy9oOGMvaDdjLzk4OTI2OTQyMjkwMjIuanBnfDVlYjY4YjEyZjZlYTNlOGYwMGE3Mjc4YzUxZDY5YTJhNTJmNDlkNTE5ZGVmMDAwNDM0NTM1YWI3ZGI2Y2I3MTY",
+          "price": "8999"
+      },
+      {
+          "id": 37,
+          "title": "BPL 81.28 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/BPL-32-HD-Television-492166140-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0Nzk1NnxpbWFnZS9qcGVnfGltYWdlcy9oNTcvaGYxLzk3MzAyNzIxMzMxNTAuanBnfDlhZWM4ZDBkODhiYzcwNzAxNTgyZTU3OWEwNjAxMWQwZTc5YzM0NGJlZjg1NzRjYTQwMTExOGQ4ZTk3MjQ2MGQ",
+          "price": "12000"
+      },
+      {
+          "id": 38,
+          "title": "Kodak 80 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/Kodak-32HDX7XPRO-Televisions-492166141-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNjIzNHxpbWFnZS9qcGVnfGltYWdlcy9oZmQvaDgwLzk4OTQ2ODczNDI2MjIuanBnfDAxNzdkZTU5YWY0ZjdkMWFhN2NhM2E3ZDY4MjkwZjIzMGNkYjIzYzNkMDkyMTZlNWU3N2ViZTA2YTE4YzcxMzc",
+          "price": "9999"
+      },
+      {
+          "id": 39,
+          "title": "OnePlus 108 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/ONEPLUS-43Y1S-EDGE-SMART-LED-TV-492796557-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MzIyMHxpbWFnZS9qcGVnfGltYWdlcy9oZTkvaDI4Lzk3Nzg1NjMzMTc3OTAuanBnfGYwZTJhZWZhNTdjMzc2MTIwZGFmNzEwYmI1YzEwOWY1NGMzMGE0ZWZkNGJlNTUyMWMwODY3MzkwNGI3OTk1ZWM",
+          "price": "25000"
+      },
+      {
+          "id": 40,
+          "title": "TCL 139 cm",
+          "category": "television",
+          "image": "https://www.reliancedigital.in/medias/TCL-55P735-LED-Televisions-492913015-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w5ODYwMnxpbWFnZS9qcGVnfGltYWdlcy9oNmYvaDg0Lzk4NTA0MzQ5MTIyODYuanBnfDQxNmFkMzlhMDAwNzFlNzljMmVlNzY4OTdhYTVkYjYzYmI3ZGQ3YjkyMTg0MDFlZjg0ZTQxNGMyMTI1NWYwYmI",
+          "price": "40900"
+      },
+      {
+          "id": 41,
+          "title": "Boat Rockerz",
+          "category": "Headset",
+          "image": "https://www.reliancedigital.in/medias/TCL-55P735-LED-Televisions-492913015-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w5ODYwMnxpbWFnZS9qcGVnfGltYWdlcy9oNmYvaDg0Lzk4NTA0MzQ5MTIyODYuanBnfDQxNmFkMzlhMDAwNzFlNzljMmVlNzY4OTdhYTVkYjYzYmI3ZGQ3YjkyMTg0MDFlZjg0ZTQxNGMyMTI1NWYwYmI",
+          "price": "999"
+      },
+      {
+          "id": 42,
+          "title": "Boat Rockerz",
+          "category": "Headset",
+          "image": "https://www.reliancedigital.in/medias/Boat-Rockerz-400-RTL-Headphone-492579325-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNTYyMHxpbWFnZS9qcGVnfGltYWdlcy9oYjAvaDg5Lzk3NjUzOTQ3MTA1NTguanBnfDg0OTc3MmY5MzQxNWMwMmJlMTBkMTYyNTFiZmI5Y2I1MmNhNDQ2NDkyNjdhMDg5YTAzMzk3ZTliMTAyZjAxOGE",
+          "price": "900"
+      },
+      {
+          "id": 43,
+          "title": "pTron Basspods",
+          "category": "Headset",
+          "image": "https://www.reliancedigital.in/medias/pTron-Basspods-P181-Bluetooth-Earphones-492796965-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MjMyM3xpbWFnZS9qcGVnfGltYWdlcy9oYWIvaDlmLzk4MjU4OTQ4MjYwMTQuanBnfDFiNDA1MjIwOGNkMjM4YmVmYThiMjY2OWEyMzg3OWRmNDQ3MDBhYzMwYjcxOTMyZWEwNmRhMDQyMWMyMDZmZTk",
+          "price": "649"
+      },
+      {
+          "id": 44,
+          "title": "Zebronics TWS",
+          "category": "Headset",
+          "image": "https://www.reliancedigital.in/medias/ZEBRONIC-SOUND-BOMB-4-True-Wireless-492796841-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMDY4NHxpbWFnZS9qcGVnfGltYWdlcy9oYWYvaGJiLzk4MjUzNDA1ODgwNjIuanBnfDA0OTk5NDA4ODViYmM3MzRkZWZjYTM3YmU3OGFhZTlhZTI4YjBhZWExYmVjYzdhM2FjM2UzNGM5NzE0ZGFkM2I",
+          "price": "699"
+      },
+      {
+          "id": 45,
+          "title": "Zebronics",
+          "category": "Headset",
+          "image": "https://www.reliancedigital.in/medias/Zebronics-SOUND-BOMB-2-True-Wireless-492796890-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDI0MnxpbWFnZS9qcGVnfGltYWdlcy9oODcvaDAzLzk4MjM4MjIzNDgzMTguanBnfDI0MWY3ZTA2YWU3OTViNGFhMmM1ZTEwYzZkNjI2ZmNlMTAyMjk3M2I1MTA3ODYxNzM0YzMwYTA0NGRjMzdjZGY",
+          "price": "690"
+      },
+      {
+          "id": 46,
+          "title": "Crossloop GENEX",
+          "category": "Headset",
+          "image": "https://www.reliancedigital.in/medias/Crossloops-TWS-GEN-EX-492579359-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMzE2MnxpbWFnZS9qcGVnfGltYWdlcy9oZjIvaDZiLzk3NzU1MzExMzA5MTAuanBnfDU5NGM1MzU3MDY5NTI0OGUzNzJiMDkyYTNjNTdiMzNmZWY1MmIyZWMxMzEwY2MwOWZiMmJlYTQ5MDdlMjE3M2E",
+          "price": "799"
+      },
+      {
+          "id": 47,
+          "title": "Protronics Harmonics",
+          "category": "Headset",
+          "image": "https://www.reliancedigital.in/medias/Portronics-POR-1349-True-Wireless-492796933-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTA3NHxpbWFnZS9qcGVnfGltYWdlcy9oYjYvaGE4Lzk4MzU3MTQxODMxOTguanBnfDc1YTczNzQ4NmYyZjc0ZDdkZTZiYzU2ZTdlMTZhZjc4MDllMjYyY2QwMzQ4MDhkYTU4MmY3OGFjYjZkMDFlODE",
+          "price": "849"
+      },
+      {
+          "id": 48,
+          "title": "pTron Bassbuds",
+          "category": "Headset",
+          "image": "https://www.reliancedigital.in/medias/pTron-Bassbuds-Classic-Headphones-and-Headsets-491898054-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MTY5NXxpbWFnZS9qcGVnfGltYWdlcy9oYTEvaGNlLzk1NTQxNDI4NTUxOTguanBnfDBmMDg3ZjBkMjFjM2UyYjlhYWQ4OTg4YmZlZjViYjBlZWVjYTkxM2YyZThhMDE0MzRiMjliYWIyYmFlOTM4NjY",
+          "price": "899"
+      },
+      {
+          "id": 49,
+          "title": "Reconnect Marvel Dead pool",
+          "category": "Headset",
+          "image": "https://www.reliancedigital.in/medias/Reconnect-Disney-DTWS101DP-Headphones-and-Headsets-491615073-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0Njc0MXxpbWFnZS9qcGVnfGltYWdlcy9oOTAvaDIxLzk3NDE5Nzg3OTYwNjIuanBnfDQyNjRiN2ViMDQ5MTRhNTU1NmM0ODM4NTcyOTRlYjM1ZGUzMDY4ZjkzOWQwNjQzNjJmY2U0OGI3NzQzOGJiZDY",
+          "price": "899"
+      },
+      {
+          "id": 50,
+          "title": "Arrow Pulse HX",
+          "category": "Headset",
+          "image": "https://www.reliancedigital.in/medias/Arrow-Pluse-HX-20-Headphones-492579556-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MTI5MnxpbWFnZS9qcGVnfGltYWdlcy9oYmIvaGNkLzk5MjQzMDY4MjkzNDIuanBnfDkyYjM0YzlmMDJmNWE5Y2UzY2I5MTFhZjJhYzE0N2ZhZWVkYTEwM2Y3NWIzM2VkMDU4ODIzMTA2NjlmMGI4MzU",
+          "price": "459"
+      },
+      {
+          "id": 51,
+          "title": "Hisense inverter",
+          "category": "Home",
+          "image": "https://www.reliancedigital.in/medias/HISENSE-AS-18TC4RAM0-Air-Conditioners-581026857-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMzQ1MnxpbWFnZS9qcGVnfGltYWdlcy9oNDMvaDU1Lzk4MTAwNjU0NTcxODIuanBnfDM0MGU2NWE2YjZlNmI2YWZlYWUwMmRlYWNjYjU5ZThhMmYzNGIxOTFhYTNmN2E0ZTY2ZWQ4ODY5MTAxNGI2MWI",
+          "price": "29999"
+      },
+      {
+          "id": 52,
+          "title": "L.G inverter",
+          "category": "Home",
+          "image": "https://www.reliancedigital.in/medias/LG-PS-Q19GWZF-SPLITAIRCONS-581026758-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMTU4MXxpbWFnZS9qcGVnfGltYWdlcy9oNTAvaGU0Lzk3NjM1NDEyMjE0MDYuanBnfDgyOGVmZGUxMGU5NzA5NTAwOTQ2MzQ3Yjc2NDJmNWNhNTk1MzQ4MzA0ODBjMDZkYTM4ZGY3ZmE2ZjM4OWMxZmY",
+          "price": "29999"
+      },
+      {
+          "id": 53,
+          "title": "Voltas Beko refrigirator",
+          "category": "Home",
+          "image": "https://www.reliancedigital.in/medias/Voltas-Beko-RDC215DBWRX-Refrigerator-492911098-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMzUwN3xpbWFnZS9qcGVnfGltYWdlcy9oOTkvaGYzLzk4Mzg4OTgxMTg2ODYuanBnfDc5Y2ZjYjU4NmIyOTMyMGMwNGIzNzU4M2I3NTg4NTVkOTMwNzJjMzNjMDNlZGVjYmY5NTUyZGYwNDgyMDY3YjI",
+          "price": "13000"
+      },
+      {
+          "id": 54,
+          "title": "LG 190 liters",
+          "category": "Home",
+          "image": "https://www.reliancedigital.in/medias/LG-GL-B201ASED-Refrigerator-492664539-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzY2MXxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaDQ0Lzk4MjQyNTUyMTM1OTguanBnfDFlODRhZWQ3NmUwMDM0NGZjMWE0MGM0OTlhMGFhMGU1MzJiMTY5NjIyYjU5OTRkYjY4NDM5Zjc5MTgwNTQ4ZjY",
+          "price": "21000"
+      },
+      {
+          "id": 55,
+          "title": "Hisense Refrigirator",
+          "category": "Home",
+          "image": "https://www.reliancedigital.in/medias/Hisense-RR46D4SBN-Refrigerator-493620596-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzU1N3xpbWFnZS9qcGVnfGltYWdlcy9oZjkvaGI1Lzk4ODYyMTUxMTA2ODYuanBnfGYwYjI3NmYzNTgyNTRiZjZjYTc5NTE4MGI5MjQwZWE2YzdhMmZmOTY0MjBhNzNjMDBmMDdmNzc0N2M2ZjA2MWI",
+          "price": "8500"
+      },
+      {
+          "id": 56,
+          "title": "LG 8 Kg Washing Machine",
+          "category": "Home",
+          "image": "https://www.reliancedigital.in/medias/Lg-FHP1208Z9B-Refrigerator-492911185-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDE4OXxpbWFnZS9qcGVnfGltYWdlcy9oNGYvaGE3Lzk4ODk1MjkyMzM0MzguanBnfGViZDUwYjMwNWU2ZDBlYTc0MjI3ZmEzODlhMGZmMGFkNjU1ZDQ0YWFjMDZkZDI1YWFjYWMwNzdiM2MzZjc5YWQ",
+          "price": "46000"
+      },
+      {
+          "id": 57,
+          "title": "Samsung 7 kg Washing machine",
+          "category": "Home",
+          "image": "https://www.reliancedigital.in/medias/Samsung-WW70T4020CX-TL-Washing-Machines-491959443-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MTM5M3xpbWFnZS9qcGVnfGltYWdlcy9oNjUvaDA0Lzk1NTI4OTE1NzYzNTAuanBnfDc5ZjYxM2MyNGIwMjkwMDY2NDIyZGQxM2FiYTcyZmQyM2MxZDQ5NjM3ZjBmNzUzOGYxMGE2ZmZjZGFjYzhkN2Y",
+          "price": "36000"
+      },
+      {
+          "id": 58,
+          "title": "IFB Washing machine",
+          "category": "Home",
+          "image": "https://www.reliancedigital.in/medias/IFB-DIVA-AQUA-SXS-6008-Washing-Machine-492910931-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTUxN3xpbWFnZS9qcGVnfGltYWdlcy9oNWMvaGMzLzk4NDU5NTE5ODc3NDIuanBnfDJiYTdmM2Q2MzY2YTdlNzg5NDA5NjNjODYzYmE5ZTQwNjAzM2I0Y2RiNDVlODc2ZjU0OTkzNGE4NTkzNmY5YmI",
+          "price": "27000"
+      },
+      {
+          "id": 59,
+          "title": "Bajaj water heater",
+          "category": "Home",
+          "image": "https://www.reliancedigital.in/medias/491166983-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NTE2OXxpbWFnZS9wbmd8aW1hZ2VzL2gwNC9oYjUvODk2MzkzMzcwMDEyNi5wbmd8MGFjZWY0YzdiMjA5NzY3Y2ExYjg2MTJiZTBhNTE3NDhjYjQ3MmY2NDczNzNjOTU5M2JmODQwOTVjMzA4YjhlNw",
+          "price": "7000"
+      },
+      {
+          "id": 60,
+          "title": "Candes water heater",
+          "category": "Home",
+          "image": "https://www.reliancedigital.in/medias/Candes-Neo-Water-Heater-493620546-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxODY1OHxpbWFnZS9qcGVnfGltYWdlcy9oNzAvaGUxLzk4Nzk3MDQ4NjI3NTAuanBnfGRmZGM2Y2YzY2E0NTM0Zjc3MGZiMmJhY2I2N2E5Y2EyODZjNzJmYzc1N2I5NzdhOGQwYmI5ZjdlYWI2NjI0ZjY",
+          "price": "400"
+      },
+      {
+          "id": 61,
+          "title": "HP Laptop",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Hp-681Y7PA-ACJ-Laptop-493178767-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNjAxOXxpbWFnZS9qcGVnfGltYWdlcy9oYTQvaDU2Lzk5MjM5NDA2MTQxNzQuanBnfGEzZDE5OGQxNmY4M2FkMGUxODU2OTg4MDdkOTFkMmZlYmJmZjdiMDAzZTVhYzBiZmVmNThiMmYwYzhmMTkyNGI",
+          "price": "26000"
+      },
+      {
+          "id": 62,
+          "title": "Lenovo L2IN Ideapad Laptop",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Lenovo-L2IN-Laptops-492574725-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MTQ2NnxpbWFnZS9qcGVnfGltYWdlcy9oZmIvaGQyLzk3NDczMjk5NzQzMDIuanBnfDMxMDY2NDQ1MjE3ZDFjOTZiNjRmYTE0NTlhNmYzMWZmNGNjNjY3NzhkZjE2MTdlZTZmMzE2Yjc3NDBmNjYwMGU",
+          "price": "35000"
+      },
+      {
+          "id": 63,
+          "title": "Asus EK522WSLaptop",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Asus-X415EA-EK522WS-Laptop-493178259-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTUyNHxpbWFnZS9qcGVnfGltYWdlcy9oZWQvaDM5Lzk5MDQ3MzE1MjEwNTQuanBnfDk2NmRmZTZjNzNiMTlkMjgwMWJiM2E0NjdmOTM4NzJjM2Y5ZTAyZmJmMjZhYmIxYmJjZTVjYzNkMDlmMDE1YWQ",
+          "price": "49000"
+      },
+      {
+          "id": 64,
+          "title": "TP-Link Archer Router",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/TP-Link-ARCHER-A6-Router-492850204-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjcxOHxpbWFnZS9qcGVnfGltYWdlcy9oZTgvaGNjLzk4MjUzOTc1Mzg4NDYuanBnfDNlMWY4MTkzNjRiZDAwNDA1MDNlYjIwNjU2YzZkY2VlZjRiNjY5MzI4NWNlZmIyM2NlZWU4NmMxZjJhOGQwZDI",
+          "price": "2500"
+      },
+      {
+          "id": 65,
+          "title": "TP-Link Wirless",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/TP-Link-TL-WR841N-New-Wireless-Router-491163799-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTEyOXxpbWFnZS9qcGVnfGltYWdlcy9oODcvaDM2Lzk1OTY1NTc3MjE2MzAuanBnfDA4NTE4M2JhN2Q0MzdkOTQyZGRjZjFmYTVmNDQ1NTA3YzE5MzViN2Q1MWFmOGVkNjc5MGFmNTI0NGM5MjEyZTU",
+          "price": "1049"
+      },
+      {
+          "id": 66,
+          "title": "Netger Orbi Router",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Netgear-RBK13-New-Routers-491894035-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyOTIzOXxpbWFnZS9qcGVnfGltYWdlcy9oMzMvaDdjLzk1OTU4NDQyNjM5NjYuanBnfGFjZmRkYzY5N2Q3OWI4MDdlOGI0ZGI1NGFjMjc4MjVmMjA5YzM4YjhiMmQzNmQ0MGJjMTZmZGJlN2YzZjEwZmQ",
+          "price": "13000"
+      },
+      {
+          "id": 67,
+          "title": "HP Ink Tank Printer",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Hp-419-Printers-491379685-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4OTU3fGltYWdlL2pwZWd8aW1hZ2VzL2hkZS9oOTkvODk4NTcwMjQ5ODMzNC5qcGd8OTQxMjM1ZjkwZmEzZTUxODk4ZWNlNGRlY2M2NzM2YjY2MWVjYzU0Y2I0NDU5YzljNDY4NGY1YjhkMjRkZjg5Yw",
+          "price": "15000"
+      },
+      {
+          "id": 68,
+          "title": "HP Deskjet Printer",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/HP-7FR27B-Printer-491897355-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oNWMvaDJmLzkzODQ3NDI1MTg4MTQuanBnfDdiZjk2MmFlNzI2N2ZiNDA1MjUyNTk5N2RlNjc5MzAwY2NiNTc5ZTNmYTc3NzJhOGNiMzFiNzlhNDM4MTg1NDQ",
+          "price": "6700"
+      },
+      {
+          "id": 69,
+          "title": "Canona Pixma Router",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Canon-PIXMAG3010-Printers-491419970-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MjAyfGltYWdlL2pwZWd8aW1hZ2VzL2g0Mi9oZDIvOTAxNTQ3MzQzODc1MC5qcGd8M2VjZjM0NDQ5NmNmYTg4YmYzNDEwODAxNGQ4ZWE5OTBjNDFjMjEyMjdiNjkwYjdmOTNjMDFjNWZhYTBlZmE2MA",
+          "price": "15000"
+      },
+      {
+          "id": 70,
+          "title": "EPSON Printer",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/EPSON-L3150-Printers-491503398-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MTczfGltYWdlL2pwZWd8aW1hZ2VzL2g5ZS9oNTMvOTI1MTk4NDM3NTgzOC5qcGd8YmQyMGQ2MTFjMmUyY2Q4NTIwNGU5NGNlN2NjZDBjNDhlYjBiOTNjMDhjOTNiNTk0N2YwNzc2Mjc3ZWIzMzgyNQ",
+          "price": "14000"
+      },
+      {
+          "id": 71,
+          "title": "Logitech Keyboard",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Logitech-MK220-Keyboard-Mouse-490929989-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w5OTE2fGltYWdlL2pwZWd8aW1hZ2VzL2gzZC9oZTQvOTg5NTc4NTU2MjE0Mi5qcGd8ZDQxMzU5ZTQ4NWU0MGE3ZDQ4N2EwYThmYTM2ZDliZTM2Njg1ZDkzZmQ5MTY2MmZhODIyMjE0MGNmZWJkODRhMQ",
+          "price": "1100"
+      },
+      {
+          "id": 72,
+          "title": "ZEBRAONICS Keyboard",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/ZEBRONICS-K20-Keyboard-491894176-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDU5M3xpbWFnZS9qcGVnfGltYWdlcy9oM2UvaDg1LzkzNjY0MDY1MjkwNTQuanBnfDNjY2Y1OWMwOWU5MjQ3ZTU1NjBmMGQ2ODhiN2M4YmRkMTU0OTdhMDQzYzA4YmVkZjdiMjBhMTFjNDVkZDg5ZmY",
+          "price": "350"
+      },
+      {
+          "id": 73,
+          "title": "Lapcare Battery",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Lapcare-LVOBT6C2160-Laptop-Adapter-492850858-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMjM2NHxpbWFnZS9qcGVnfGltYWdlcy9oZDEvaDI5Lzk4NTM4OTM4MDQwNjIuanBnfGM5M2NhMDk5YzRkYjUzNzY1ODE5ZDkwNzYyNDM1MjVhZDAwNGZhYmViMjZlNDgzMmZlMTEwMzhhMDY1MDNjMTM",
+          "price": "1600"
+      },
+      {
+          "id": 74,
+          "title": "Asus VG259AR ",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Asus-VG259QR-Gaming-Monitor-491997455-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTA0NXxpbWFnZS9qcGVnfGltYWdlcy9oYjMvaDMzLzk2NDQxMjI0Mzk3MTAuanBnfDg0OTI0MmFmNGZmOTkwNWM1ZmMyNjc2MDhjZTg0M2I2Zjc5ODYyMzg5MWE2MWY0NjZhYjY4ODRlODFlMzE5YjY",
+          "price": "21000"
+      },
+      {
+          "id": 75,
+          "title": "Lenovo monitor",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Lenovo-66CBKCC1US-Monitors-491997448-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNzU3NXxpbWFnZS9qcGVnfGltYWdlcy9oMGEvaGViLzk2MTQ2MzYxNTQ5MTAuanBnfDJlMzIzYTE0MTE3NTMwZDM4MTRmMGE2ODBmYjZhNzg0ZGU5MTJlMGRmZGI5YzU3MGNmNWU2ZjVlMTBlZDhkYmQ",
+          "price": "11000"
+      },
+      {
+          "id": 76,
+          "title": "Bandbridge USB Cable",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Bandridge-BCL4902-Cables-and-Cords-490783946-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0Nzc0MXxpbWFnZS9qcGVnfGltYWdlcy9oMWEvaGUxLzkzMjMwNjE4NzA2MjIuanBnfGRkYzllN2JiODQ5ZTA0NTVjYmFkN2VmYTY5YzI1MjVkZTQ4NjZhNjIyNjlmYzA5NDE0ZWEzNjRhYWE4MWNlZjY",
+          "price": "250"
+      },
+      {
+          "id": 77,
+          "title": "Apple MacBook",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Apple-MGND3HNA-Laptops-491946465-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0ODM0OXxpbWFnZS9qcGVnfGltYWdlcy9oMDAvaGIwLzk0NDMwOTEzMTY3NjYuanBnfDE1MTdiNjJmZTFlZTgxY2I1MDhkZDI1ZmU1ZjExMmQyYWQzODUxYmY3M2M4ZDhiNGUwYWFiOGY0NTNlODVmMmU",
+          "price": "90000"
+      },
+      {
+          "id": 78,
+          "title": "Apple MacBook",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Apple-MYD82HNA-Laptops-491946467-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzOTg5N3xpbWFnZS9qcGVnfGltYWdlcy9oZDUvaDEwLzk0NDMwOTE5NzIxMjYuanBnfGUzYzRiMzc2ZWIyNWUwNWU1NmMyYmIwZjFmNzhiZDZjODRiNjBiMTVkMWUxOGUxODcxMmU1ZTJlY2JlMWFmNGQ",
+          "price": "95000"
+      },
+      {
+          "id": 79,
+          "title": "Asus Laptop",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Asus-EK562WS-Laptop-492574733-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDQwM3xpbWFnZS9qcGVnfGltYWdlcy9oYjYvaGE4Lzk3NTEzNTk1ODYzMzQuanBnfDI2ZGEyZjEyZTUyMWQxMGM5ODMyMjQwMzI4YTVmNjE1ZTZjNWNkMjkzYTMyODk0YmNiNzYzNWE0MmVmMzUxNDA",
+          "price": "48000"
+      },
+      {
+          "id": 80,
+          "title": "Dell Laptop",
+          "category": "computers",
+          "image": "https://www.reliancedigital.in/medias/Dell-3511-Laptops-492850218-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3NjE3NXxpbWFnZS9qcGVnfGltYWdlcy9oZTAvaDMxLzk4NDQ1Mzg2MDU1OTguanBnfGVhMTRhZTU3YjMzMTY5ODQyMzhlNDgxYzAwMThlYmRkMmMxYjU1OWY2ZDljNTdhNDI2YzZkZTgxOWJiNzliODk",
+          "price": "62000"
+      },
+      {
+          "id": 81,
+          "title": "Nikon D700 Camera",
+          "category": "camera",
+          "image": "https://www.reliancedigital.in/medias/Nikon-VBK510UN-DSLR-Cameras-491431245-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMTQ5MnxpbWFnZS9qcGVnfGltYWdlcy9oZTEvaDFjLzkxMTcwMTgwNjI4NzguanBnfGFiNmIxMDdjOWEyZmQxM2ZjOGYyMGI3YTE3NTE3MzAyOWVhNGMwOWYyM2M3YTljMDQ4NDI1NjQwM2I3ZDVlNmM",
+          "price": "80000"
+      },
+      {
+          "id": 82,
+          "title": "Canon EOS DSLR",
+          "category": "camera",
+          "image": "https://www.reliancedigital.in/medias/Canon-EOS-1500D-DSLR-Camera-with-18-55-mm-and-55-250-mm-Dual-Lens-Kit-491362609-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzAyOXxpbWFnZS9qcGVnfGltYWdlcy9oMzUvaDFmLzkyOTQ2OTg0MTQxMTAuanBnfDQ4M2IyMzJlMjVmOTQ1Nzc3YzhkNjUyZTk4ODA4Mzk1ZGU0NTk4OTc5NGEzY2NjM2NhM2Q0YjA1MWYwZTFiNDE",
+          "price": "40000"
+      },
+      {
+          "id": 83,
+          "title": "Fujifilm, Instax camera",
+          "category": "camera",
+          "image": "https://www.reliancedigital.in/medias/Instax-Mini-11-BTS-EX-D-Pont-and-Shoot-Camera-492912669-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MTc3NnxpbWFnZS9qcGVnfGltYWdlcy9oNTIvaDI3Lzk4MzYwNTk1OTA2ODYuanBnfDg2MDNmZDFmZjg0ZmM2NDc3ZGE5MmIwNTMzOWZhNWJlZWMyZjg0MGU0YTIzYTQ1MjZjYzg1ZGNmMTkzMjlkOTc",
+          "price": "8000"
+      },
+      {
+          "id": 84,
+          "title": "Fujifilm, Instax camera",
+          "category": "camera",
+          "image": "https://www.reliancedigital.in/medias/Instax-IC0105N-Digital-Camera-492336883-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzU3M3xpbWFnZS9qcGVnfGltYWdlcy9oMTUvaGRhLzk5MTExNzMzNDk0MDYuanBnfGJhMThhZWQ0YWZjNjE1MmRjYjg0Mzc2OTc0NTk4MGZhMWI1NDMzYTM3ODhkOGMxYmI0OGU1M2FiZTJjYjI2ZWU",
+          "price": "12000"
+      },
+      {
+          "id": 85,
+          "title": "Nikon COOLPIX camera",
+          "category": "camera",
+          "image": "https://www.reliancedigital.in/medias/Nikon-P1000-Prosumer-Camera-491430998-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNTE5OHxpbWFnZS9qcGVnfGltYWdlcy9oYmMvaDVkLzkwNTM4NDQ1MzczNzQuanBnfGE0ZThhNWI3YzE1ZGEzNzcwNjlkZWQzNjYxMmZhMjEwMjhlYjkzYWU0Njg4YjhmYzU4NGI3N2ZkODRiNGQwMjA",
+          "price": "64000"
+      },
+      {
+          "id": 86,
+          "title": "Insta360 camera",
+          "category": "camera",
+          "image": "https://www.reliancedigital.in/medias/Insta360-Go-2-Action-Cameras-492579464-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0OTkwMHxpbWFnZS9qcGVnfGltYWdlcy9oN2UvaDZmLzk4MTY4OTE1MjMxMDIuanBnfGFkNjg5NmU5MTM5OTkxYTA4NTlkMjJhMGI0MDAzN2MzYjA3NWZhZWQwMjRkZjE5ZjkzYjRhNzc4NThkOTU4ZjA",
+          "price": "26000"
+      },
+      {
+          "id": 87,
+          "title": "Insta 360 one camera",
+          "category": "camera",
+          "image": "https://www.reliancedigital.in/medias/Insta-360-One-R-1-Inch-Edition-Action-Cameras-491934729-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1OTIyMXxpbWFnZS9qcGVnfGltYWdlcy9oMjgvaDhkLzk3NDIyMzM2OTgzMzQuanBnfDNhOWI3MTI3NGJjZTE1YmNjNDRjYjg3YTgyZTQzOGVhNjk0YzVmNGIyODgzYzNhY2FkOTEzYTg3NGY0ZmJkZmY",
+          "price": "45000"
+      },
+      {
+          "id": 88,
+          "title": "Zeiss Binocular",
+          "category": "camera",
+          "image": "https://www.reliancedigital.in/medias/Zeiss-524203-9908-000-Binocular-491998319-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMDQxMnxpbWFnZS9qcGVnfGltYWdlcy9oOTkvaGJmLzk3ODM0NzI3MTc4NTQuanBnfGM1YTYyZTJlMGMyNDdhOTkyYjRiYmU0OTc2ZGRjYzhkY2E3NzNkNTcxZDllNWU2MzQzZDQxMjJkOTU1OThlMTQ",
+          "price": "40000"
+      },
+      {
+          "id": 89,
+          "title": "Reconnect Binocular",
+          "category": "camera",
+          "image": "https://www.reliancedigital.in/medias/Reconnect-BC06202-Binoculars-491431346-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMTA1NXxpbWFnZS9qcGVnfGltYWdlcy9oNzIvaDgzLzkxMzY3MTM4MjYzMzQuanBnfDk0YzJlZTFkNjE2YThmYjdlNDRjODhlYTljMDcxNzhjZDBiNGMxYTk4YzZkZjZmNjZiNjA3OGY4ODdjMmZiNzM",
+          "price": "2200"
+      },
+      {
+          "id": 90,
+          "title": "Olympus Binocular",
+          "category": "camera",
+          "image": "https://www.reliancedigital.in/medias/Olympus-8-40S-Binoculars-492571626-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTQ4OHxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaGM5Lzk2ODkxNDUwODE4ODYuanBnfDcwNDRiOGI5YzE3MTA5NzhjOTc2MjI1NTUxMmMyMDc3YzA2NzY1NGEzMjhmZjQyMzc5MDM4YjM3YjU0NmIwYTY",
+          "price": "9999"
+      },
+      {
+          "id": 91,
+          "title": "Pigeon Induction Cooktop",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/PIGEON-Rapido-Premium-Induction-Cookers-492165501-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTI2OXxpbWFnZS9qcGVnfGltYWdlcy9oY2UvaDU3Lzk3NTIyOTA2MjM1MTguanBnfDRmMDQ3Y2U2Yjk4ZTQ1ZWVhOWYzNmJjZmJmNGFlOTQ2MzVlZjZkOWJmNzk1MGQyZWMzMTk1OGY3MmZiOTFhYmU",
+          "price": "1600"
+      },
+      {
+          "id": 92,
+          "title": "Bajaj Induction Cooktop",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/BAJAJ-INDUCTION-COOKER-MAJESTY-ICX3-491167067-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNjM3OXxpbWFnZS9qcGVnfGltYWdlcy9oZmIvaGJlLzkyMjU4MzIyMDIyNzAuanBnfDY4ZDgyMTVlOTEyMDUxMWVhNDU5OWI2MmJiMmFlYzdmNDkxMWEwYTAyNTM0MWY0NWExZjAyNzFkYmRlMjViYWQ",
+          "price": "2000"
+      },
+      {
+          "id": 93,
+          "title": "Usha Food Processor",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Usha-Food-Processor-FP3811-Black-1000W-491581363-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3Mjc4N3xpbWFnZS9qcGVnfGltYWdlcy9oOGQvaDA3LzkzNTU2MzE3NTUyOTQuanBnfGRiOWRjMmNjYzU2ZTFlYWYyNWZhNTY3NTBmNjg3NThjNzVjMWQ4MTI4NWMwYWEwNmFiZjc0ZDUyMDE3NDdkZTg",
+          "price": "11000"
+      },
+      {
+          "id": 94,
+          "title": "Bajaj foods processor",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Bajaj-FX-1000-DLX-Food-Processors-491892015-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w5NDEzOXxpbWFnZS9qcGVnfGltYWdlcy9oMGUvaGI2Lzk0NjE1NzA1MzU0NTQuanBnfGVhZTNiM2NkNWY0ZjQ1YmIyZTJmYzAxY2Y1YzkxNmU5NTUxYTVhMTBjYmZiYmUyZDEyZTc5NDNkN2U2Y2Q0YTQ",
+          "price": "9000"
+      },
+      {
+          "id": 95,
+          "title": "Wonderchef Turbo",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Wonderchef-Turbo-Chopper-Food-Processor-491566360-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzMyNnxpbWFnZS9qcGVnfGltYWdlcy9oZDcvaGZkLzk3NTIyOTE2MDY1NTguanBnfGY5NWYyN2IxMzZmZTBkZWEzNWY2ODE4MjFjZjZkMmNkMjVkNTM5ZTIwN2M4YjRjNmY2Yzk1YTA3YzhiMDk1YWQ",
+          "price": "800"
+      },
+      {
+          "id": 96,
+          "title": "philips Hand Blender",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Philips-HL1655-00-Hand-Blender-491362251-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2NTk5fGltYWdlL2pwZWd8aW1hZ2VzL2g1YS9oODYvODkzMDY2MTM2NzgzOC5qcGd8ZmVmZTE1NDRlYWM0MDM5NGJmNDNjMGIyOTRmYzVjZTU4NzgxZDQ5OTg4NWIyNGQwOWYwNjI0NjdlMWM1OTI1Mw",
+          "price": "1999"
+      },
+      {
+          "id": 97,
+          "title": "Kelvintor copper motor",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Kelvinator-KHBC00230-Hand-Blender-491903038-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTAyM3xpbWFnZS9qcGVnfGltYWdlcy9oYjMvaGUxLzk4OTQ3OTQ5MTk5NjYuanBnfDFkYTRlZmU1NTc4YmRmMWQ4NzUyMGYxYjYyMGRjMzRhZDBiNmI0OTNjYzQ1ZjNlYjNjMjNiOWVlNjY5OGYyMmI",
+          "price": "2000"
+      },
+      {
+          "id": 98,
+          "title": "Greenchef 4 burner",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Greenchef-Duster-Cooktops-Hobs-493620558-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0OTc1MXxpbWFnZS9qcGVnfGltYWdlcy9oYmMvaGNhLzk4OTQ5MjkzMDE1MzQuanBnfGQyZjJiMTMwMzkyNmM1NzE0ZTU2NjQ0OTdlOTRmOWM5ZmZlYWQ0MTE1ZGFkMGQ2MjljNjA5ODc4ZWMxMjg1ZDQ",
+          "price": "3500"
+      },
+      {
+          "id": 99,
+          "title": "Wonderchef ultima 3 burner",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Wonderchef-63154233-Cooktop-492911159-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTM2OXxpbWFnZS9qcGVnfGltYWdlcy9oOWQvaDc5Lzk4ODkxMzY4Njk0MDYuanBnfDQ4ODJlYmExZDc5ZmNmZDQ1YzE4MGVjZGZkZTQ4ZWEyZjQ2NTk0YzYwZWJkZDA2M2I3YzE5NTQ3ZTBhYzk0NjQ",
+          "price": "3000"
+      },
+      {
+          "id": 100,
+          "title": "Faber Onyx Cooktop",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Faber-HOB-COOKTOP-ONYX-4-Hobs-491581409-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzODIxNXxpbWFnZS9qcGVnfGltYWdlcy9oNjYvaDk2LzkyOTI2NTQ4MDUwMjIuanBnfDJjNDBkZmIzNDE0OWVjNzMzOTNkMDU2NjFhN2ExYmQ3MDQyNTU3ZTk0OTRhZDI2OTUyOTE0NDQ3Y2E5ZjgwYWI",
+          "price": "10000"
+      },
+      {
+          "id": 101,
+          "title": "Inalsa easy sandwich Toaster",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Inalsa-Easy-Toast-Inox-Sandwich-Makers-491350653-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MjgzfGltYWdlL2pwZWd8aW1hZ2VzL2gxYi9oOGIvOTIyNTgzMzE4NTMxMC5qcGd8MTQwZDhmMjkxNDZhMTIzMGM5ZjRmYzhiYjcxZWQzYWEwNDk4OTAwOTUyYjZkY2JmZTNlN2YzMGJmY2E1YzM5NA",
+          "price": "1100"
+      },
+      {
+          "id": 102,
+          "title": "Kelvinator Toaster",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Kelvinator-KSMS0012S-Sandwich-Makers-491902986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NzMzNXxpbWFnZS9qcGVnfGltYWdlcy9oZjMvaDQ5Lzk1ODQ5NzE0ODExMTguanBnfGQ1YjBlYjlkOWJlYTQxYTVkZDdjZDBkODdmMmZhMDQwYzdiMDczNWYwMTlkMWE1OGE1ODNmMTc4MmJmZjkwMTM",
+          "price": "1200"
+      },
+      {
+          "id": 103,
+          "title": "Kelvinator coffee makers",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Kelvinator-KDCMS001-Coffee-Maker-491959017-i-6-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMjgxMnxpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDFkLzk2MjM3ODk3OTc0MDYuanBnfGZiNWY1MWM3ZTBlZGNlZjhmNzFlOThiNmNhNzdhMDYwYTBiMjk4MDdiMDc3NDA5ZTc3ZmM1ZTY0NjNkOWEyNzQ",
+          "price": "2000"
+      },
+      {
+          "id": 104,
+          "title": "Morphy Richards Coffer maker",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Morphy-Richards-Primero-Coffee-Maker-491892011-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTA2OHxpbWFnZS9qcGVnfGltYWdlcy9oNmYvaGNhLzkzNzMxNzc3NzQxMTAuanBnfDkzZTA0NGIyNGU2MmY5MDkxYjFjMjdlMzkxZjQxZGNmZjkyZWMzOTc2OTc1YzE1YzI1NTE4ZWVkNDYzMzM2MDA",
+          "price": "2700"
+      },
+      {
+          "id": 105,
+          "title": "Philips Airfryer",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Philips-HD9270-70-Airfryer-492572874-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MTc2MHxpbWFnZS9wbmd8aW1hZ2VzL2g5Ni9oMWYvOTg0MzEyNTQ1MjgzMC5wbmd8MTBkOTJlZWU0ZWI0MDA0Y2FhZjNkMjYzNzlkZDU1MzkyMzEzOTI5NjU3YjMwMTZlZDAxMzFkNDcyMWVjZjU3Yg",
+          "price": "14000"
+      },
+      {
+          "id": 106,
+          "title": "Inalsa deep fryer",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Inalsa-Professional-2-Speciality-Appliances-491472948-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMTQ1N3xpbWFnZS9qcGVnfGltYWdlcy9oZWYvaDc1LzkxNzQ2NDI2ODgwMzAuanBnfGFmMWMyNWI0MTNlN2RlM2UyYTAxZWYzNDU4YzgzNmVlM2IzMGQ3Zjg4ODA3ZDYyOGE2NTBlYmIwMWQ0MDM2ZDI",
+          "price": "4000"
+      },
+      {
+          "id": 107,
+          "title": "Bread maker",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Kent-16010-Speciality-Appliances-491891852-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjAyOHxpbWFnZS9qcGVnfGltYWdlcy9oZDIvaDBhLzk2MDgzMTg4MTIxOTAuanBnfGJkYjFhZWMxNzU0ZGIyODVlMjNlMTkzNjU4ODA5ZjVjMGE1ZTVkNTVjNjY3MmViMmUwMzQ5MDlkODAyYTg5ZTk",
+          "price": "9000"
+      },
+      {
+          "id": 108,
+          "title": "Greenchef electric kettle",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Greenchef-Arrow-ElectricKettle-493620564-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDc0OHxpbWFnZS9qcGVnfGltYWdlcy9oYzIvaDljLzk4OTQ3Nzc4MTUwNzAuanBnfGI3MWE3MjhhYzdiNGY5ZmU2NDMyOGFkNGY1MDE5MmVlYTExNDY0NThjNTE2MTVkYjhhODc3YzQ1NTNmNGM1ODY",
+          "price": "600"
+      },
+      {
+          "id": 109,
+          "title": "Butterfly Wet Grinder",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/Butterfly-Wet-Grinder-Rhino-Grey-492664312-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MTU0fGltYWdlL2pwZWd8aW1hZ2VzL2g1OC9oMmUvOTc0OTY5NDU3ODcxOC5qcGd8YzM5MzI2NjA5N2EzNDg3N2I3YTFjNDA2ODdiNGFiMDNlYTcwOGJlMThlZTg4M2ViODU1Y2UyNTcxNDM2OGNhMw",
+          "price": "4500"
+      },
+      {
+          "id": 110,
+          "title": "Panasonic wet grinder",
+          "category": "kitchen",
+          "image": "https://www.reliancedigital.in/medias/PANASONIC-WET-GRINDER-MK-SW200-TIMER-2LT-491186064-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w5ODYwfGltYWdlL2pwZWd8aW1hZ2VzL2g3MC9oZTMvOTIwNjc4NDIyOTQwNi5qcGd8ODU2ZmI2YWU0ZjkxYWNkZWRlMjYzNWRmNmZiNGEyM2ZjY2RjYmM1YTg5MmIyZGZiYzZhMTI2Y2E2NWYwYmFlMA",
+          "price": "9000"
+      },
+      {
+          "id": 111,
+          "title": "Men's Beard trimmer",
+          "category": "personal",
+          "image": "https://www.reliancedigital.in/medias/BPL-BBTD001GK-Shaver-and-Trimmers-491903184-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0Mjc2M3xpbWFnZS9qcGVnfGltYWdlcy9oZGEvaDUwLzk2MjExMzQwMTY1NDIuanBnfDU4YWM2ZDBiZDQwNjM5ZjEwMzQ0ZjEyMTU0OWZmM2MzOWUzZDVlZmI0NDUwYTU1YTdlYzIxMzRjYmRmMmQwOGE",
+          "price": "600"
+      },
+      {
+          "id": 112,
+          "title": "Philps Beard trimmer",
+          "category": "personal",
+          "image": "https://www.reliancedigital.in/medias/Philips-BT3102-15-Shaver-and-Trimmers-491891822-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTE5NHxpbWFnZS9qcGVnfGltYWdlcy9oMjAvaDJmLzkzMzI2NjMxMjM5OTguanBnfDcwNDg1ZTA4OTg0MzllNzFjMDU3MDk2N2Q3NWJmMTUzZGE1MzZlOGNhY2VjZjllOTU3OTM2YjFkZDYzOGJkZWQ",
+          "price": "1000"
+      },
+      {
+          "id": 113,
+          "title": "Multigroom trimmer",
+          "category": "personal",
+          "image": "https://www.reliancedigital.in/medias/Philips-MG7715-65-Trimmer-492864867-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTE0OXxpbWFnZS9qcGVnfGltYWdlcy9oZWIvaDdiLzk4MzE3NzM5Mjk1MDIuanBnfGRiNGVlMmNlMjdhYzdlNjQ2Mzg1MjY2ZTBkODU5OGZiZWVjZDRiZDkwMDk1MzdlMTRiOTNlMjk1OTFiYjA1NWQ",
+          "price": "3000"
+      },
+      {
+          "id": 114,
+          "title": "Touch trimmer Epiltor",
+          "category": "personal",
+          "image": "https://www.reliancedigital.in/medias/Vega-VHBT-01-Shaver-Trimmers-491902979-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMDEyMHxpbWFnZS9qcGVnfGltYWdlcy9oYWYvaGZmLzk0MTM1MDI2NjQ3MzQuanBnfDMzZThiYTliZmY0MjI0ZGVkN2RhMDMxY2YwNTNhZDI2NjhmMGM3YTc2MWM4YzY4ZGUyNzY3MzA3NDgxYmY2MjI",
+          "price": "999"
+      },
+      {
+          "id": 115,
+          "title": "Satinelle epilator",
+          "category": "personal",
+          "image": "https://www.reliancedigital.in/medias/Philips-Epilator-BRE235-00-491581688-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NzQ1fGltYWdlL2pwZWd8aW1hZ2VzL2g0OC9oM2IvOTIwMjQxMzUzNTI2Mi5qcGd8YWMyNzU4MGJiNTExN2JjMDVkNDE0MTk4ODUwNzcyMmZiYmM0MWY0YWY5M2I0MDIwNTg3YjYyN2Y2OGVlNzY0Yw",
+          "price": "1999"
+      },
+      {
+          "id": 116,
+          "title": "Havells Styling kit",
+          "category": "personal",
+          "image": "https://www.reliancedigital.in/medias/Havells-HC4045-Hair-Styler-491392036-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4MTU2fGltYWdlL2pwZWd8aW1hZ2VzL2gxMC9oMTYvOTI0OTI1NTE5NDY1NC5qcGd8YjhiZGZiMjBmZGI1Yjg1Mjk2YzQ1ODM4NzBhNmFiMjQ0MGZiNmQyZDAyZmE2MDAxOGUxOGEyNzI3NjdhNTJiMg",
+          "price": "2000"
+      },
+      {
+          "id": 117,
+          "title": "Straightner",
+          "category": "personal",
+          "image": "https://www.reliancedigital.in/medias/Lifelong-LLPCW20-STYLER-492574757-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjAwM3xpbWFnZS9qcGVnfGltYWdlcy9oNDkvaDcyLzk3NTM5Mjc4MTExMDIuanBnfDk1NjA4OTA5OTRjNTRkMTc1MmU0Y2ViMDczMWYxYTc3OWM2OGI2N2M0M2JhZTlmYmJjNjZmZTU1YjkyZDU2MmY",
+          "price": "450"
+      },
+      {
+          "id": 118,
+          "title": "Reconnect hair dryer",
+          "category": "personal",
+          "image": "https://www.reliancedigital.in/medias/Reconnect-RP5303-Hair-Dryer-491538802-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNzE1M3xpbWFnZS9qcGVnfGltYWdlcy9oMmYvaGI0LzkzMjY5NDMzMzg1MjYuanBnfDdmMDhmZDVmYTI3OGFkMzk2MmM0MGUwOGVjMGJkZDUxY2NlZjkyOTlhOWViYjRlNjcxYzliZWUyMDRkZDI4OWE",
+          "price": "700"
+      },
+      {
+          "id": 119,
+          "title": "Philips Hair starighting Brush",
+          "category": "personal",
+          "image": "https://www.reliancedigital.in/medias/Philips-BHH880-Hair-Dryers-and-Stylers-491539222-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MzA0NnxpbWFnZS9qcGVnfGltYWdlcy9oMjcvaGRhLzkzMzQ0MTgxNDUzMTAuanBnfDE4YTM1ODhiOTIwZmUxMDJlYzIxNzEzNjkyOGE2MjJlMmM2NDg0MjM4MjkyOGMyM2I3Zjg5Y2YyYmRkNDY0Mjg",
+          "price": "3500"
+      },
+      {
+          "id": 120,
+          "title": "Garment steamer",
+          "category": "personal",
+          "image": "https://www.reliancedigital.in/medias/Usha-SI-Techne-Garment-Steamers-491213724-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjYyOXxpbWFnZS9qcGVnfGltYWdlcy9oNGUvaDk1Lzk0NjgyNDk4OTkwMzguanBnfGI1Mzg2Njg2M2E5ZmIzMGE4NzMxYTFiMDg2NGI2NTllZmZkOTRhYjY4NDJhMTk4MDFiYjg5NTYwM2Y2YTJiZDc",
+          "price": "4000"
+      },
+      {
+          "id": 121,
+          "title": "Battery",
+          "category": "accessories",
+          "image": "https://www.reliancedigital.in/medias/GoPro-ACBAT-001-Camera-Accessories-491630513-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTExfGltYWdlL2pwZWd8aW1hZ2VzL2gwNy9oOTYvOTIzMjExODIxODc4Mi5qcGd8YWM1ODMxY2ZjNDU3ZjY1YmY4MDllM2Y4ODNiZDc1ZmNmMzliZTc0NDIxMTYyNjRiZDFkMWQ3OWI4NTM1Mjc5Mg",
+          "price": "2600"
+      },
+      {
+          "id": 122,
+          "title": "Lithium-ion battery",
+          "category": "accessories",
+          "image": "https://www.reliancedigital.in/build/client/images/sold-out.png",
+          "price": "10000"
+      },
+      {
+          "id": 123,
+          "title": "Ambrane 1000mAh power bank",
+          "category": "accessories",
+          "image": "https://www.reliancedigital.in/medias/Ambrane-PP115-Power-Bank-492574678-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMDgxNXxpbWFnZS9qcGVnfGltYWdlcy9oMjkvaDE1Lzk3NDE0MTY5NTU5MzQuanBnfDU2Njc4NWEwZmQ1MDMwNTA5ZjYwYjNjNzRhNWYyZGE4NzUwNjE1M2Y5Yzk0ZDliZGUzNDgwZWZmMGRkZDI4YTg",
+          "price": "700"
+      },
+      {
+          "id": 124,
+          "title": "Mi 10000 mAh Power bank",
+          "category": "accessories",
+          "image": "https://www.reliancedigital.in/medias/Mi-3i-Batteries-and-Powerbank-491901316-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDkzNXxpbWFnZS9qcGVnfGltYWdlcy9oMDMvaGJlLzk0NTU3Njg5MjgyODYuanBnfDcwNDRkOTM5ODM4YTBiNmQ2YWRhMmQxMTU3ZWQ4YjU2ZmM1YmM3YzY4NzZmOWYzZThlYjI0NDRlZDI1ZmYxMDM",
+          "price": "2000"
+      },
+      {
+          "id": 125,
+          "title": "realme power bank",
+          "category": "accessories",
+          "image": "https://www.reliancedigital.in/medias/realme-RMA156-Batteries-and-Powerbank-491946589-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NzkxOXxpbWFnZS9qcGVnfGltYWdlcy9oMDkvaGJiLzk0NzE2Mzc3NDk3OTAuanBnfDhlZTRiODBkMmVkNDNhZmM3Y2E3Y2VlOWJkNjI1MmJhYmZlMTYzMmE0ODk2YmFlMjQ0MzYxMDI4NzI0ZjNjOGI",
+          "price": "1999"
+      },
+      {
+          "id": 126,
+          "title": "Portonics Powerbank",
+          "category": "accessories",
+          "image": "https://www.reliancedigital.in/medias/Portronics-POR-801-Batteries-and-Powerbanks-491667199-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxODEzOHxpbWFnZS9qcGVnfGltYWdlcy9oOWIvaDlhLzkyOTY2MzIzODE0NzAuanBnfDkyN2RiZWIzOWNmYTJmZDNlMDJmMzM4MzRiN2RmNGI0MjdlYjc0NmYwYzJhNmU3NTdhZTZkOTdmOTg4NTUzY2U",
+          "price": "900"
+      },
+      {
+          "id": 127,
+          "title": "UltraPixel Webcam",
+          "category": "accessories",
+          "image": "https://www.reliancedigital.in/medias/ENTER-UltraPixel-Webcam-492849061-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MDkyMnxpbWFnZS9qcGVnfGltYWdlcy9oNDkvaGU0Lzk4MTQyNzA5Njc4MzguanBnfDQzZDA3N2M0MWIyY2QwNGU4MmIxOTM5N2Q4ZTljMzQ1MDU5NTk2MmYzNzhhNzg4YjM1NzIzMWE0MTllNTkwYzI",
+          "price": "999"
+      },
+      {
+          "id": 128,
+          "title": "Zebronics Webcam",
+          "category": "accessories",
+          "image": "https://www.reliancedigital.in/medias/ZEBRONICS-ULTIMATESTAR-WEB-CAMERA-491998368-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMzAzMXxpbWFnZS9qcGVnfGltYWdlcy9oYTQvaGQyLzk2NzcyMDcyNDA3MzQuanBnfDNmODI0MWQ4NWZhMWQwMjFlY2EzODM1NGFlZGViN2UxMWRjNDNmNDM3MTQ2OTAxNjg5MWRlZTUxOGM3MTAwN2M",
+          "price": "2000"
+      },
+      {
+          "id": 129,
+          "title": "HP w300 Webcam",
+          "category": "accessories",
+          "image": "https://www.reliancedigital.in/medias/HP-w300-Webcam-491946544-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0MTE4NHxpbWFnZS9qcGVnfGltYWdlcy9oNDkvaDQ0Lzk0NjMzNTMzMTEyNjIuanBnfDA0ZDJhOWY3YWI4MDg4OTlmYTk4Yjg0NWI2ZjI4Yzc4YzU1MThiYmZiOWNjZmU2OTEwYzg4NjY2MWFjODFlYzk",
+          "price": "4500"
+      },
+      {
+          "id": 130,
+          "title": "Logitech C270 webcam",
+          "category": "accessories",
+          "image": "https://www.reliancedigital.in/medias/13ef6109-dcd4-4872-a287-a4ecab934a6d-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDQ1NHxpbWFnZS9qcGVnfGltYWdlcy9oNjIvaDcwLzg4MzgzNDY1MDYyNzAuanBnfGM1ZGRlMDBmM2M1MGNmNjhhMGIzY2NmYTE4YzUzYzgyMGJjZjAzOWFkNjQ5N2Y5MGRlMzZjNTgyNjM1YWE0NjI",
+          "price": "1999"
+      }
+  ]
+  }
