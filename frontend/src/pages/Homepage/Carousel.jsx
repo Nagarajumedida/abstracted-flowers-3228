@@ -3,6 +3,7 @@ import { Box, IconButton, Image, useBreakpointValue } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
+import {Link} from "react-router-dom"
 // homepage assets**************
 import AppleImage from "./homepage assets/productSlider_Homepage_1/Apple_S8.webp";
 import LaptopImage from "./homepage assets/productSlider_Homepage_1/Laptop-Carnival-Carousel-Banner-D.webp";
@@ -51,7 +52,7 @@ export default function Carousel() {
 
   return (
     <Box>
-      <Box position={"relative"} height={"auto"} overflow={"hidden"} m="auto">
+     <Link to="/product"> <Box position={"relative"} height={"auto"} overflow={"hidden"} m="auto">
         {/* CSS files for react-slick */}
         <link
           rel="stylesheet"
@@ -125,6 +126,7 @@ export default function Carousel() {
           </Slider>
         </Box>
       </Box>
+      </Link>
     </Box>
   );
 }
