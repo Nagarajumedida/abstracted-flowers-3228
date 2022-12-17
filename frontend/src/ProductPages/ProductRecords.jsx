@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Heading } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react'
 
-
+import styled from "styled-components"
 import ProductLists from '../ProductComponents/ProductLists';
 import "./ProductRecords.css"
 import { Show, Hide } from '@chakra-ui/react'
@@ -44,9 +44,11 @@ setName(category[index])
 
     return (
         <Box className='mainbox'> 
-     <FilterSort/>
+     <WrapperFilterSort>
+                <FilterSort />
+            </WrapperFilterSort>
             {/* <Show above='850px' className='filter'>
-               
+                <FilterSort/>
             </Show> */}
    
       <Box className='allproducts'>
@@ -73,6 +75,10 @@ setName(category[index])
 }
 
 
+
+export default ProductRecords
+
+
 const Wrapper = styled.div`
 //   border:1px solid red;
   display:flex;
@@ -80,21 +86,8 @@ const Wrapper = styled.div`
 `;
 
 const WrapperFilterSort = styled.div`
- width:300px;
-//   border:2px solid teal; 
-position:fixed;
-`;
-const WrapperUserProduct = styled.div`
-//  border:1px solid blue;
- width:80%;
- display:grid;
- margin-left:300px;
- grid-template-columns:repeat(auto-fit,minmax(250px,max-content));
- grid-gap:20px;
- justify-content:center;
- text-align:center
- grid-gap:10px;
-`;
+ width:29%;
 
 
-export default ProductRecords
+`;
+

@@ -2,7 +2,7 @@
 
 .products{
   
-
+}
 .product-list{
     /* border:1px solid red; */
     border-radius: 10px;
@@ -67,7 +67,7 @@ transform: scale(1.1);
 
    
    
-}
+
 .product-list:hover{
     transform: scale(0.90);
     border: 2px solid  rgba(120, 181, 218, 0.918) !important;
