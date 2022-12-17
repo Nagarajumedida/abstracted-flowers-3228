@@ -16,9 +16,9 @@ const MainRoutes = () => {
 
         {/* <Route path='/product?category=television' element={<ProductRecords/>}/>
         <Route path='/product?category=mobile' element={<ProductRecords/>}/> */}
-        
+{/*         
         <Route path="/product/:id" element={<SingleProductRecord/>}/>
-        <Route path="/product/:id/edit" element={<EditProductPage/>}/>
+        <Route path="/product/:id/edit" element={<EditProductPage/>}/> */}
 
         {/* <Route path="/product/:id" element={<SingleProductRecord/>}/> */}
         {/* <Route path="/product/:id/edit" element={<EditProductPage/>}/> */}
