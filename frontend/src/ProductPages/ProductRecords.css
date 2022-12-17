@@ -73,6 +73,7 @@ display: flex;
 }  
 }
 
+
 @media all and (min-width:451px) and (max-width:850px){
     .allproducts{
         width: 100%;

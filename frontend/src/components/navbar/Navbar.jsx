@@ -54,7 +54,7 @@ import laptops_menu_image from "./navbar_assets/laptops_menu_image.png";
 import personal_grooming_image from "./navbar_assets/personal_grooming_image.png";
 
 // assets import******************
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FrontendContext } from "../../context/Frontend_context";
 
 const Navbar = () => {
@@ -89,18 +89,16 @@ const Navbar = () => {
   // pos="sticky" top={"0px"} zIndex="27"
    const navigate=useNavigate()
 
-   const[category,setCategory]=useState('')
+  
 
+ const location=useLocation()
 
-
-  useEffect(()=>{
-  if(category===''){
-    navigate('')
-  }
-console.log("category",category)
-
-  },[])
-
+ 
+    
+                        
+    
+ 
+ 
 
 
 
@@ -167,6 +165,9 @@ console.log("category",category)
           <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
         </Box>
         </Link>
+
+
+        
         <Box
           flex="0.7"
           bg="rgb(228,37,41)"
@@ -247,8 +248,9 @@ console.log("category",category)
           }}
         >
          
-          <Text onClick={(e)=>setCategory(e.target.value)} 
-           value={Main_menu_array_navbar[0].title}
+          <Text 
+         
+          
           fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[0].title}
           </Text>
@@ -270,11 +272,13 @@ console.log("category",category)
             setStyle_Television("none");
           }}
         >
-           <Link to='/product?category=television'>
-          <Text fontSize={"12px"} fontWeight="500">
+           
+          <Text fontSize={"12px"} 
+          
+          fontWeight="500">
             {Main_menu_array_navbar[1].title}
           </Text>
-          </Link>
+         
           <BiChevronDown />
         </Box>
         <Box
@@ -447,7 +451,11 @@ console.log("category",category)
                 mb="10px"
                 alignSelf={"start"}
               >
-                Smartphones
+
+            
+              Smartphones
+             
+
               </Text>
               <Text
                 fontSize={"16px"}
@@ -612,7 +620,8 @@ console.log("category",category)
                 _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
                 mb="10px"
               >
-                AI Learning Robots
+            <Link to='/product?category=mobile'>  
+             AI Learning Robots</Link>
               </Text>
             </VStack>
           </HStack>
@@ -654,8 +663,10 @@ console.log("category",category)
                 mb="10px"
                 alignSelf={"start"}
               >
-                Televisions
-              </Text>
+          <Link to='/product?category=television'>
+               Televisions
+          </Link>
+          </Text>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -663,7 +674,10 @@ console.log("category",category)
                 fontWeight={"300"}
                 _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
               >
-                Smart TVs
+                 <Link to='/product?category=television'>
+                 Smart TVs
+                 </Link>
+               
               </Text>
               <Text
                 alignSelf={"start"}

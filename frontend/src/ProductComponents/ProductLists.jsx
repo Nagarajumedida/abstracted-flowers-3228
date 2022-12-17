@@ -16,7 +16,17 @@ const ProductLists = () => {
   const productList = useSelector((store) => store.product)
   const location = useLocation()
   // console.log(store)
-  
+ 
+ 
+
+
+
+
+  const onClickHeart=()=>{
+      setHeart(!heart)
+  }
+
+
 
   useEffect(() => {
     dispatch(getProductList)
@@ -64,7 +74,7 @@ const ProductLists = () => {
     className='prodname'>{product.title}</Text></Box>
     <Flex fontWeight='500' style={{gap:"4%",alignItems:"center",marginBottom:"2%"}}>
       <Text color='#003380' fontSize='lg'>₹{product.price}.00</Text>
-    <Text color="gray"><s>16,999.00</s></Text>
+    <Text color="gray"><s>₹{Number(product.price)+Number(product.price*18/100)}.00</s></Text>
     <Text color="green">18%(₹3,500)</Text>
     </Flex>
     <Box><Button style={{border:"1px solid green",color:"green",borderRadius:"20px",
@@ -80,7 +90,9 @@ const ProductLists = () => {
       <Center >
        <Divider orientation='vertical' />
       </Center>
-      <Box style={{display:"flex",alignItems:"center",gap:"2%"}} onClick={()=>setHeart(!heart)}>
+      <Box style={{display:"flex",alignItems:"center",gap:"2%"}}
+    
+      onClick={onClickHeart}>
         {!heart?<BsSuitHeartFill/>:<BsSuitHeart/>}Wishlist </Box>
        </Box>
    </Box>

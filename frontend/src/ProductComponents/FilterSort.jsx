@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import "./FilterSort.css"
 
 
-const FilterSort = () => {
+export const FilterSort = () => {
 
     const [searchParams, setSearchParams] = useSearchParams();
 
@@ -14,10 +14,6 @@ const FilterSort = () => {
     const [categoryType, setCategoryType] = useState(searchParams.getAll("category") || [])
 
     // const[genderType,setGenderType] = useState(searchParams.getAll("gender") || [])
-
-
-  
-
     const handleFilter = (e) => {
 
         const option = e.target.value;
@@ -102,12 +98,14 @@ const FilterSort = () => {
             
             <div onChange={handleSortBy}>
                 <div className='filter-2'>
-                    <input type="radio" name="sortBy" value="asc" defaultChecked={sortBy === 'asc'} />
+                    <input type="radio" name="sortBy" value="asc"
+                     defaultChecked={sortBy === 'asc'} />
                     <label>Low - High</label>
                 </div>
 
                 <div className='filter-2'>
-                    <input type="radio" name="sortBy" value="desc" defaultChecked={sortBy === 'desc'} />
+                    <input type="radio" name="sortBy" value="desc"
+                     defaultChecked={sortBy === 'desc'} />
                     <label>High - Low</label>
                 </div>
                 </div>
@@ -128,4 +126,3 @@ const FilterSort = () => {
     )
 }
 
-export default FilterSort;

@@ -1,16 +1,19 @@
 import { Box, Button, Flex, Heading } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react'
-import styled from "styled-components"
-import FilterSort from '../ProductComponents/FilterSort';
+
+
 import ProductLists from '../ProductComponents/ProductLists';
 import "./ProductRecords.css"
 import { Show, Hide } from '@chakra-ui/react'
 import { useLocation } from 'react-router-dom';
+import {FilterSort}  from "../ProductComponents/FilterSort"
+
 
 const searchCategory=["mobile","television",
 "Headset","Home","computers","camera","kitchen","personal",
 "accessories"]
-const category=["MOBILES & TABLETS",
+const category=[
+"MOBILES & TABLETS",
 "TELEVISIONS",
 "AUDIO",
 "HOME APPLIANCES",
@@ -25,7 +28,7 @@ const category=["MOBILES & TABLETS",
 const ProductRecords = () => {
     const [name,setName]=useState(category[0])
     const location = useLocation()
-    console.log("productRecords",location.search.split("=")[1])
+   // console.log("productRecords",location.search.split("=")[1])
 
 useEffect(()=>{
 const index=searchCategory.indexOf(location.search.split("=")[1])
@@ -33,11 +36,18 @@ console.log("index",index)
 setName(category[index])
 },[location])
 
+
+
+
+
+
+
     return (
-        <Box className='mainbox'>        
-            <Show above='850px' className='filter'>
-                <FilterSort />
-            </Show>
+        <Box className='mainbox'> 
+     <FilterSort/>
+            {/* <Show above='850px' className='filter'>
+               
+            </Show> */}
    
       <Box className='allproducts'>
         <Box >
