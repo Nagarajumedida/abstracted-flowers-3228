@@ -22,8 +22,12 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
+
+import React, { useContext, useEffect, useState } from "react";
+
 import React, { useContext, useState } from "react";
 import {Link} from "react-router-dom"
+
 import "./Navbar.css";
 
 // icons import******************
@@ -56,7 +60,12 @@ import personal_grooming_image from "./navbar_assets/personal_grooming_image.png
 
 // assets import******************
 
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { FrontendContext } from "../../context/Frontend_context";
+
+
 import { FrontendContext } from "../../context/FrontendContext";
+
 
 const Navbar = () => {
   const contexts = useContext(FrontendContext);
@@ -88,6 +97,21 @@ const Navbar = () => {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   // pos="sticky" top={"0px"} zIndex="27"
+   const navigate=useNavigate()
+
+  
+
+ const location=useLocation()
+
+ 
+    
+                        
+    
+ 
+ 
+
+
+
   return (
     <div style={{position:"sticky",top:"0px",zIndex:"27" }}>
       <Flex
@@ -147,10 +171,13 @@ const Navbar = () => {
         pr="20px"
         alignItems={"center"}
       >
-        <Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
+     <Link to='/'>   <Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
           <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
         </Box>
+        </Link>
 
+
+        
         <Box
           flex="0.7"
           bg="rgb(228,37,41)"
@@ -233,9 +260,14 @@ const Navbar = () => {
             setStyleMoblie_and_tablets("none");
           }}
         >
-          <Text fontSize={"12px"} fontWeight="500">
+         
+          <Text 
+         
+          
+          fontSize={"12px"} fontWeight="500">
             {Main_menu_array_navbar[0].title}
           </Text>
+          
           <BiChevronDown />
         </Box>
         <Box
@@ -253,9 +285,13 @@ const Navbar = () => {
             setStyle_Television("none");
           }}
         >
-          <Text fontSize={"12px"} fontWeight="500">
+           
+          <Text fontSize={"12px"} 
+          
+          fontWeight="500">
             {Main_menu_array_navbar[1].title}
           </Text>
+         
           <BiChevronDown />
         </Box>
         <Box
@@ -429,7 +465,11 @@ const Navbar = () => {
                 mb="10px"
                 alignSelf={"start"}
               >
-                Smartphones
+
+            
+              Smartphones
+             
+
               </Text>
              
               <Text
@@ -595,7 +635,8 @@ const Navbar = () => {
                 _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
                 mb="10px"
               >
-                AI Learning Robots
+            <Link to='/product?category=mobile'>  
+             AI Learning Robots</Link>
               </Text>
             </VStack>
           </HStack>
@@ -638,9 +679,16 @@ const Navbar = () => {
                 mb="10px"
                 alignSelf={"start"}
               >
+
+          <Link to='/product?category=television'>
+               Televisions
+          </Link>
+          </Text>
+
                 Televisions
               </Text>
               
+
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -648,7 +696,10 @@ const Navbar = () => {
                 fontWeight={"300"}
                 _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
               >
-                Smart TVs
+                 <Link to='/product?category=television'>
+                 Smart TVs
+                 </Link>
+               
               </Text>
               <Text
                 alignSelf={"start"}

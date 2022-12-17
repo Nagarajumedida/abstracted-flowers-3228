@@ -14,7 +14,8 @@ const Homepage = () => {
   useEffect(() => {
     document.title =
       "Online Electronic Shopping Store in India - Reliance Digital";
-  }, []);
+  
+    }, []);
   return (
     <div>
       <Box w="100%" height={"auto"}>

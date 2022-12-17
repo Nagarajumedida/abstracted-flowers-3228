@@ -13,8 +13,16 @@ const MainRoutes = () => {
     <Routes>
          <Route path='/' element={<Home/>}/>
         <Route path='/product' element={<ProductRecords/>}/>
+
+        {/* <Route path='/product?category=television' element={<ProductRecords/>}/>
+        <Route path='/product?category=mobile' element={<ProductRecords/>}/> */}
+        
+        <Route path="/product/:id" element={<SingleProductRecord/>}/>
+        <Route path="/product/:id/edit" element={<EditProductPage/>}/>
+
         {/* <Route path="/product/:id" element={<SingleProductRecord/>}/> */}
         {/* <Route path="/product/:id/edit" element={<EditProductPage/>}/> */}
+
         <Route path="*" element={<h3>Page Not Found</h3>}/>
         <Route path='/login' element={<Login/>}/>
          <Route path='/cart' element={<Cart/>}/>
