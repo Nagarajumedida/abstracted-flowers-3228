@@ -71,9 +71,11 @@ const Register = () => {
         navigate("/checkout")
         }
         else
-        setfirst(true)}}>PROCEED</Button></Link>
+        setfirst(true)}}>PROCEED</Button> 
+         alert("Registration Successfully Created")
+              </Link>
         <Flex justifyContent="center" alignItems="center" >
-        <Text  fontSize='xs'>Already registered?</Text>
+        <Text  fontSize='xs'>Already Registered?</Text>
         <Link to="/login"><Button colorScheme='red' variant='link'>
             LOGIN
         </Button></Link>

@@ -183,7 +183,7 @@ const Navbar = () => {
         </Center>
         <Center w="80px" bg="rgb(228,37,41)" gap={"5px"}>
           <ImCart color="white" size={"15px"} />
-
+          <Link to="/cart">
           <Text
             fontSize={"14px"}
             fontWeight={"500"}
@@ -191,6 +191,7 @@ const Navbar = () => {
           >
             Cart
           </Text>
+            </Link>
         </Center>
         <Center height="20px">
           <Divider orientation="vertical" />
