@@ -419,6 +419,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="200px" h="100%">
+              <Link to="/mobiles">
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -429,6 +430,7 @@ const Navbar = () => {
               >
                 Smartphones
               </Text>
+              </Link>
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -626,7 +628,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="120px" h="100%">
-              <Text
+             <Link to="/television"> <Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -636,6 +638,7 @@ const Navbar = () => {
               >
                 Televisions
               </Text>
+              </Link>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -809,7 +812,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
-              <Text
+             <Link to="/headsets"> <Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -818,7 +821,7 @@ const Navbar = () => {
                 alignSelf={"start"}
               >
                 Headphones & Headsets
-              </Text>
+              </Text></Link>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -1011,7 +1014,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
-              <Text
+             <Link to="/homeproducts"><Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -1020,7 +1023,7 @@ const Navbar = () => {
                 alignSelf={"start"}
               >
                 Air Conditioners
-              </Text>
+              </Text></Link>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -1586,7 +1589,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
-              <Text
+             <Link to="/computers"> <Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -1595,7 +1598,7 @@ const Navbar = () => {
                 alignSelf={"start"}
               >
                 Laptops
-              </Text>
+              </Text></Link>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -1969,7 +1972,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
-              <Text
+              <Link to="/camera"><Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -1978,7 +1981,7 @@ const Navbar = () => {
                 alignSelf={"start"}
               >
                 DSLR Cameras
-              </Text>
+              </Text></Link>
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -2144,6 +2147,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
+              <Link to="/kitchen">
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -2154,6 +2158,7 @@ const Navbar = () => {
               >
                 Microwave Ovens
               </Text>
+              </Link>
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -2431,6 +2436,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
+              <Link to="/personal">
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -2441,6 +2447,7 @@ const Navbar = () => {
               >
                 Shavers & Trimmers
               </Text>
+              </Link>
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -5205,6 +5212,7 @@ const Navbar = () => {
                           </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4}>
+                          
                         <Text
                           letterSpacing={"1px"}
                             fontSize={"15px"}
@@ -5219,6 +5227,7 @@ const Navbar = () => {
                           >
                             Smartphones
                           </Text>
+                         
                           <Text
                           letterSpacing={"1px"}
                             fontSize={"15px"}
@@ -5261,6 +5270,7 @@ const Navbar = () => {
                           >
                             Apple Price Drop
                           </Text>
+                          <Link to="/accessories">
                           <Text
                           letterSpacing={"1px"}
                             fontSize={"15px"}
@@ -5275,6 +5285,7 @@ const Navbar = () => {
                           >
                             Accessories
                           </Text>
+                          </Link>
                           <Text
                           letterSpacing={"-0.5px"}
                           ml="20px"

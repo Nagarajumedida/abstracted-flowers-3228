@@ -16,6 +16,8 @@ import Footer from './components/footer/Footer';
 
 
 import Register from './pages/Register';
+import Mobile from './SingleComponents/Mobile';
+
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
  <Navbar/>
 
   <MainRoutes/>
+  {/* <Mobile/> */}
+ 
 
 <Footer/>
 
