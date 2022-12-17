@@ -205,12 +205,13 @@ export default function Carousel_products_only() {
       >
         PRICE DROP ON APPLE SMARTWATCHES{" "}
       </Text>
+      
       <Box
         color="white"
         display={["block", "none", "none", "none", "none", "none"]}
       >
        
-
+      
         <Box w="90%" bg="white" m="auto">
           <Box
             position={"relative"}
@@ -281,7 +282,7 @@ export default function Carousel_products_only() {
               </Box>
             </IconButton>
             {/* Slider */}
-
+           
             <Box w="100%" m="auto" h="auto" >
               <Slider {...settings} ref={(slider) => setSlider(slider)}>
                 {cards.map((item, index) => (

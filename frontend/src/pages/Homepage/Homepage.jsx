@@ -1,4 +1,4 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image, Link } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import Carousel from "./Carousel";
 import "./Homepage.css";
@@ -18,10 +18,11 @@ const Homepage = () => {
     }, []);
   return (
     <div>
+      
       <Box w="100%" height={"auto"}>
         <Image src={AdImage_One} alt={AdImage_One} w="100%" />
       </Box>
-      <Carousel />
+     <Carousel />
       <PriceDrop_appleSmartwatches/>
       <Apple_Carousel/>
       <Carousel_products_only/>

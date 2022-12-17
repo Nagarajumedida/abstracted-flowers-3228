@@ -1,6 +1,6 @@
 import React,{useContext,useState} from 'react'
 import {Box,Input,Button,Text} from '@chakra-ui/react'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate,Link} from 'react-router-dom'
 import { FrontendContext} from '../context/FrontendContext';
 const Login = () => {
 const navigate = useNavigate();
@@ -13,12 +13,13 @@ const {mobile,setMobile} = useContext(FrontendContext)
         <Text fontWeight="bold">Login/Register</Text>
         <Input type="number" placeholder='Enter Mobile Number' width="90%" onChange={(e)=>setMobile(e.target.value)}/>
         {first&&<Text color="red" fontSize='sm'>Mobile number is necessary</Text>}
-        <Button colorScheme='red' width="90%" onClick={()=>{
+       <Link to="/register"> <Button colorScheme='red' width="90%" onClick={()=>{
           if(mobile.length!==0)
             navigate("/register")
             else
             setFirst(true)
           }}>PROCEED</Button>
+          </Link>
         </Box>
         <br/>
     </div>
