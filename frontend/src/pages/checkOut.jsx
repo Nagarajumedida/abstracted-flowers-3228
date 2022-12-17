@@ -1,79 +1,38 @@
-import React, { useState } from "react";
-import  {useForm} from "react-hook-form";
-import "./checkOut.module.css";
+import React from "react";
 
-
-
- export const CheckOut = () => {
-  const [data, setData] = useState({});
-  const { register, handleSubmit } = useForm();
-
-  const onSubmit = (values) => {
-    console.log(values);
-    setData(values);
-  };
-
+const Checkout = () => {
   return (
-    <div>
+    <div className="checkout">
       <h1>Checkout</h1>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="form-group">
+      <form>
+        <div className="form-row">
           <label>Name</label>
-          <input type="text" name="name" ref={register} />
+          <input type="text" name="name" />
         </div>
-        <div className="form-group">
-          <label>Email</label>
-          <input type="email" name="email" ref={register} />
-        </div>
-        <div className="form-group">
+        <div className="form-row">
           <label>Address</label>
-          <input type="text" name="address" ref={register} />
+          <input type="text" name="address" />
         </div>
-        <div className="form-group">
+        <div className="form-row">
           <label>City</label>
-          <input type="text" name="city" ref={register} />
+          <input type="text" name="city" />
         </div>
-        <div className="form-group">
+        <div className="form-row">
           <label>State</label>
-          <input type="text" name="state" ref={register} />
+          <input type="text" name="state" />
         </div>
-        <div className="form-group">
+        <div className="form-row">
           <label>Zip Code</label>
-          <input type="text" name="zipcode" ref={register} />
+          <input type="text" name="zip" />
         </div>
-        <div className="form-group">
-          <label>Country</label>
-          <input type="text" name="country" ref={register} />
-        </div>
-        <div className="form-group">
+        <div className="form-row">
           <label>Credit Card Number</label>
-          <input type="text" name="creditCardNumber" ref={register} />
+          <input type="text" name="credit-card" />
         </div>
-        <div className="form-group">
-          <label>Expiration Date</label>
-          <input type="text" name="expirationDate" ref={register} />
-        </div>
-        <div className="form-group">
-          <label>CVV</label>
-          <input type="text" name="cvv" ref={register} />
-        </div>
-        <div className="form-group">
-          <input type="submit" value="Submit" />
-        </div>
+        <button type="submit">Submit</button>
       </form>
-      {data.name ? (
-        <div>
-          <h3>Confirmation</h3>
-          <p>Name: {data.name}</p>
-          <p>Email: {data.email}</p>
-          <p>Address: {data.address}</p>
-          <p>City: {data.city}</p>
-          <p>State: {data.state}</p>
-          <p>Zip Code: {data.zipCode}</p>
-          <p>Country: {data.country}</p>
-        </div>
-      ) : null}
     </div>
   );
 };
 
+export default Checkout;
