@@ -22,7 +22,12 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
+
 import React, { useContext, useEffect, useState } from "react";
+
+import React, { useContext, useState } from "react";
+import {Link} from "react-router-dom"
+
 import "./Navbar.css";
 
 // icons import******************
@@ -54,8 +59,13 @@ import laptops_menu_image from "./navbar_assets/laptops_menu_image.png";
 import personal_grooming_image from "./navbar_assets/personal_grooming_image.png";
 
 // assets import******************
+
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FrontendContext } from "../../context/Frontend_context";
+
+
+import { FrontendContext } from "../../context/FrontendContext";
+
 
 const Navbar = () => {
   const contexts = useContext(FrontendContext);
@@ -137,7 +147,7 @@ const Navbar = () => {
             Buying guides
           </Text>
         </Center>
-
+         
         <Center height="20px">
           <Divider orientation="vertical" />
         </Center>
@@ -200,7 +210,7 @@ const Navbar = () => {
         </Center>
         <Center w="80px" bg="rgb(228,37,41)" gap={"5px"}>
           <ImCart color="white" size={"15px"} />
-
+          <Link to="/cart">
           <Text
             fontSize={"14px"}
             fontWeight={"500"}
@@ -208,12 +218,14 @@ const Navbar = () => {
           >
             Cart
           </Text>
+          </Link>
         </Center>
         <Center height="20px">
           <Divider orientation="vertical" />
         </Center>
         <Center w="70px" bg="rgb(228,37,41)" gap={"5px"}>
           <FaUser color="white" size={"15px"} />
+          <Link to='/login'>
           <Text
             fontSize={"14px"}
             fontWeight={"500"}
@@ -221,6 +233,7 @@ const Navbar = () => {
           >
             Login
           </Text>
+          </Link>
         </Center>
       </Flex>
       <Flex
@@ -443,6 +456,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="200px" h="100%">
+        
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -457,6 +471,7 @@ const Navbar = () => {
              
 
               </Text>
+             
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -655,6 +670,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="120px" h="100%">
+             
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -663,10 +679,16 @@ const Navbar = () => {
                 mb="10px"
                 alignSelf={"start"}
               >
+
           <Link to='/product?category=television'>
                Televisions
           </Link>
           </Text>
+
+                Televisions
+              </Text>
+              
+
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}

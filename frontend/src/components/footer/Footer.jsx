@@ -9,7 +9,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React, { useContext } from "react";
-import { FrontendContext } from "../../context/Frontend_context";
+import { FrontendContext } from "../../context/FrontendContext";
 import "./Footer.css";
 
 import { AiFillFacebook } from "react-icons/ai";

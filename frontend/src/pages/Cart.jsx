@@ -1,12 +1,13 @@
 import {Box,Button, Divider, Flex,Image,Input,InputGroup,InputRightAddon,Spacer,Text} from '@chakra-ui/react'
 import React,{useContext,useEffect,useState } from 'react'
 import {useNavigate} from 'react-router-dom'
+import {FrontendContext} from '../context/FrontendContext'
 const Cart = () => {
 const [show,setShow] = useState(false)
 const [item,setItem] = useState([])
-const [price,setPrice] = useState(0)
+const [price1,setPrice1] = useState(0)
 const navigate = useNavigate()
-const {setCar,pincode,total,settotal,firstName} = useContext(AppContext)
+const {setCar,pincode,total,settotal,firstName} = useContext(FrontendContext)
 const handleDelete=(id)=>{
     let r=JSON.parse(localStorage.getItem("cart"))
     let newarr=r.filter(e=>e.id!==id)
@@ -47,7 +48,7 @@ useEffect(() => {
         <Flex>
         <Text>My Cart ({item.length} Items)</Text>
         <Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/>
-        <Text>Shipping to: 110084 <i class="fa-solid fa-location-dot"></i></Text>
+        <Text>Shipping to: 203393                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <i class="fa-solid fa-location-dot"></i></Text>
         <Spacer/>
         <Button colorScheme='red' variant='solid' width="30%" onClick={handleCheckout}>
         Checkout

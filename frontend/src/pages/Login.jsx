@@ -1,9 +1,11 @@
 import React,{useContext,useState} from 'react'
 import {Box,Input,Button,Text} from '@chakra-ui/react'
 import {useNavigate} from 'react-router-dom'
+import { FrontendContext} from '../context/FrontendContext';
 const Login = () => {
 const navigate = useNavigate();
 const [first,setFirst] = useState(false)
+const {mobile,setMobile} = useContext(FrontendContext)
   return (
     <div style={{height:"300px"}}>
         <br/>

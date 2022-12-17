@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter } from 'react-router-dom';
-import {  FrontendContextProvider } from './context/Frontend_context';
+import {  FrontendContextProvider } from './context/FrontendContext';
 import { store } from './Redux/store';
 import { Provider } from 'react-redux';
 

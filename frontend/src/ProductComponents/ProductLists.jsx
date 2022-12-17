@@ -61,6 +61,7 @@ const ProductLists = () => {
     <>
       {productList.length > 0 && productList.map((product) => {
         return (
+
           
 
           <>
@@ -99,6 +100,19 @@ const ProductLists = () => {
 
          
           </>
+
+          <div key={product.id} className="product-list">
+            <div style={{fontWeight:"bold",fontSize:"16px"}}>{product.title}</div>
+            <div>
+              <img src={product.image} alt={product.title} style={{ height: "200px", width: "100%" }} />
+            </div>
+            {/* <div style={{fontWeight:"bold",fontSize:"16px"}}>{product.category}</div> */}
+            <div>${product.price}</div>
+            <div>
+              <button className='button-product'>BUY NOW</button>
+            </div>
+          </div>
+
         )
       })}
 
