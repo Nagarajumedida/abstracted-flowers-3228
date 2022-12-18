@@ -8,7 +8,7 @@ const PaymentPage = () => {
     const Navigate = useNavigate()
     Navigate("/")
 
-  
+  }
 
   const handleSubmit=()=>{
    
@@ -53,6 +53,6 @@ const PaymentPage = () => {
       </Link>
     </div>
     </>
-  );
+  )
 };
 export default PaymentPage;

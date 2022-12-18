@@ -53,7 +53,7 @@ const CheckOut = () => {
         <button type="submit" onClick={()=>{HandleSubmit()}}><a href="/Payment">Submit</a></button>
 
           <input type="text" name="name" />
-        </FormControl>
+        {/* </FormControl> */}
         <FormControl className="form-row">
           <FormLabel >Address</FormLabel>
           <input type="text" name="address" />

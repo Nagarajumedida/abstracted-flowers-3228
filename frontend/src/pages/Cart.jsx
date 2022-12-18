@@ -139,7 +139,7 @@ useEffect(() => {
             <Divider />
             <Flex justifyContent="space-between" fontWeight="bold">
                 <Text>AMOUNT PAYABLE</Text>
-                <Text>₹{total-1000}</Text>
+                <Text>₹{totalPrice-1000}</Text>
             </Flex>
             </Box>
             </Box>

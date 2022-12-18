@@ -98,15 +98,14 @@ console.log("CART",Items)
 
 
 
-        <Link to="/checkout">
+     
 
         <Box fontSize='xl' className='btnbox' style={{marginTop:"3%"}}>
         <button className='cartbtn' onClick={AddToCart} > ADD TO CART</button>
         <button className='buybtn' onClick={BuyNow}>BUY NOW</button>
          </Box>
 
-         </Link>
-
+      
 
 
 
