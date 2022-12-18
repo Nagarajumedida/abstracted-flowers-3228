@@ -29,7 +29,7 @@ const Register = () => {
     const handle123=()=>{
       if(firstnam!==""&&lastName!==""&&email!=="")
             {
-              setfirstName(firstnam); 
+              setfirstName(firstnam);
               navigate("/");
             }
             else
@@ -56,23 +56,22 @@ const Register = () => {
         }
         <Input placeholder='Mobile Number*' width="90%" value={mobile}/>
         <Text  fontSize='xs'>Your mobile number will be used to avail benefits such as Jio Mart Cashback and ROne Loyality Points and receive quick notifications.
-
 </Text>
        <Link to="/"> <Button colorScheme='red' width="90%" onClick={()=>{
+         alert("Registration Successfully Created")
           if(firstnam!==""&&lastName!==""&&email!=="")
-          {setfirstName(firstnam); 
+          {setfirstName(firstnam);
           toast({
           title: 'Account created.',
           description: "We've created your account for you.",
           status: 'success',
           duration: 9000,
           isClosable: true,
-        }) 
+        })
         navigate("/checkout")
         }
         else
-        setfirst(true)}}>PROCEED</Button> 
-         alert("Registration Successfully Created")
+        setfirst(true)}}>PROCEED</Button>
               </Link>
         <Flex justifyContent="center" alignItems="center" >
         <Text  fontSize='xs'>Already Registered?</Text>

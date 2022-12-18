@@ -1,38 +1,51 @@
 import React from "react";
-
+import {
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  FormHelperText,
+  Heading,
+  Button
+} from '@chakra-ui/react'
+import styles from "./checkOut.module.css"
+import PaymentPage from "./PaymentPage";
+import { Link, useNavigate } from "react-router-dom";
 const CheckOut = () => {
+  const HandleSubmit = ()=>{
+    const Navigate = useNavigate()
+    Navigate("/Payment")
+  }
   return (
     <div className="checkout">
-      <h1>Checkout</h1>
-      <form>
-        <div className="form-row">
-          <label>Name</label>
-          <input type="text" name="name" />
-        </div>
-        <div className="form-row">
-          <label>Address</label>
-          <input type="text" name="address" />
-        </div>
-        <div className="form-row">
-          <label>City</label>
-          <input type="text" name="city" />
-        </div>
-        <div className="form-row">
-          <label>State</label>
-          <input type="text" name="state" />
-        </div>
-        <div className="form-row">
-          <label>Zip Code</label>
-          <input type="text" name="zip" />
-        </div>
-        <div className="form-row">
-          <label>Credit Card Number</label>
-          <input type="text" name="credit-card" />
-        </div>
-        <button type="submit">Submit</button>
+      <form className={styles.checkoutContainer} >
+      <Heading as='h3' >Checkout</Heading>
+        <FormControl >
+          <FormLabel >Name</FormLabel>
+          <input type="text" name="name" required/>
+        </FormControl>
+        <FormControl className="form-row">
+          <FormLabel >Address</FormLabel>
+          <input type="text" name="address" required/>
+        </FormControl>
+        <FormControl className="form-row">
+          <FormLabel >City</FormLabel>
+          <input type="text" name="city" required/>
+        </FormControl>
+        <FormControl className="form-row">
+          <FormLabel >State</FormLabel>
+          <input type="text" name="state" required/>
+        </FormControl>
+        <FormControl className="form-row">
+          <FormLabel>Zip Code</FormLabel>
+          <input type="text" name="zip" required/>
+        </FormControl>
+        <FormControl className="form-row">
+          <FormLabel>Credit Card Number</FormLabel>
+          <input type="text" name="credit-card" required/> <br/>
+        </FormControl>
+        <button type="submit" onClick={()=>{HandleSubmit()}}><a href="/Payment">Submit</a></button>
       </form>
     </div>
   );
 };
-
 export default CheckOut;

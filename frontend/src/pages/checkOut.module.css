@@ -1,19 +1,18 @@
-.checkout-container {
+.checkoutContainer {
+  border: 1px solid grey;
     width: 400px;
     padding: 20px;
+    margin-left: 50px;
   }
-  
   .form-group {
     margin-bottom: 20px;
   }
-  
   label {
     display: block;
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-weight: bold;
   }
-  
   input {
     width: 100%;
     padding: 10px;
@@ -21,7 +20,6 @@
     border-radius: 4px;
     font-size: 1rem;
   }
-  
   button {
     width: 100%;
     padding: 10px;
@@ -33,3 +31,7 @@
     border-radius: 4px;
     cursor: pointer;
   }
+
+
+
+

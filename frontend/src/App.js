@@ -27,15 +27,11 @@ function App() {
  <Navbar/>
 
   <MainRoutes/>
-  {/* <Mobile/> */}
+ 
  
 
 <Footer/>
 
-
- {/* <Register/> */}
-
- <Footer/>
 
 
     </>

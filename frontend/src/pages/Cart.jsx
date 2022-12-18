@@ -7,9 +7,27 @@ const [show,setShow] = useState(false)
 const [item,setItem] = useState([])
 const [price1,setPrice1] = useState(0)
 const navigate = useNavigate()
+const [totalPrice,setTotalPrice]=useState(0)
 const {setCar,pincode,total,settotal,firstName} = useContext(FrontendContext)
+
+
+console.log("showitem",item)
+
+useEffect(()=>{
+    
+    let p = 0;
+   
+    item.forEach(el => {
+        p += Number(el.price)
+    })
+    setTotalPrice(p)
+},[item])
+
+
+
 const handleDelete=(id)=>{
     let r=JSON.parse(localStorage.getItem("cart"))
+    
     let newarr=r.filter(e=>e.id!==id)
     localStorage.setItem("cart",JSON.stringify(newarr))
     setItem(newarr)
@@ -22,12 +40,14 @@ const handleDelete=(id)=>{
 }
 const handleAdd=(val,id)=>{
     let r=JSON.parse(localStorage.getItem("cart"))
+    
     let tot=0;
+
     for(let i=0;i<r.length;++i)
     {
         if(r[i].id===id)
         r[i].qty+=val;
-        tot=tot+(r[i].qty*r[i].price)
+        tot=tot+Number(r[i].qty*Number(r[i].price))
     }
     settotal(tot)
     setItem(r)
@@ -102,7 +122,7 @@ useEffect(() => {
             <br/>
             <Flex justifyContent="space-between">
                 <Text>Price({item.length}Items)</Text>
-                <Text>₹{total}</Text>
+                <Text>₹{totalPrice}</Text>
             </Flex>
             <br/>
             <Flex justifyContent="space-between">
