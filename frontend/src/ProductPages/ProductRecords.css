@@ -7,17 +7,19 @@ display: flex;
 }
 
 .filter{
-    width: 10%;
+    width: 25%;
 }
 
 .products{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    column-gap:3%;
+    row-gap: 30px;
 }
 
 .allproducts{
-    width: 70%;
+    width: 74%;
 }
 
 .sortbtn{

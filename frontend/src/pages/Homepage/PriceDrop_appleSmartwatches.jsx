@@ -196,6 +196,7 @@ export default function PriceDrop_appleSmartwatches() {
   const cards = PriceDrop_appleSmartwatches_Array;
 
   return (
+    <Link to='/product'>
     <Box>
       <Text
         fontSize={"20px"}
@@ -977,5 +978,6 @@ export default function PriceDrop_appleSmartwatches() {
         </Box>
       </Box>
     </Box>
+    </Link>
   );
 }

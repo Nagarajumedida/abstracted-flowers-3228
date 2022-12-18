@@ -44,12 +44,12 @@ setName(category[index])
 
     return (
         <Box className='mainbox'> 
-     <WrapperFilterSort>
+     
+     <Show above='850px'  className='filter'>
                 <FilterSort />
-            </WrapperFilterSort>
-            {/* <Show above='850px' className='filter'>
-                <FilterSort/>
-            </Show> */}
+                </Show>
+           
+           
    
       <Box className='allproducts'>
         <Box >
@@ -87,7 +87,5 @@ const Wrapper = styled.div`
 
 const WrapperFilterSort = styled.div`
  width:29%;
-
-
 `;
 

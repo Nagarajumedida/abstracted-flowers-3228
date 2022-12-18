@@ -44,7 +44,7 @@ import { FaUsb } from "react-icons/fa";
 import { MdTabletMac } from "react-icons/md";
 import { BsCameraFill } from "react-icons/bs";
 import { ImSpoonKnife } from "react-icons/im";
-import {Link} from "react-router-dom"
+
 
 // icons import******************
 
@@ -55,7 +55,7 @@ import laptops_menu_image from "./navbar_assets/laptops_menu_image.png";
 import personal_grooming_image from "./navbar_assets/personal_grooming_image.png";
 
 // assets import******************
-
+import { Link } from "react-router-dom";
 import { FrontendContext } from "../../context/FrontendContext";
 
 const Navbar = () => {
@@ -147,9 +147,16 @@ const Navbar = () => {
         pr="20px"
         alignItems={"center"}
       >
+
+    <Link to='/'>    <Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
+          <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
+        </Box>
+        </Link>
+
         <Link to="/"><Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
           <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
         </Box></Link>
+
 
         <Box
           flex="0.7"
@@ -420,6 +427,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="200px" h="100%">
+              <Link to="/mobiles">
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -430,6 +438,7 @@ const Navbar = () => {
               >
                 Smartphones
               </Text>
+              </Link>
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -627,7 +636,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="120px" h="100%">
-              <Text
+             <Link to="/television"> <Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -637,6 +646,7 @@ const Navbar = () => {
               >
                 Televisions
               </Text>
+              </Link>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -810,7 +820,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
-              <Text
+             <Link to="/headsets"> <Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -819,7 +829,7 @@ const Navbar = () => {
                 alignSelf={"start"}
               >
                 Headphones & Headsets
-              </Text>
+              </Text></Link>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -1012,7 +1022,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
-              <Text
+             <Link to="/homeproducts"><Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -1021,7 +1031,7 @@ const Navbar = () => {
                 alignSelf={"start"}
               >
                 Air Conditioners
-              </Text>
+              </Text></Link>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -1587,7 +1597,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
-              <Text
+             <Link to="/computers"> <Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -1596,7 +1606,7 @@ const Navbar = () => {
                 alignSelf={"start"}
               >
                 Laptops
-              </Text>
+              </Text></Link>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -1970,7 +1980,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
-              <Text
+              <Link to="/camera"><Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -1979,7 +1989,7 @@ const Navbar = () => {
                 alignSelf={"start"}
               >
                 DSLR Cameras
-              </Text>
+              </Text></Link>
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -2145,6 +2155,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
+              <Link to="/kitchen">
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -2155,6 +2166,7 @@ const Navbar = () => {
               >
                 Microwave Ovens
               </Text>
+              </Link>
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -2432,6 +2444,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
+              <Link to="/personal">
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -2442,6 +2455,7 @@ const Navbar = () => {
               >
                 Shavers & Trimmers
               </Text>
+              </Link>
               <Text
                 fontSize={"16px"}
                 color={"white"}
@@ -5206,6 +5220,7 @@ const Navbar = () => {
                           </AccordionButton>
                         </h2>
                         <AccordionPanel pb={4}>
+                          
                         <Text
                           letterSpacing={"1px"}
                             fontSize={"15px"}
@@ -5220,6 +5235,7 @@ const Navbar = () => {
                           >
                             Smartphones
                           </Text>
+                         
                           <Text
                           letterSpacing={"1px"}
                             fontSize={"15px"}
@@ -5262,6 +5278,7 @@ const Navbar = () => {
                           >
                             Apple Price Drop
                           </Text>
+                          <Link to="/accessories">
                           <Text
                           letterSpacing={"1px"}
                             fontSize={"15px"}
@@ -5276,6 +5293,7 @@ const Navbar = () => {
                           >
                             Accessories
                           </Text>
+                          </Link>
                           <Text
                           letterSpacing={"-0.5px"}
                           ml="20px"
