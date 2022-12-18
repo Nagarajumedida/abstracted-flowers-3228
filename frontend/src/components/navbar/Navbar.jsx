@@ -44,7 +44,7 @@ import { FaUsb } from "react-icons/fa";
 import { MdTabletMac } from "react-icons/md";
 import { BsCameraFill } from "react-icons/bs";
 import { ImSpoonKnife } from "react-icons/im";
-import {Link} from "react-router-dom"
+
 
 // icons import******************
 
@@ -153,9 +153,7 @@ const Navbar = () => {
         </Box>
         </Link>
 
-        <Link to="/"><Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
-          <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
-        </Box></Link>
+      
 
 
         <Box
@@ -176,14 +174,17 @@ const Navbar = () => {
             />
           </InputGroup>
         </Box>
-        <Center w="150px" bg={main_red_color}>
+        <Center w="70px" bg="rgb(228,37,41)" gap={"5px"}>
+          <FaUser color="white" size={"15px"} />
+          <Link to="/login">
           <Text
             fontSize={"14px"}
             fontWeight={"500"}
             _hover={{ cursor: "pointer" }}
           >
-            Select your PIN Code
+            Admin
           </Text>
+          </Link>
         </Center>
         <Center height="20px">
           <Divider orientation="vertical" />
