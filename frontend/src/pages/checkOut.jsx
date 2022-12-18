@@ -1,36 +1,53 @@
 import React from "react";
+import {
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  FormHelperText,
+  Heading,
+  Button
+} from '@chakra-ui/react'
+import styles from "./checkOut.module.css"
+import PaymentPage from "./paymentPage";
+import { Link } from "react-router-dom";
+
 
 const CheckOut = () => {
   return (
     <div className="checkout">
-      <h1>Checkout</h1>
-      <form>
-        <div className="form-row">
-          <label>Name</label>
+      <form className={styles.checkoutContainer} >
+      <Heading as='h3' >Checkout</Heading>
+        <FormControl >
+          <FormLabel >Name</FormLabel>
           <input type="text" name="name" />
-        </div>
-        <div className="form-row">
-          <label>Address</label>
+        </FormControl>
+        <FormControl className="form-row">
+          <FormLabel >Address</FormLabel>
           <input type="text" name="address" />
-        </div>
-        <div className="form-row">
-          <label>City</label>
+        </FormControl>
+        <FormControl className="form-row">
+          <FormLabel >City</FormLabel>
           <input type="text" name="city" />
-        </div>
-        <div className="form-row">
-          <label>State</label>
+        </FormControl>
+        <FormControl className="form-row">
+          <FormLabel >State</FormLabel>
           <input type="text" name="state" />
-        </div>
-        <div className="form-row">
-          <label>Zip Code</label>
+        </FormControl>
+        <FormControl className="form-row">
+          <FormLabel>Zip Code</FormLabel>
           <input type="text" name="zip" />
-        </div>
-        <div className="form-row">
-          <label>Credit Card Number</label>
-          <input type="text" name="credit-card" />
-        </div>
-        <button type="submit">Submit</button>
+        </FormControl>
+        <FormControl className="form-row">
+          <FormLabel>Credit Card Number</FormLabel>
+          <input type="text" name="credit-card" /> <br/>
+          
+        </FormControl>
+        
+        <Link to="/payment"><button type="submit">Submit</button></Link>
+      
       </form>
+
+      
     </div>
   );
 };

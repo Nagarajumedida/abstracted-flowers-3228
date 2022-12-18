@@ -1,6 +1,8 @@
-.checkout-container {
+.checkoutContainer {
+  border: 1px solid grey;
     width: 400px;
     padding: 20px;
+    margin-left: 50px;
   }
   
   .form-group {

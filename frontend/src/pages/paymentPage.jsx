@@ -82,33 +82,52 @@
 
 
 
+import { FormControl, FormLabel, Heading } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
 const PaymentPage = () => {
+  
+
+  const handleSubmit=()=>{
+   
+    alert("Your order has been placed")
+   
+   
+  }
   return (
-    <div>
-      <h1>Payment Page</h1>
-      <p>Please enter your payment details here:</p>
+    <>
+    <div style={{ width:"40%" , margin:"auto", marginTop:"50px", marginBottom:"50px"}}>
+    <Heading as={"h3"} >Payment Page</Heading>
+    <Heading as={"h6"} >Please enter your payment details here:</Heading>
+    </div>
+    <div style={{border:"1px solid grey", width:"60%" , margin:"auto", marginTop:"50px", marginBottom:"50px"}} >
+     
       <form>
-        <label>
+        <FormControl>
+        <FormLabel>
           Credit Card Number:
           <input type="text" name="ccNumber" />
-        </label>
-        <label>
+        </FormLabel>
+        </FormControl>
+        <FormControl>
+        <FormLabel>
           Security Code:
           <input type="text" name="securityCode" />
-        </label>
-        <label>
+        </FormLabel>
+        </FormControl>
+        <FormControl>
+        <FormLabel>
           Expiration Date:
           <input type="date" name="expirationDate" />
-        </label>
-        <input type="submit" value="Submit" />
+        </FormLabel>
+        </FormControl>
       </form>
-      <Link to="/confirmation">
-        <button>Next</button>
+      <Link to="/">
+        <button onClick={()=> handleSubmit()}>Submit</button>
       </Link>
     </div>
+    </>
   );
 };
 
