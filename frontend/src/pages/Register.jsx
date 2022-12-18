@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState } from 'react'
 import { Box,Input,Button,Text,Flex, useToast } from '@chakra-ui/react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,Link } from 'react-router-dom'
 import { FrontendContext} from '../context/FrontendContext';
 const Register = () => {
     const navigate=useNavigate();
@@ -58,7 +58,7 @@ const Register = () => {
         <Text  fontSize='xs'>Your mobile number will be used to avail benefits such as Jio Mart Cashback and ROne Loyality Points and receive quick notifications.
 
 </Text>
-        <Button colorScheme='red' width="90%" onClick={()=>{
+       <Link to="/"> <Button colorScheme='red' width="90%" onClick={()=>{
           if(firstnam!==""&&lastName!==""&&email!=="")
           {setfirstName(firstnam); 
           toast({
@@ -71,12 +71,14 @@ const Register = () => {
         navigate("/checkout")
         }
         else
-        setfirst(true)}}>PROCEED</Button>
+        setfirst(true)}}>PROCEED</Button> 
+         alert("Registration Successfully Created")
+              </Link>
         <Flex justifyContent="center" alignItems="center" >
-        <Text  fontSize='xs'>Already registered?</Text>
-        <Button colorScheme='red' variant='link'>
+        <Text  fontSize='xs'>Already Registered?</Text>
+        <Link to="/login"><Button colorScheme='red' variant='link'>
             LOGIN
-        </Button>
+        </Button></Link>
         </Flex>
         <br/>
         </Box>

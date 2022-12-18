@@ -8,6 +8,7 @@ import {
   Flex,
   IconButton,
   Image,
+  Link,
   Square,
   Text,
   useBreakpointValue,
@@ -292,6 +293,7 @@ export default function PriceDrop_appleSmartwatches() {
             <Box w="100%" m="auto" h="auto" >
               <Slider {...settings} ref={(slider) => setSlider(slider)}>
                 {cards.map((item, index) => (
+                 
                   <Box key={item} w="24%" pl="20px" pt="10px" h="auto">
                     <Box w="90%" >
                       <Image
@@ -327,6 +329,7 @@ export default function PriceDrop_appleSmartwatches() {
                       </Badge>
                     </Box>
                   </Box>
+                  
                 ))}
               </Slider>
             </Box>
