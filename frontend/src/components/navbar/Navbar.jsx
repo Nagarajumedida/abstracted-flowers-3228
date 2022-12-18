@@ -44,7 +44,7 @@ import { FaUsb } from "react-icons/fa";
 import { MdTabletMac } from "react-icons/md";
 import { BsCameraFill } from "react-icons/bs";
 import { ImSpoonKnife } from "react-icons/im";
-
+import {Link} from "react-router-dom"
 
 // icons import******************
 
@@ -55,7 +55,7 @@ import laptops_menu_image from "./navbar_assets/laptops_menu_image.png";
 import personal_grooming_image from "./navbar_assets/personal_grooming_image.png";
 
 // assets import******************
-import { Link } from "react-router-dom";
+
 import { FrontendContext } from "../../context/FrontendContext";
 
 const Navbar = () => {
@@ -153,8 +153,7 @@ const Navbar = () => {
         </Box>
         </Link>
 
-        
-
+      
 
         <Box
           flex="0.7"
@@ -174,17 +173,14 @@ const Navbar = () => {
             />
           </InputGroup>
         </Box>
-        <Center w="70px" bg="rgb(228,37,41)" gap={"5px"}>
-          <FaUser color="white" size={"15px"} />
-          <Link to="http://localhost:7500">
+        <Center w="150px" bg={main_red_color}>
           <Text
             fontSize={"14px"}
             fontWeight={"500"}
             _hover={{ cursor: "pointer" }}
           >
-           Admin 
+            Select your PIN Code
           </Text>
-          </Link>
         </Center>
         <Center height="20px">
           <Divider orientation="vertical" />

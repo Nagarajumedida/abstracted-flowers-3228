@@ -6,6 +6,9 @@ import ReactImageMagnify from "react-image-magnify";
 import { Box, Button, Divider, Flex, Heading,ListItem,Text, UnorderedList } from '@chakra-ui/react';
 import "./SingleProduct.css"
 
+
+
+
 const SingleProduct = () => {
     const [data,setData]=useState([])
    // const [inputData,setInputData]=useState('')
@@ -14,6 +17,7 @@ const SingleProduct = () => {
     const [show,setshow]=useState(true)
     const[Items,setItems]=useState([])
 
+  
 
     const GetFunc=()=>{
         return axios.get(`http://localhost:8080/product/${id}`) 
@@ -92,12 +96,18 @@ console.log("CART",Items)
         (₹{Number(Math.floor(data.price*(Math.random()*15 + 10)/100))})</Text>
         </Box>
 
-{/* <Link to="/checkout"> */}
+
+
+        <Link to="/checkout">
+
         <Box fontSize='xl' className='btnbox' style={{marginTop:"3%"}}>
         <button className='cartbtn' onClick={AddToCart} > ADD TO CART</button>
         <button className='buybtn' onClick={BuyNow}>BUY NOW</button>
          </Box>
-         {/* </Link> */}
+
+         </Link>
+
+
 
 
 

@@ -18,14 +18,25 @@ import Personal from '../SingleComponents/Personal'
 import Accessories from '../SingleComponents/Accessories'
 import HomeProducts from '../SingleComponents/HomeNeed'
 import SingleProduct from '../ProductComponents/SingleProduct'
+
 import PaymentPage from '../pages/PaymentPage'
+
+
+
+
+
 const MainRoutes = () => {
   return (
     <Routes>
          <Route path='/' element={<Home/>}/>
         <Route path='/product' element={<ProductRecords/>}/>
         <Route path="/checkout" element={<CheckOut/>}/>
+
         <Route path="/Payment" element = {<PaymentPage/>}/>
+
+        <Route path="/payment" element = {<PaymentPage/>}/>
+
+
         {/* <Route path='/product?category=television' element={<ProductRecords/>}/>
         <Route path='/product?category=mobile' element={<ProductRecords/>}/> */}
 {/*
@@ -36,6 +47,7 @@ const MainRoutes = () => {
         <Route path="*" element={<h3>Page Not Found</h3>}/>
         <Route path='/login' element={<Login/>}/>
          <Route path='/cart' element={<Cart/>}/>
+
          <Route path="mobiles" element={<Mobile/>}/>
          <Route path="television" element={<Television/>}/>
          <Route path="headsets" element={<Headsets/>}/>
@@ -45,6 +57,7 @@ const MainRoutes = () => {
          <Route path="/kitchen" element={<Kitchen/>}/>
          <Route path="/personal" element={<Personal/>}/>
          <Route path="/accessories" element={<Accessories/>}/>
+
          <Route path="/register" element={<Register/>}/>
         <Route/>
     </Routes>

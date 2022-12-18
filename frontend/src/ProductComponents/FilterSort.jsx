@@ -45,7 +45,7 @@ export const FilterSort = () => {
         const params = {};
         categoryType && (params.category = categoryType);
         // genderType && (params.gender = genderType) 
-        // sortBy && (params.sortBy = sortBy);
+        sortBy && (params.sortBy = sortBy);
          setSearchParams(params)
 
     }, [categoryType, setSearchParams, sortBy])
