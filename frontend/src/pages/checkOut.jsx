@@ -1,6 +1,6 @@
 import React from "react";
 
-const Checkout = () => {
+const CheckOut = () => {
   return (
     <div className="checkout">
       <h1>Checkout</h1>
@@ -35,4 +35,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default CheckOut;

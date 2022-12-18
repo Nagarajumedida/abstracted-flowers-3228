@@ -7,7 +7,7 @@ import Home from "../pages/Homepage/Homepage"
 import Login from "../pages/Login"
 import Cart from "../pages/Cart"
 import Register from '../pages/Register'
-import { CheckOut } from '../pages/CheckOut'
+import  CheckOut from '../pages/CheckOut'
 
 const MainRoutes = () => {
   return (
