@@ -31,8 +31,8 @@ const MainRoutes = () => {
         <Route path="/product/:id" element={<SingleProductRecord/>}/>
         <Route path="/product/:id/edit" element={<EditProductPage/>}/> */}
 
-        {/* <Route path="/product/:id" element={<SingleProductRecord/>}/> */}
-        {/* <Route path="/product/:id/edit" element={<EditProductPage/>}/> */}
+      {/* <Route path="/product/:id" element={<SingleProductRecord/>}/> */}
+      {/* <Route path="/product/:id/edit" element={<EditProductPage/>}/> */}
 
         <Route path="*" element={<h3>Page Not Found</h3>}/>
         <Route path='/login' element={<Login/>}/>

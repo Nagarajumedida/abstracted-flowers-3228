@@ -4,8 +4,7 @@ import { useLocation, useSearchParams } from 'react-router-dom'
 import { Box,Image,Text,Checkbox,Button,Flex,Center,Divider } from '@chakra-ui/react'
 import { BsSuitHeartFill,BsSuitHeart } from "react-icons/bs"
 
-
-import { getProductList } from '../Redux/action'
+import { getProductList  } from '../Redux/action'
 import "./ProductList.css"
 const ProductLists = () => {
   const [heart,setHeart]=useState(true)
@@ -15,15 +14,9 @@ const ProductLists = () => {
 
   const productList = useSelector((store) => store.product)
   const location = useLocation()
-  // console.log(store)
- 
- 
 
-
-
-
-  const onClickHeart=()=>{
-      setHeart(!heart)
+  const onClickHeart = () => {
+    setHeart(!heart)
   }
 
 
@@ -57,12 +50,15 @@ const ProductLists = () => {
 
 
 
+
+
+
   return (
     <>
       {productList.length > 0 && productList.map((product) => {
         return (
 
-          
+
 
           <>
       <Box key={product.id} className='oneProductCard'>
@@ -82,9 +78,10 @@ const ProductLists = () => {
     height:"20px"}} fontSize="11px">OFFERS AVAILABLE</Button></Box>
     </Box>
 
-    <Box fontSize='lg' 
-    style={{display:"grid",border:"1px solid rgb(223, 220, 220)",
-    alignItems:"center",padding:"2%",
+              <Box fontSize='lg'
+                style={{
+                  display: "grid", border: "1px solid rgb(223, 220, 220)",
+                  alignItems: "center", padding: "2%",
 
     gridTemplateColumns:"repeat(3,1fr)",textAlign:"center"}}>
       <Box><Checkbox colorScheme='blue'><Text>Compare</Text></Checkbox></Box>
@@ -101,7 +98,7 @@ const ProductLists = () => {
          
           </>
 
-        
+
 
         )
       })}

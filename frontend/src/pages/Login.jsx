@@ -11,8 +11,8 @@ const {mobile,setMobile} = useContext(FrontendContext)
         <br/>
         <Box marginLeft="60%" width="500px" boxShadow='md' display="flex" flexDirection="column" height="250px" justifyContent="space-around" alignItems="center">
         <Text fontWeight="bold">Login/Register</Text>
-        <Input type="number" placeholder='Enter Mobile Number' width="90%" onChange={(e)=>setMobile(e.target.value)}/>
-        {first&&<Text color="red" fontSize='sm'>Mobile number is necessary</Text>}
+        <Input minlength="10" maxlength="13" type="number" placeholder='Enter Mobile Number' width="90%" onChange={(e)=>setMobile(e.target.value)}/>
+        {first&&<Text color="red" fontSize='sm'>Mobile number is Necessary</Text>}
        <Link to="/register"> <Button colorScheme='red' width="90%" onClick={()=>{
           if(mobile.length!==0)
             navigate("/register")
