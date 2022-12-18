@@ -7,6 +7,17 @@ import Home from "../pages/Homepage/Homepage"
 import Login from "../pages/Login"
 import Cart from "../pages/Cart"
 import Register from '../pages/Register'
+import Mobile from '../SingleComponents/Mobile'
+import Television from '../SingleComponents/Television'
+import Headsets from '../SingleComponents/Headset'
+
+import Camera from '../SingleComponents/Camera'
+import Computer from '../SingleComponents/Computers'
+import Kitchen from '../SingleComponents/Kitchen'
+import Personal from '../SingleComponents/Personal'
+import Accessories from '../SingleComponents/Accessories'
+import HomeProducts from '../SingleComponents/HomeNeed'
+
 
 const MainRoutes = () => {
   return (
@@ -26,6 +37,22 @@ const MainRoutes = () => {
         <Route path="*" element={<h3>Page Not Found</h3>}/>
         <Route path='/login' element={<Login/>}/>
          <Route path='/cart' element={<Cart/>}/>
+
+
+         <Route path="mobiles" element={<Mobile/>}/>
+         <Route path="television" element={<Television/>}/>
+         <Route path="headsets" element={<Headsets/>}/>
+         <Route path="/homeproducts" element={<HomeProducts/>}/>
+         <Route path="/camera" element={<Camera/>}/>
+         <Route path="/Computers" element={<Computer/>}/>
+         <Route path="/kitchen" element={<Kitchen/>}/>
+         <Route path="/personal" element={<Personal/>}/>
+         <Route path="/accessories" element={<Accessories/>}/>
+
+
+
+         
+        
          <Route path="/register" element={<Register/>}/>
         <Route/>
   
