@@ -259,7 +259,7 @@ export default function PriceDrop_appleSmartwatches() {
                 w="40px"
                 ml="-15px"
                 backgroundColor={"rgb(202,233,248)"}
-                display={["none", "none", "none", "none", "flex", "flex"]}
+                display={["none", "none", "none", "none", "none", "none"]}
                 alignItems={"center"}
                 border="1px"
                 borderColor={"rgb(0, 170, 255)"}
@@ -284,7 +284,7 @@ export default function PriceDrop_appleSmartwatches() {
                 w="40px"
                 mr="-15px"
                 backgroundColor={"rgb(202,233,248)"}
-                display={["none", "none", "none", "none", "flex", "flex"]}
+                display={["none", "none", "none", "none", "none", "none"]}
                 alignItems={"center"}
                 border="1px"
                 borderColor={"rgb(0, 170, 255)"}

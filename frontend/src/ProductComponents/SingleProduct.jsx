@@ -11,9 +11,11 @@ import "./SingleProduct.css"
 
 const SingleProduct = () => {
     const [data,setData]=useState([])
+   // const [inputData,setInputData]=useState('')
     const {id}=useParams()
     const dispatch=useDispatch();
     const [show,setshow]=useState(true)
+    const[Items,setItems]=useState([])
 
   
 
@@ -24,11 +26,31 @@ const SingleProduct = () => {
     useEffect(()=>{
             GetFunc()
             .then((res)=>{setData(res.data)
+              // setInputData(res.data)
            })
             .catch((err)=>console.log(err))
     
     },[id]);
 
+    const AddToCart=()=>{
+    
+     setItems([...Items,data])
+  alert("Item added to Cart")
+    }
+
+    useEffect(()=>{
+      localStorage.setItem("cart",JSON.stringify(Items))
+    },[Items])
+ 
+
+ const BuyNow=()=>{
+  localStorage.removeItem('cart');
+  setItems([])
+ }
+
+
+
+console.log("CART",Items)
 
 
  console.log("data",data)
@@ -75,12 +97,16 @@ const SingleProduct = () => {
         </Box>
 
 
+
         <Link to="/checkout">
+
         <Box fontSize='xl' className='btnbox' style={{marginTop:"3%"}}>
-        <button className='cartbtn' > ADD TO CART</button>
-        <button className='buybtn'>BUY NOW</button>
+        <button className='cartbtn' onClick={AddToCart} > ADD TO CART</button>
+        <button className='buybtn' onClick={BuyNow}>BUY NOW</button>
          </Box>
+
          </Link>
+
 
 
 
