@@ -25,11 +25,7 @@ function App() {
     <>
 
  <Navbar/>
-
   <MainRoutes/>
- 
- 
-
 <Footer/>
 
 
