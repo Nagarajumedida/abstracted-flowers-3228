@@ -27,7 +27,7 @@ const SingleProduct = () => {
 
 
 
-// console.log("data",data)
+ console.log("data",data)
 
   return (<>
     <Box className='main'>

@@ -7,6 +7,9 @@ import Home from "../pages/Homepage/Homepage"
 import Login from "../pages/Login"
 import Cart from "../pages/Cart"
 import Register from '../pages/Register'
+
+import  CheckOut from '../pages/CheckOut'
+
 import Mobile from '../SingleComponents/Mobile'
 import Television from '../SingleComponents/Television'
 import Headsets from '../SingleComponents/Headset'
@@ -17,6 +20,8 @@ import Kitchen from '../SingleComponents/Kitchen'
 import Personal from '../SingleComponents/Personal'
 import Accessories from '../SingleComponents/Accessories'
 import HomeProducts from '../SingleComponents/HomeNeed'
+import SingleProduct from '../ProductComponents/SingleProduct'
+
 
 
 const MainRoutes = () => {
@@ -31,7 +36,7 @@ const MainRoutes = () => {
         <Route path="/product/:id" element={<SingleProductRecord/>}/>
         <Route path="/product/:id/edit" element={<EditProductPage/>}/> */}
 
-      {/* <Route path="/product/:id" element={<SingleProductRecord/>}/> */}
+      <Route path="/product/:id" element={<SingleProduct/>}/>
       {/* <Route path="/product/:id/edit" element={<EditProductPage/>}/> */}
 
         <Route path="*" element={<h3>Page Not Found</h3>}/>

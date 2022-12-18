@@ -13,6 +13,7 @@ import Ipad_10th_gen from "./homepage assets/productSlider_Homepage_2/iPad-10th-
 // icons import*******************
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 // icons import*******************
 // Settings for the slider
@@ -42,7 +43,7 @@ export default function Apple_Carousel() {
   const cards = [Airpods_pro_Sale,Ipad_10th_gen,Ipad_pro_SAle];
 
   return (
-    <Box>
+  <Link to='/product'>  <Box>
       <Box position={"relative"} height={"auto"} overflow={"hidden"} m="auto">
         {/* CSS files for react-slick */}
         <link
@@ -118,5 +119,6 @@ export default function Apple_Carousel() {
         </Box>
       </Box>
     </Box>
+    </Link>
   );
 }

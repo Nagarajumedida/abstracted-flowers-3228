@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useLocation, useSearchParams } from 'react-router-dom'
+import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import { Box, Image, Text, Checkbox, Button, Heading, Flex, Center, Divider } from '@chakra-ui/react'
 import { BsSuitHeartFill, BsSuitHeart } from "react-icons/bs"
 
@@ -64,7 +64,7 @@ const AccessoriesData = () => {
             {productList.length > 0 && productList.map((product) => {
                 if (product.category == "accessories") {
                     return (
-
+                        <Link to={`/product/${product.id}`}>
                         <Box key={product.id} className='oneProductCard'>
                             <Box className='oneProd'>
                                 <Box className='imgBox'>
@@ -101,6 +101,7 @@ const AccessoriesData = () => {
                                     {!heart ? <BsSuitHeartFill /> : <BsSuitHeart />}Wishlist </Box>
                             </Box>
                         </Box>
+                        </Link>
 
                     )
                 }

@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useLocation, useSearchParams } from 'react-router-dom'
+import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import { Box,Image,Text,Checkbox,Button,Flex,Center,Divider } from '@chakra-ui/react'
 import { BsSuitHeartFill,BsSuitHeart } from "react-icons/bs"
+
 
 import { getProductList  } from '../Redux/action'
 import "./ProductList.css"
 const ProductLists = () => {
-  const [heart,setHeart]=useState(true)
+
+  const [heart, setHeart] = useState(true)
+
+
+
 
   const dispatch = useDispatch()
   const [searchParams] = useSearchParams()
@@ -49,7 +54,7 @@ const ProductLists = () => {
 
 
 
-
+console.log("prodlist",productList)
 
 
 
@@ -60,7 +65,7 @@ const ProductLists = () => {
 
 
 
-          <>
+          <> <Link to={`/product/${product.id}`}>
       <Box key={product.id} className='oneProductCard'>
    <Box className='oneProd'>
     <Box className='imgBox'>
@@ -95,7 +100,7 @@ const ProductLists = () => {
        </Box>
    </Box>
 
-         
+   </Link>
           </>
 
 

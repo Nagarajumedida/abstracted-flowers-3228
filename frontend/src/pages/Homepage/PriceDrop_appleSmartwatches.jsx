@@ -31,6 +31,9 @@ import ApplefitnessRedtip from "./homepage assets/homepage_product_slider/appleP
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 
+
+
+
 // icons import*******************
 // Settings for the slider
 const settings = {
@@ -196,6 +199,7 @@ export default function PriceDrop_appleSmartwatches() {
   const cards = PriceDrop_appleSmartwatches_Array;
 
   return (
+    <Link to='/product'>
     <Box>
       <Text
         fontSize={"20px"}
@@ -977,5 +981,6 @@ export default function PriceDrop_appleSmartwatches() {
         </Box>
       </Box>
     </Box>
+    </Link>
   );
 }

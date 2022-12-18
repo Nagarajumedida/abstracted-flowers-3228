@@ -1,4 +1,5 @@
 //
+import { Link } from "react-router-dom";
 
 import React from "react";
 import {
@@ -195,7 +196,8 @@ export default function Carousel_products_only() {
   const cards = PriceDrop_appleSmartwatches_Array;
 
   return (
-    <Box>
+    <Link to="/product"><Box>
+       
       <Text
         fontSize={"20px"}
         fontWeight="350"
@@ -931,5 +933,6 @@ export default function Carousel_products_only() {
         </Box>
       </Box>
     </Box>
+    </Link>
   );
 }
