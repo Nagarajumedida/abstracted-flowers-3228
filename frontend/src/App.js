@@ -17,6 +17,7 @@ import Footer from './components/footer/Footer';
 
 import Register from './pages/Register';
 import Mobile from './SingleComponents/Mobile';
+import Cart from './pages/Cart';
 
 
 
@@ -27,6 +28,7 @@ function App() {
  <Navbar/>
 
   <MainRoutes/>
+
   {/* <Mobile/> */}
  
 

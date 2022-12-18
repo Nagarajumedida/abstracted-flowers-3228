@@ -1,10 +1,13 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import ReactImageMagnify from "react-image-magnify";
 import { Box, Button, Divider, Flex, Heading,ListItem,Text, UnorderedList } from '@chakra-ui/react';
 import "./SingleProduct.css"
+
+
+
 
 const SingleProduct = () => {
     const [data,setData]=useState([])
@@ -12,6 +15,7 @@ const SingleProduct = () => {
     const dispatch=useDispatch();
     const [show,setshow]=useState(true)
 
+  
 
     const GetFunc=()=>{
         return axios.get(`http://localhost:8080/product/${id}`) 
@@ -70,10 +74,13 @@ const SingleProduct = () => {
         (₹{Number(Math.floor(data.price*(Math.random()*15 + 10)/100))})</Text>
         </Box>
 
+
+        <Link to="/checkout">
         <Box fontSize='xl' className='btnbox' style={{marginTop:"3%"}}>
         <button className='cartbtn' > ADD TO CART</button>
         <button className='buybtn'>BUY NOW</button>
          </Box>
+         </Link>
 
 
 
