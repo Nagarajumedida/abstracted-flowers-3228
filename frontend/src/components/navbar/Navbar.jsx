@@ -54,7 +54,7 @@ import laptops_menu_image from "./navbar_assets/laptops_menu_image.png";
 import personal_grooming_image from "./navbar_assets/personal_grooming_image.png";
 
 // assets import******************
-
+import { Link } from "react-router-dom";
 import { FrontendContext } from "../../context/FrontendContext";
 
 const Navbar = () => {
@@ -146,9 +146,10 @@ const Navbar = () => {
         pr="20px"
         alignItems={"center"}
       >
-        <Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
+    <Link to='/'>    <Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
           <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
         </Box>
+        </Link>
 
         <Box
           flex="0.7"

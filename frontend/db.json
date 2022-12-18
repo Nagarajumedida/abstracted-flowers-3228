@@ -8,8 +8,7 @@
           "image": "https://www.reliancedigital.in/medias/Motorola-G62-Mobile-Phone-493177199-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyODQ4MXxpbWFnZS9qcGVnfGltYWdlcy9oZTcvaDI2Lzk4NzMyNjcwNjQ4NjIuanBnfGNiMDM4OTg1MzJhOGUzZjcyOWYxNGI3ZTdlODFmOTM5MmU5NWM1Yzk5YzJjNzgwMTcwMjYxNDc5ZDIzYWU4ZGU",
           "price": "17999"
 
-          "image": "https://m.media-amazon.com/images/I/51PG75Ko2NL._SX522_.jpg",
-          "price": "1799"
+         
 
       },
       {
@@ -19,8 +18,7 @@
 
           "image": "https://www.reliancedigital.in/medias/Samsung-Galaxy-S22-SmartPhone-492849199-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNjQxMHxpbWFnZS9qcGVnfGltYWdlcy9oYzEvaGNkLzk3Nzk0NzY1NjE5NTAuanBnfGFjZTBiMzc3YjZjNGU5ZTIyOWU0OTBhNjJjOWE1OGZkMmUzOTFlZTc4MGY1OTk0NTIxMjUwNDk3Yzg3NWU4MzQ",
           "price": "20000"
-          "image": "https://www.reliancedigital.in/wp-content/uploads/2022/02/Samsung_S22_Cover.jpg",
-          "price": "2999"
+         
 
       },
       {
@@ -35,49 +33,49 @@
           "title": "Realme 9i",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/Realme-9i-Smart-Phone-493177590-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NTk0NnxpbWFnZS9qcGVnfGltYWdlcy9oZDIvaDgxLzk5MDk3MjU2NTkxNjYuanBnfDRiNDI3NTY3MzQ0MTg0M2IyYmIxYTljMzhlYTliOWY1OWExZTIxYTUxN2E2MjcxNjY1MGM4ZDMyMzQ5NzkyNWE",
-          "price": "1899"
+          "price": "10899"
       },
       {
           "id": 5,
           "title": "Vivo T1 pro",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/Vivo-T1-Pro-5G-Mobiles-492850282-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNzg2M3xpbWFnZS9qcGVnfGltYWdlcy9oOWIvaGM5Lzk4NjY4MDA4ODk4ODYuanBnfGUzYzUyYTQ1NzBkYjY0MzE3ZGI1MjkzNjM5NzhjYzQ0NTRmMWU5MTVhNmRiMDM2NzYxYmExMjQ4MTI4MzhlMWI",
-          "price": "2499"
+          "price": "24099"
       },
       {
           "id": 6,
           "title": "Apple iPhone",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/Apple-iPhone-14-Plus-Mobile-Phone-493177765-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDAyMHxpbWFnZS9qcGVnfGltYWdlcy9oNDIvaDAyLzk4OTA1MzYwNjMwMDYuanBnfDQzYjhhMjgyYWJlYWJkNTBiNDM4NzI5YjA4NTU4NzY3Y2Y2ZTJjYWQxNDQ4NDE0ZWViYzJmZTdjZjYwNTQ5ZGU",
-          "price": "8999"
+          "price": "80999"
       },
       {
           "id": 7,
           "title": "OPPO F21 pro",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/Oppo-F21s-Pro-Mobile-Phone-493177727-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTMwNnxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaDc0Lzk4OTQ2MjcwODIyNzAuanBnfGQxODBlNWU2MTgyMjNjZTljZTE3MjRkYzhmN2I3ZTQ2YTYxM2QwNjFjN2M3NjBjMjhkMTk1NTAxZjcxYTU5YjE",
-          "price": "2599"
+          "price": "20599"
       },
       {
           "id": 8,
           "title": "Apple iPhone 14",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/Apple-iPhone-14-Mobile-Phone-493177752-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDYyM3xpbWFnZS9qcGVnfGltYWdlcy9oMGQvaDc0Lzk4OTA0ODY1MTc3OTAuanBnfGZiNzc0ODMzZjdmMGNjMGE3MmEwMGVlNDgzNTYxYzlkZThjOGNmYzIwYzI1NDFmZmY0MDMyYmQ0ZjNlMjkyN2U",
-          "price": "7999"
+          "price": "70999"
       },
       {
           "id": 9,
           "title": "Xiaomi 11T pro",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/Xiaomi-11T-Pro-Smartphones-492574979-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NjkyNHxpbWFnZS9qcGVnfGltYWdlcy9oY2IvaDZmLzk4MzI5MTExNzU3MTAuanBnfGIxMTRmZDg3OTA1ZTUzZTU4MTM0ZDkxYjA1N2I1MzMxNGQ2YzBhNWJlMWZkNWQ3ZjA1OGMzMTQ5YzIxYmMwYjY",
-          "price": "3599"
+          "price": "31599"
       },
       {
           "id": 10,
           "title": "Motorola G71",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/Motorola-G71-Mobile-Phone-492849088-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTk3OXxpbWFnZS9qcGVnfGltYWdlcy9oMTcvaGNmLzk4Mjg4NDc3Nzk4NzAuanBnfGQxYjE2M2ZlMTBkOGEyZGQwNWQyYjRlZWY4NTZkMzUxMDY5ZDQxMjQwYjAwMzM0NjlmNGVkYjVjNGU1NjQ2NGE",
-          "price": "1699"
+          "price": "11699"
       },
       {
           "id": 11,
@@ -112,14 +110,14 @@
           "title": "Techno POVA",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/Tecno-TECNO-POVA3-Smart-Phones-492850709-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MDIzNXxpbWFnZS9qcGVnfGltYWdlcy9oYmEvaGRhLzk4NDg2NTk4Njk3MjYuanBnfDMzODFjYzQzNDczYjAxOGViOTUxOWYxNmMwYmM0Y2E1YjAyYTAwZTBhODg3MWE5YWVkZGU3MTRiZTkyMWQ2MTg",
-          "price": "1199"
+          "price": "10199"
       },
       {
           "id": 16,
           "title": "Motorola E32",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/Motorola-E32-Mobile-Phone-492849904-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDU4OHxpbWFnZS9qcGVnfGltYWdlcy9oODAvaDI1Lzk4MzQxMDkyMDY1NTguanBnfGU1NGNkMTA3ODhiYTJhZGEyNDFhMGEzZDZhNjg5NzhmZWYzM2JkNDY4NjY3MzhiZTA3MzRmM2U4OGUzMmU4Y2Q",
-          "price": "7599"
+          "price": "17599"
       },
       {
           "id": 17,
@@ -133,14 +131,14 @@
           "title": "Vivo Y21G",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/VIVO-Y21G-MobilePhone-492849963-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDUxNXxpbWFnZS9qcGVnfGltYWdlcy9oMTYvaDM0Lzk4NzAyNzU5NjkwNTQuanBnfDc1NDkxNzY4MWY5MGUxNGFjM2IxYzVlYTM5NGJhZWFkZWM2Y2JjNmI3MjUxZDRmMzY0ODcyZjVjMmQyM2QxNmU",
-          "price": "1399"
+          "price": "11399"
       },
       {
           "id": 19,
           "title": "Oppo A57",
           "category": "mobile",
           "image": "https://www.reliancedigital.in/medias/Oppo-A57-Smart-Phones-492850647-i-492850647-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NjU1M3xpbWFnZS9qcGVnfGltYWdlcy9oOTcvaGIyLzk4NDcyMjg0NjUxODIuanBnfDAyYzY4OTY5ZmJkMzU1NjlmNGUwNjQ4YzE4ZjJlZDk3ZDBjMWEwOTU5ZmI0ZGEzNzRjMzU1NmFmNjlmYTA3Njk",
-          "price": "1499"
+          "price": "14199"
       },
       {
           "id": 20,
@@ -154,28 +152,28 @@
           "title": "Samsung 80 cm",
           "category": "television",
           "image": "https://www.reliancedigital.in/medias/Samsung-UA32T4010ARXXL-LED-TV-492796778-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzcwOXxpbWFnZS9qcGVnfGltYWdlcy9oZTIvaDc2Lzk4MDg4ODExMjMzNTguanBnfGU1ZTI3N2IwYzAzZjljMGQ4NDg1YmNkMDU5ZmVkYjZlZmRkMmRhNGM4YTY0MzMwZTYxYzUyYjlhMGEzM2JhMDk",
-          "price": "1299"
+          "price": "12299"
       },
       {
           "id": 22,
           "title": "Samsung 108 cm",
           "category": "television",
           "image": "https://www.reliancedigital.in/medias/Samsung-UA43TE50AAKXXL-Smart-LED-TV-492166127-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDUzN3xpbWFnZS9qcGVnfGltYWdlcy9oMWEvaGJhLzk4MDcxMDk4ODE4ODYuanBnfDExNTUwMTVlNWUyZTZlZGE4ZTVhMTAyMGMxZmUyMjA3MWIxZWVhMmI2MmFmMGFiYmIzMGFlMDdlYTgwY2QxNjE",
-          "price": "3999"
+          "price": "13999"
       },
       {
           "id": 23,
           "title": "Samsung Crystal 4K 163 cm",
           "category": "television",
           "image": "https://www.reliancedigital.in/medias/Samsung-UA65AUE70AKLXL-LED-TV-492796783-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDUzN3xpbWFnZS9qcGVnfGltYWdlcy9oOWQvaDQ0Lzk4MDg1MTM2OTU3NzQuanBnfGJhZmExMmQ5ZTU3MjcxOWQ5ZmFmMTAxNGZlNWI0ZDkyZGJkM2Q5ZTQ2NjU0Mjc4NTBkOTA2NzJmYTU3OWE4YjQ",
-          "price": "7999"
+          "price": "17999"
       },
       {
           "id": 24,
           "title": "Samsung 108 cm",
           "category": "television",
           "image": "https://www.reliancedigital.in/medias/Samsung-QA43LS03AAKLXL-LED-TV-492796782-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNTc2NXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaGY5Lzk4MDg1MDkxMDgyNTQuanBnfDA3ZjQwODcxOWRiYWQ3Yzg5MmNiZTg1YTEwODA3NDM2YjY0ZDJkYWRjMDI1YjljNDdlM2FjOTRkNjBlMTJhZmQ",
-          "price": "4999"
+          "price": "14999"
       },
       {
           "id": 25,
@@ -189,42 +187,42 @@
           "title": "ONEPLUS 81.28 cm",
           "category": "television",
           "image": "https://www.reliancedigital.in/medias/ONEPLUS-32Y1-TV-491895010-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjIzMXxpbWFnZS9qcGVnfGltYWdlcy9oNjkvaDE0Lzk4MTAwNTg5MDM1ODIuanBnfGFiZjk3NDA1MzY1ODQwYjc2OTZkMzY4OTI1Y2RmOWM3OTI4NTE1MTlkMDFlOTUwYmZkM2U5MTVlYmIyZGFlYzg",
-          "price": "1299"
+          "price": "10299"
       },
       {
           "id": 27,
           "title": "ONEPLUS 108 cm",
           "category": "television",
           "image": "https://www.reliancedigital.in/medias/ONEPLUS-43Y1-TV-491895011-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNTQ5NHxpbWFnZS9qcGVnfGltYWdlcy9oOGQvaDZmLzk4MTAwNTg1NzU5MDIuanBnfDRlNjk2MTc0MjNiODNmYmZkNmVjNWQwMjM1N2QxMzExOWFkNzcyOTNiY2M3ODU0ZmUyN2Y5OWEyNjExNzFkYTY",
-          "price": "2299"
+          "price": "20299"
       },
       {
           "id": 28,
           "title": "Realme 80 cm",
           "category": "television",
           "image": "https://www.reliancedigital.in/medias/Realme-Realme-32-Televisions-491973484-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4MTc4M3xpbWFnZS9qcGVnfGltYWdlcy9oOGYvaGQ3Lzk0NzU5NzIxNjk3NTguanBnfDgxZmQwM2JmNTJhM2EwYTcxZTViNzA5YjkzNWVmZjJiMjg4OTM4NGVkZWM2ODA2ZGQ4OTg1ZjAzOTNiNjVlMjc",
-          "price": "1299"
+          "price": "12099"
       },
       {
           "id": 131,
           "title": "realme 126 cm",
           "category": "television",
           "image": "https://www.reliancedigital.in/medias/realme-RMV2005-Televisions-492338548-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3NDkxOHxpbWFnZS9qcGVnfGltYWdlcy9oN2YvaDFiLzk1NzY5NDczMTg4MTQuanBnfGYzYjBhZTM2Mzg5ODMwOGRiYzBmOTM0NTg5YzM0ODc3NTI0MDc0NWIyMTgxNDQ4ODY2ZDRiM2RlMGRhMTFiNGY",
-          "price": "3199"
+          "price": "31099"
       },
       {
           "id": 132,
           "title": "MI 32 HD Smart",
           "category": "television",
           "image": "https://www.reliancedigital.in/medias/Mi-4A-Horizon-Edition-Television-492166368-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNjcxM3xpbWFnZS9qcGVnfGltYWdlcy9oNDcvaDk4Lzk3OTA4NzQ3MTQxNDIuanBnfDhjNDk4M2M1MTM1YTViZmFkMTY1NGM1ZmU4ZjFiODNiOGQ2NTMyYzUxYjg0NWJmYWE4MjIzODg4YmEzMWM5ZDY",
-          "price": "1699"
+          "price": "16909"
       },
       {
           "id": 133,
           "title": "Mi 4X 125 cm",
           "category": "television",
           "image": "https://www.reliancedigital.in/medias/Mi-4X-Pro-Television-492166363-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MTYzOXxpbWFnZS9qcGVnfGltYWdlcy9oNWIvaDdiLzk2MjAzMTkxMDkxNTAuanBnfGM2OGNhOWE3M2M0ZDlkNDQ2MjUzMDFmNTE0NzBiMmMzNjExZmRiNzAwNWVhYzhjMDQyYmQ2MmUyZDU2MjBhZTM",
-          "price": "3999"
+          "price": "39909"
       },
       {
           "id": 134,

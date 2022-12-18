@@ -7,6 +7,7 @@ import Home from "../pages/Homepage/Homepage"
 import Login from "../pages/Login"
 import Cart from "../pages/Cart"
 import Register from '../pages/Register'
+import SingleProduct from '../ProductComponents/SingleProduct'
 
 const MainRoutes = () => {
   return (
@@ -14,8 +15,7 @@ const MainRoutes = () => {
          <Route path='/' element={<Home/>}/>
         <Route path='/product' element={<ProductRecords/>}/>
 
-        {/* <Route path='/product?category=television' element={<ProductRecords/>}/>
-        <Route path='/product?category=mobile' element={<ProductRecords/>}/> */}
+        
 {/*         
         <Route path="/product/:id" element={<SingleProductRecord/>}/>
         <Route path="/product/:id/edit" element={<EditProductPage/>}/> */}
@@ -27,6 +27,7 @@ const MainRoutes = () => {
         <Route path='/login' element={<Login/>}/>
          <Route path='/cart' element={<Cart/>}/>
          <Route path="/register" element={<Register/>}/>
+         <Route path="/product/:id" element={<SingleProduct/>}/>
         <Route/>
   
     </Routes>
