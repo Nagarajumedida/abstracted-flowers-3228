@@ -19,7 +19,7 @@ app.use(passport.session())
 
 
 app.set("view engine", "ejs")
-app.get("/", (req, res) => {
+app.get("/admin", (req, res) => {
     res.render("index")
 })
 app.get("/register", (req, res) => {
@@ -115,5 +115,5 @@ app.delete("/delete/:productID", async (req, res) => {
 
 
 app.listen(8080, () => {
-    console.log("listeing on http://localhost:7500")
+    console.log("listeing on http://localhost:8080")
 })
