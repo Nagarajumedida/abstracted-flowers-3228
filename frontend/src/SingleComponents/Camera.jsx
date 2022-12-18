@@ -64,7 +64,7 @@ const CameraData = () => {
             {productList.length > 0 && productList.map((product) => {
                 if (product.category == "camera") {
                     return (
-
+                 
                         <Box key={product.id} className='oneProductCard'>
                             <Box className='oneProd'>
                                 <Box className='imgBox'>

@@ -7,6 +7,9 @@ import Home from "../pages/Homepage/Homepage"
 import Login from "../pages/Login"
 import Cart from "../pages/Cart"
 import Register from '../pages/Register'
+
+import  CheckOut from '../pages/CheckOut'
+
 import Mobile from '../SingleComponents/Mobile'
 import Television from '../SingleComponents/Television'
 import Headsets from '../SingleComponents/Headset'
@@ -18,6 +21,7 @@ import Personal from '../SingleComponents/Personal'
 import Accessories from '../SingleComponents/Accessories'
 import HomeProducts from '../SingleComponents/HomeNeed'
 import SingleProduct from '../ProductComponents/SingleProduct'
+
 
 
 const MainRoutes = () => {

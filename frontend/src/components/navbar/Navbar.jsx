@@ -153,9 +153,7 @@ const Navbar = () => {
         </Box>
         </Link>
 
-        <Link to="/"><Box w="180px" ml="50px" bg="rgb(228,37,41)" h="60px">
-          <Image src={MainLogo} alt={MainLogo} width="100%" height={"100%"} />
-        </Box></Link>
+        
 
 
         <Box
@@ -176,14 +174,17 @@ const Navbar = () => {
             />
           </InputGroup>
         </Box>
-        <Center w="150px" bg={main_red_color}>
+        <Center w="70px" bg="rgb(228,37,41)" gap={"5px"}>
+          <FaUser color="white" size={"15px"} />
+          <Link to="http://localhost:7500">
           <Text
             fontSize={"14px"}
             fontWeight={"500"}
             _hover={{ cursor: "pointer" }}
           >
-            Select your PIN Code
+           Admin 
           </Text>
+          </Link>
         </Center>
         <Center height="20px">
           <Divider orientation="vertical" />
@@ -493,7 +494,7 @@ const Navbar = () => {
                 fontWeight={"300"}
                 _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
               >
-                Mobile Accessories
+              Mobile Accessories
               </Text>
               <Text
                 alignSelf={"start"}
@@ -1022,7 +1023,7 @@ const Navbar = () => {
         <Flex flex={"1"} pt="5px">
           <HStack pl="3%">
             <VStack w="220px" h="100%">
-             <Link to="/homeproducts"><Text
+            <Text
                 fontSize={"16px"}
                 color={"white"}
                 fontWeight={"500"}
@@ -1030,8 +1031,8 @@ const Navbar = () => {
                 mb="10px"
                 alignSelf={"start"}
               >
-                Air Conditioners
-              </Text></Link>
+          <Link to="/homeproducts"> Air Conditioners</Link>
+              </Text>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -1039,8 +1040,9 @@ const Navbar = () => {
                 fontWeight={"300"}
                 _hover={{ textDecorationLine: "underline", cursor: "pointer" }}
               >
-                Split Air Conditioners
-              </Text>
+             <Link to="/homeproducts">    Split Air Conditioners
+             </Link>
+                           </Text>
               <Text
                 alignSelf={"start"}
                 fontSize={"13px"}
@@ -1317,7 +1319,7 @@ const Navbar = () => {
                 mb="10px"
                 alignSelf={"start"}
               >
-                Air Conditioners
+               <Link to="/homeproducts">  Air Conditioners</Link>
               </Text>
               <Text
                 alignSelf={"start"}
@@ -5233,7 +5235,7 @@ const Navbar = () => {
                             mb="10px"
                             alignSelf={"start"}
                           >
-                            Smartphones
+                        <Link to='/accessories'>    Smartphones</Link>
                           </Text>
                          
                           <Text

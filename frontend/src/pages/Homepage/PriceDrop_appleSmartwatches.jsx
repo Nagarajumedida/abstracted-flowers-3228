@@ -31,6 +31,9 @@ import ApplefitnessRedtip from "./homepage assets/homepage_product_slider/appleP
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 
+
+
+
 // icons import*******************
 // Settings for the slider
 const settings = {

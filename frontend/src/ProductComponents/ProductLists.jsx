@@ -4,10 +4,15 @@ import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import { Box,Image,Text,Checkbox,Button,Flex,Center,Divider } from '@chakra-ui/react'
 import { BsSuitHeartFill,BsSuitHeart } from "react-icons/bs"
 
+
 import { getProductList  } from '../Redux/action'
 import "./ProductList.css"
 const ProductLists = () => {
-  const [heart,setHeart]=useState(true)
+
+  const [heart, setHeart] = useState(true)
+
+
+
 
   const dispatch = useDispatch()
   const [searchParams] = useSearchParams()
@@ -60,9 +65,8 @@ console.log("prodlist",productList)
 
 
 
-          <>
-          <Link to={`/product/${product.id}`}>
-      <Box  key={product.id} className='oneProductCard'>
+          <> <Link to={`/product/${product.id}`}>
+      <Box key={product.id} className='oneProductCard'>
    <Box className='oneProd'>
     <Box className='imgBox'>
       <Image className='prodimg' src={product.image} alt={product.title} />
