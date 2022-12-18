@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Button, Text } from '@chakra-ui/react';
+import { Box, Button, Checkbox, Text } from '@chakra-ui/react';
 import { useSearchParams } from 'react-router-dom'
 import "./FilterSort.css"
 
@@ -52,86 +52,87 @@ export const FilterSort = () => {
     console.log(categoryType)
 
     return (<>
-        <div className='filter'>
+        <Box className='filter'>
 
             
 
             {/* <Box w='80%' m='auto' ><Text fontSize='36px' fontWeight='bold' >Filters</Text></Box> */}
             <h2>Filters</h2>
-            <div className='filter-1' style={{ marginTop: '30px' }}>
+            <Box className='filter-1' style={{ marginTop: '30px' }}>
                 {/* <h4>Categories</h4> */}
                 <Button onClick={() => setShowcategory(!showcategory)} className='buttp'>{showcategory ? 'Categories ↑' : 'Categories ↓'}</Button>
                 {showcategory && <Box>
-                    <div className='filter-2'>
-                        <input type="checkbox" value="mobile" defaultChecked={categoryType.includes("mobile")} onChange={handleFilter} />
-                        <label>Mobiles</label>
-                    </div>
+                    <Box className='filter-2'>
+        <Checkbox type="checkbox" value="mobile" defaultChecked={categoryType.includes("mobile")} 
+        onChange={handleFilter} >
+                        Mobiles</Checkbox>
+                    </Box>
 
-                    <div className='filter-2'>
-                        <input type="checkbox" value="television" defaultChecked={categoryType.includes("television")} onChange={handleFilter} />
+                    <Box className='filter-2'>
+    <input type="checkbox" value="television" defaultChecked={categoryType.includes("television")} onChange={handleFilter} />
                         <label>Televisions</label>
-                    </div>
+                    </Box>
 
-                    <div className='filter-2'>
+                    <Box className='filter-2'>
                         <input type="checkbox" value="Headset" defaultChecked={categoryType.includes("Headset")} onChange={handleFilter} />
                         <label>Headsets</label>
-                    </div>
+                    </Box>
 
-                    <div className='filter-2'>
+                    <Box className='filter-2'>
                         <input type="checkbox" value="Home" defaultChecked={categoryType.includes("Home")} onChange={handleFilter} />
                         <label>Home</label>
-                    </div>
+                    </Box>
 
-                    <div className='filter-2'>
+                    <Box className='filter-2'>
                         <input type="checkbox" value="computers" defaultChecked={categoryType.includes("computers")} onChange={handleFilter} />
                         <label>Computers</label>
-                    </div>
+                    </Box>
 
-                    <div className='filter-2'>
+                    <Box className='filter-2'>
                         <input type="checkbox" value="camera" defaultChecked={categoryType.includes("camera")} onChange={handleFilter} />
                         <label>Cameras</label>
-                    </div>
+                    </Box>
 
-                    <div className='filter-2'>
+                    <Box className='filter-2'>
                         <input type="checkbox" value="kitchen" defaultChecked={categoryType.includes("kitchen")} onChange={handleFilter} />
                         <label>Kitchen</label>
-                    </div>
+                    </Box>
 
-                    <div className='filter-2'>
+                    <Box className='filter-2'>
                         <input type="checkbox" value="personal" defaultChecked={categoryType.includes("personal")} onChange={handleFilter} />
                         <label>Personal</label>
-                    </div>
+                    </Box>
 
-                    <div className='filter-2'>
+                    <Box className='filter-2'>
                         <input type="checkbox" value="accessories" defaultChecked={categoryType.includes("accessories")} onChange={handleFilter} />
                         <label>Accessories</label>
-                    </div>
+                    </Box>
                 </Box>
                 }
-            </div>
+            </Box>
 
             <div className='filter-1'>
                 {/* <h4>Price</h4> */}
                 <Button onClick={() => setShowprice(!showprice)} className='buttp'>{showprice ? 'Price ↑' : 'Price ↓'}</Button>
-                <div onChange={handleSortBy}>
+                <Box onChange={handleSortBy}>
                      {showprice && <Box>
-                    <div className='filter-2'>
+                    <Box className='filter-2'>
                         <input type="radio" name="sortBy" value="asc" defaultChecked={sortBy === 'asc'} />
                         <label>Low - High</label>
-                    </div>
+                    </Box>
 
-                    <div className='filter-2'>
+                    <Box className='filter-2'>
                         <input type="radio" name="sortBy" value="desc" defaultChecked={sortBy === 'desc'} />
                         <label>High - Low</label>
-                    </div>
+                    </Box>
                     </Box>
                 }
 
-                </div>
+                </Box>
                
             </div>
        
-        </div>
+        </Box>
         
         </>
     )
