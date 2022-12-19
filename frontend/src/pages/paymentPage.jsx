@@ -1,58 +1,93 @@
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
+// import SubmitOrder from "./SubmitOrder";
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import { useState } from "react";
 
-import { FormControl, FormLabel, Heading } from "@chakra-ui/react";
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-const PaymentPage = () => {
+function PaymentPage() {
+  const [firstName, setfirstName] = useState();
+  const [lastName, setlastName] = useState();
+  const [phone, setPhone] = useState();
+  const [address, setAddress] = useState();
+  const [user, setUsername] = useState();
 
-  const HandleSubmit = ()=>{
-    const Navigate = useNavigate()
-    Navigate("/")
+  let userData={fname:firstName,lName:lastName,ph:phone,add:address,user:user}
 
-  }
+  const lcFunction = () => {
+    localStorage.setItem("userDetails",JSON.stringify(userData))
+     console.log("done")
+  };
 
-  const handleSubmit=()=>{
-   
-    alert("Your order has been placed")
-   
-
-  }
   return (
-    <>
-    <div style={{ width:"40%" , margin:"auto", marginTop:"50px", marginBottom:"50px"}}>
-    <Heading as={"h3"} >Payment Page</Heading>
-    <Heading as={"h6"} >Please enter your payment details here:</Heading>
+    <div style={{ padding: "0.5rem" }}>
+      <InputGroup className="mb-3">
+        <InputGroup.Text style={{ backgroundColor: "#f0eceb" }}>
+          First and last name
+        </InputGroup.Text>
+        <Form.Control
+          aria-label="First name"
+          id="user_input_first"
+          onChange={(e) => setfirstName(e.target.value)}
+        />
+        <Form.Control
+          aria-label="Last name"
+          id="user_input_last"
+          onChange={(e) => setlastName(e.target.value)}
+        />
+      </InputGroup>
+      <InputGroup className="mb-3">
+        <Form.Control
+          placeholder="Recipient's username"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+          id="user_input_username"
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <InputGroup.Text
+          id="basic-addon2"
+          style={{ backgroundColor: "#f0eceb" }}
+        >
+          @gmail.com
+        </InputGroup.Text>
+      </InputGroup>
+      <InputGroup className="mb-3">
+        <InputGroup.Text
+          id="inputGroup-sizing-default"
+          style={{ backgroundColor: "#f0eceb" }}
+          type="text"
+        >
+          Phone Number
+        </InputGroup.Text>
+        <Form.Control
+          aria-label="Default"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="Phone Number"
+          id="user_input_phone"
+          onChange={(e) => setPhone(e.target.value)}
+        />
+      </InputGroup>
+      <InputGroup>
+        <InputGroup.Text style={{ backgroundColor: "#f0eceb" }}>
+          Mention Address
+        </InputGroup.Text>
+        <Form.Control
+          as="textarea"
+          aria-label="With textarea"
+          placeholder="Address"
+          id="user_input_address"
+          onChange={(e) => setAddress(e.target.value)}
+        />
+      </InputGroup>
+      <Button
+        variant="dark"
+        id="register"
+        disabled={!firstName || !lastName || !phone || !address || !user}
+        onClick={lcFunction}
+      >
+        <Link to="/finalPayment">Place Order</Link>
+      </Button>
     </div>
-    <div style={{border:"1px solid grey", width:"60%" , margin:"auto", marginTop:"50px", marginBottom:"50px"}} >
-
-      <form>
-        <FormControl>
-        <FormLabel>
-          Credit Card Number:
-          <input type="text" name="ccNumber" />
-        </FormLabel>
-        </FormControl>
-        <FormControl>
-        <FormLabel>
-          Security Code:
-          <input type="text" name="securityCode" />
-        </FormLabel>
-        </FormControl>
-        <FormControl>
-        <FormLabel>
-          Expiration Date:
-          <input type="date" name="expirationDate" />
-        </FormLabel>
-        </FormControl>
-      </form>
-      <Link to="/">
-
-        <button onClick={()=> HandleSubmit()}>Submit</button>
-
-        <button onClick={()=> handleSubmit()}>Submit</button>
-
-      </Link>
-    </div>
-    </>
-  )
-};
+  );
+}
 export default PaymentPage;
