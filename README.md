@@ -33,7 +33,7 @@ Start the server
 
   npm run start
 Prerequisites
-React.js , Nodejs , Firebase , Chakra UI , Express , Mongo DB , Redux-Thunk , Api , Render.
+React.js , Nodejs , Chakra UI , Express , Mongo DB , Redux-Thunk , Api , Render.
 
 Setup
 VS code , GitHub, Mongo DB, Render, Postman/Thunder Clent
