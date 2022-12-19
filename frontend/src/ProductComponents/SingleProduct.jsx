@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import ReactImageMagnify from "react-image-magnify";
 import { Box, Button, Divider, Flex, Heading,ListItem,Text, UnorderedList } from '@chakra-ui/react';
 import "./SingleProduct.css"
@@ -16,7 +16,7 @@ const SingleProduct = () => {
     const dispatch=useDispatch();
     const [show,setshow]=useState(true)
     const[Items,setItems]=useState([])
-
+  const navigate=useNavigate()
   
 
     const GetFunc=()=>{
@@ -44,8 +44,14 @@ const SingleProduct = () => {
  
 
  const BuyNow=()=>{
-  localStorage.removeItem('cart');
-  setItems([])
+ 
+ 
+  setItems([...Items,data])
+
+  setTimeout(function () {
+    navigate("/cart")
+  }, 2000);
+  
  }
 
 

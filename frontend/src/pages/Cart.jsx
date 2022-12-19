@@ -1,6 +1,6 @@
 import {Box,Button, Divider, Flex,Image,Input,InputGroup,InputRightAddon,Spacer,Text} from '@chakra-ui/react'
 import React,{useContext,useEffect,useState } from 'react'
-import {useNavigate} from 'react-router-dom'
+import {json, useNavigate} from 'react-router-dom'
 import {FrontendContext} from '../context/FrontendContext'
 const Cart = () => {
 const [show,setShow] = useState(false)
@@ -13,6 +13,8 @@ const {setCar,pincode,total,settotal,firstName} = useContext(FrontendContext)
 
 console.log("showitem",item)
 
+
+// function to add total amount here 
 useEffect(()=>{
     
     let p = 0;
@@ -25,50 +27,49 @@ useEffect(()=>{
 
 
 
-const handleDelete=(id)=>{
-    let r=JSON.parse(localStorage.getItem("cart"))
-    
-    let newarr=r.filter(e=>e.id!==id)
-    localStorage.setItem("cart",JSON.stringify(newarr))
-    setItem(newarr)
-    let tot=0;
-    for(let i=0;i<newarr.length;++i)
-    {
-        tot=tot+(newarr[i].qty*newarr[i].price)
-    }
-    settotal(tot)
-}
-const handleAdd=(val,id)=>{
-    let r=JSON.parse(localStorage.getItem("cart"))
-    
-    let tot=0;
 
-    for(let i=0;i<r.length;++i)
-    {
-        if(r[i].id===id)
-        r[i].qty+=val;
-        tot=tot+Number(r[i].qty*Number(r[i].price))
-    }
-    settotal(tot)
-    setItem(r)
-    localStorage.setItem("cart",JSON.stringify(r))
+
+const handleDelete=(index)=>{
+ const newItem=  item.filter((el,Index)=>{
+     return Index!==index
+   }) 
+
+localStorage.setItem('cart',JSON.stringify(newItem))
+
+
+const newData=JSON.parse(localStorage.getItem("cart"))
+   
+setItem(newData)
+
+}
+
+const handleAdd=(val,id)=>{
+    
    }
+
+
 const handleCheckout=()=>{
     if(firstName==="")
     navigate("/login")
     else
     navigate("/checkout")
 }
+
+
 useEffect(() => {
        setItem(JSON.parse(localStorage.getItem("cart"))||[]);
     }, [])
+
+
+
+
     return (
     <Box width="90%" margin="auto">
         <br/>
         <Flex>
         <Text>My Cart ({item.length} Items)</Text>
         <Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/><Spacer/>
-        <Text>Shipping to:203393                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <i class="fa-solid fa-location-dot"></i></Text>
+        <Text>Shipping to:{Math.floor((Math.random()*1000000)+1)}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="fa-solid fa-location-dot"></i></Text>
         <Spacer/>
         <Button colorScheme='red' variant='solid' width="30%" onClick={handleCheckout}>
         Checkout
@@ -77,16 +78,16 @@ useEffect(() => {
         <br/>
         <Flex>
             <Box width="67%">
-                {item.map(e=>
+                {item.map((e,index)=>
                 <div key={e.id}>
                 <Box border="1px solid #bdbdbd">
                 <Flex>
                 <Box>
                 <Image src={e.image} alt="no" width="200px"/>
                 <Flex width="170px" justifyContent="space-between" margin="auto">
-                    <Button disabled={e.qty===1} colorScheme="gray" onClick={()=>handleAdd(-1,e.id)}>-</Button>
+                    <Button disabled={e.qty===1} colorScheme="gray" onClick={(e)=>handleAdd(-1,e.id)}>-</Button>
                     <Input value={e.qty} width="70px"/>
-                    <Button colorScheme="gray" onClick={()=>handleAdd(1,e.id)}>+</Button>
+                    <Button colorScheme="gray" onClick={(e)=>handleAdd(1,e.id)}>+</Button>
                 </Flex>
                 </Box>
                 <Box>
@@ -102,7 +103,11 @@ useEffect(() => {
                 </Box>
                 </Flex>
                 <Flex>
-                <Box cursor="pointer" color='blue'height="35px" variant='link' border="1px solid #bdbdbd" width="50%" onClick={()=>handleDelete(e.id)}>            Remove       </Box>
+                <Box cursor="pointer" color='blue'height="35px" variant='link'
+                 border="1px solid #bdbdbd" width="50%"
+                  onClick={()=>handleDelete(index)}>
+                                Remove      
+                         </Box>
                 <Box cursor="pointer" color='blue' variant='link' border="1px solid #bdbdbd" width="50%">            Move to Wishlist       </Box> 
                 </Flex>
                 </Box>
