@@ -20,6 +20,7 @@ import HomeProducts from '../SingleComponents/HomeNeed'
 import SingleProduct from '../ProductComponents/SingleProduct'
 
 import PaymentPage from '../pages/PaymentPage'
+import CreditCard from '../pages/Creditcard'
 
 
 
@@ -59,6 +60,8 @@ const MainRoutes = () => {
          <Route path="/accessories" element={<Accessories/>}/>
 
          <Route path="/register" element={<Register/>}/>
+         <Route path='/creditcard' element={<CreditCard/>}/>
+
         <Route/>
     </Routes>
   )

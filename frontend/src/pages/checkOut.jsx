@@ -33,10 +33,9 @@ import {
   Checkbox,
   ModalFooter,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router";
-// import Footer from "../../components/Footer";
-// import Navbar from "../../components/Navbar";
+
 
 
 const Checkout = () => {
@@ -45,29 +44,43 @@ const Checkout = () => {
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
   const handleClick = () => {
-    alert("Order Placed Successfully");
-    onClose();
-    navigate("/");
-  };
+
+ if(name && mobile && pincode && city&& Building){
+  alert("Address added Successfully");
+  onClose();
+  navigate("/creditcard");
+ }
+else{
+  alert("Please fill your all details");
+  navigate("/checkout");
+}
+};
+
+
+
+  const [name,setname]=useState('')
+  const [mobile,setmobile]=useState('')
+  const [pincode,setpincode]=useState('')
+  const [city,setcity]=useState('')
+  const [Building,setBuilding]=useState('')
+
+
+
+
+
+
+
+
+
   return (
     <div>
-       {/* <Box w={'full'} position={'fixed'} zIndex={'10'}>
-        <Navbar />
-        </Box>  */}
+       
       <Container mb={"370px"} pt={"100px"} maxW="8xl" bg="white.600">
         <Flex>
-          {/* <Box p="4">
-            <Image
-              boxSize="35px"
-              width={"100%"}
-              objectFit="cover"
-              src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg"
-              alt="Lifestyle Stores Logo"
-            />
-          </Box> */}
+         
           <Spacer />
           <Box p="4">
-            {/* Conatct */}
+           
             <Text fontSize={"14px"}>Call 1800-123-1555</Text>
 
             <Text fontSize={"12px"}>Monday - Saturday, 09:00AM - 07:00PM</Text>
@@ -123,35 +136,8 @@ const Checkout = () => {
               </Tabs>
             </Box>
             <Box p={"5px"} w={"50%"}>
-              {/* <Flex border={"1px solid grey"} p={"10px"} alignItems={"center"}>
-                <Image
-                  w={"93px"}
-                  h={"85px"}
-                  src={
-                    "https://www.lifestylestores.com/static/icons/gift-box.png"
-                  }
-                />
-                <Text ml={"40px"} fontSize="3xl">
-                  Order Summery
-                </Text>
-              </Flex> */}
-              {/* <Box
-                mt={"10px"}
-                py={"40px"}
-                border={"1px solid grey"}
-                px={"10px"}
-              >
-                <Flex>
-                  <Text>Total MRP</Text>
-                  <Spacer />
-                  <Text>$199</Text>
-                </Flex>
-                <Flex>
-                  <Text>shipping Charge</Text>
-                  <Spacer />
-                  <Text>00</Text>
-                </Flex>
-              </Box> */}
+              
+              
               <Button
                 onClick={onOpen}
                 mt={"20px"}
@@ -177,34 +163,35 @@ const Checkout = () => {
 
                   <ModalBody pb={6}>
                     {/* Full Name */}
-                    <FormControl>
+                    <FormControl isRequired>
                       <FormLabel>Full Name</FormLabel>
-                      <Input
-                        ref={initialRef}
+                      <Input value={name}
+                      onChange={(e)=>setname(e.target.value)}
+                        ref={initialRef} 
                         placeholder="Enter your full name"
-                      />
+                        required/>
                     </FormControl>
 
                     {/* Mobile Number */}
-                    <FormControl mt={4}>
+                    <FormControl mt={4} isRequired>
                       <FormLabel>Mobile Number</FormLabel>
-                      <Input placeholder="Enter your mobile number" />
+                      <Input onChange={(e)=>setmobile(e.target.value)} value={mobile} placeholder="Enter your mobile number" />
                     </FormControl>
 
                     {/* Pincode */}
-                    <FormControl mt={4}>
+                    <FormControl mt={4} isRequired>
                       <FormLabel>Pincode</FormLabel>
-                      <Input placeholder="Enter your Pincode" />
+                      <Input onChange={(e)=>setpincode(e.target.value)} value={pincode} placeholder="Enter your Pincode" />
                     </FormControl>
 
                     {/* City */}
-                    <FormControl mt={4}>
+                    <FormControl mt={4} isRequired>
                       <FormLabel>City</FormLabel>
-                      <Input placeholder="Enter your City or Town" />
+                      <Input onChange={(e)=>setcity(e.target.value)} value={city} placeholder="Enter your City or Town" />
                     </FormControl>
 
                     {/* State */}
-                    <FormControl mt={4}>
+                    <FormControl mt={4} isRequired>
                       <FormLabel>State</FormLabel>
                       <Select placeholder="Select your State">
                         <option value="option1">Andhra Pradesh</option>
@@ -214,25 +201,25 @@ const Checkout = () => {
                     </FormControl>
 
                     {/* Building name */}
-                    <FormControl mt={4}>
+                    <FormControl mt={4} isRequired>
                       <FormLabel>Building name or number</FormLabel>
-                      <Input placeholder="Enter Building Name" />
+                      <Input value={Building} onChange={(e)=>setBuilding(e.target.value)}  placeholder="Enter Building Name" />
                     </FormControl>
 
                     {/* Strret name */}
-                    <FormControl mt={4}>
+                    <FormControl mt={4} isRequired>
                       <FormLabel>Street name or number</FormLabel>
                       <Input placeholder="Flat/House number, Floor, Building" />
                     </FormControl>
 
                     {/* Landmark */}
-                    <FormControl mt={4}>
+                    <FormControl mt={4} isRequired>
                       <FormLabel>Landmark</FormLabel>
                       <Input placeholder="Landmark" />
                     </FormControl>
 
                     {/* Address Type */}
-                    <FormControl mt={4}>
+                    <FormControl mt={4} isRequired>
                       <FormLabel>Address Type</FormLabel>
                       {/* <Input placeholder='Landmark' /> */}
                       <RadioGroup defaultValue="0">
@@ -248,7 +235,7 @@ const Checkout = () => {
                     </FormControl>
 
                     {/* Default Address */}
-                    <FormControl mt={4}>
+                    <FormControl mt={4} isRequired>
                       {/* <FormLabel>Landmark</FormLabel> */}
                       {/* <Input placeholder='Landmark' /> */}
                       <Checkbox colorScheme="orange">
@@ -258,7 +245,7 @@ const Checkout = () => {
                   </ModalBody>
 
                   <ModalFooter>
-                    <Button
+                    <Button 
                       onClick={handleClick}
                       colorScheme="orange"
                       mr={3}

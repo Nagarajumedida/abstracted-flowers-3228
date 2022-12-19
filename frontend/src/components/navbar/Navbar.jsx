@@ -173,14 +173,17 @@ const Navbar = () => {
             />
           </InputGroup>
         </Box>
-        <Center w="150px" bg={main_red_color}>
+        <Center w="70px" bg="rgb(228,37,41)" gap={"5px"}>
+          <FaUser color="white" size={"15px"} />
+          <Link to="/">
           <Text
             fontSize={"14px"}
             fontWeight={"500"}
             _hover={{ cursor: "pointer" }}
           >
-            Select your PIN Code
+           Admin
           </Text>
+          </Link>
         </Center>
         <Center height="20px">
           <Divider orientation="vertical" />
