@@ -21,6 +21,7 @@ import SingleProduct from '../ProductComponents/SingleProduct'
 
 import PaymentPage from '../pages/PaymentPage'
 import CreditCard from '../pages/Creditcard'
+import PaymentSuccess from '../pages/PaymentSuccess'
 
 
 
@@ -61,6 +62,7 @@ const MainRoutes = () => {
 
          <Route path="/register" element={<Register/>}/>
          <Route path='/creditcard' element={<CreditCard/>}/>
+         <Route path="/paymentsuccess" element={<PaymentSuccess/>}/>
 
         <Route/>
     </Routes>

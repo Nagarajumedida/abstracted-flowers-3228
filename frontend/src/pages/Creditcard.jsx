@@ -26,9 +26,15 @@ const CreditCard = () => {
 
   const handleordersuccess=(e)=>{
     e.preventDefault()
-    navigate("/")
+    setTimeout(()=>{
+      navigate("/paymentsuccess")
+    },[3000])
+   
    
   }
+
+
+ 
  
   return (
     <div className="mainbox">
@@ -170,6 +176,7 @@ const CreditCard = () => {
         <br />
         <input _hover={{backgroundColor:"teal"}}
           type="submit"
+        
           className="btn btn-secondary form-control"
           value="Submit"
         />

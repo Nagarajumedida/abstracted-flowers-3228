@@ -22,7 +22,7 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Navbar.css";
 
 // icons import******************
@@ -88,6 +88,32 @@ const Navbar = () => {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   // pos="sticky" top={"0px"} zIndex="27"
+
+
+
+  //to get info about user
+  const [username,setUsername]=useState('')
+  
+
+  useEffect(()=>{
+const userDetails=JSON.parse(localStorage.getItem("user"))
+if(userDetails){
+  setUsername(userDetails.first_name)
+}
+  },[username])
+
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div style={{position:"sticky",top:"0px",zIndex:"27" }}>
       <Flex
@@ -211,7 +237,7 @@ const Navbar = () => {
             fontWeight={"500"}
             _hover={{ cursor: "pointer" }}
           >
-            Login
+          {(username.length>0)? `${username}`:"Login"}
           </Text>
           </Link>
         </Center>
